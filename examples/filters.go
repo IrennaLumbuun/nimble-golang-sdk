@@ -12,7 +12,7 @@ import (
 func main() {
 
 	// login to Array, get groupService instance
-	groupService, err := service.NewNsGroupService("1.1.1.1", "xxx", "xxx", "v1", false)
+	groupService, err := service.NewNsGroupService("10.157.82.90", "raunak", "Nim123Boli", "v1", false, true)
 	if err != nil {
 		fmt.Printf("NewGroupService(): Unable to connect to group, err: %v", err.Error())
 	}
