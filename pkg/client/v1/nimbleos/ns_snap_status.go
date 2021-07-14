@@ -6,20 +6,22 @@ package nimbleos
 type NsSnapStatus string
 
 const (
-	cNsSnapStatusOkay           NsSnapStatus = "okay"
-	cNsSnapStatusDeleted        NsSnapStatus = "deleted"
-	cNsSnapStatusDeferredDelete NsSnapStatus = "deferred_delete"
-	cNsSnapStatusFailedDelete   NsSnapStatus = "failed_delete"
-	cNsSnapStatusForceDelete    NsSnapStatus = "force_delete"
-	cNsSnapStatusCreateRetry    NsSnapStatus = "create_retry"
-	cNsSnapStatusInvalid        NsSnapStatus = "invalid"
-	cNsSnapStatusCreating       NsSnapStatus = "creating"
+ cNsSnapStatusOkay NsSnapStatus = "okay"
+ cNsSnapStatusDeleted NsSnapStatus = "deleted"
+ cNsSnapStatusDeferredDelete NsSnapStatus = "deferred_delete"
+ cNsSnapStatusFailedDelete NsSnapStatus = "failed_delete"
+ cNsSnapStatusMetadataDelete NsSnapStatus = "metadata_delete"
+ cNsSnapStatusForceDelete NsSnapStatus = "force_delete"
+ cNsSnapStatusCreateRetry NsSnapStatus = "create_retry"
+ cNsSnapStatusInvalid NsSnapStatus = "invalid"
+ cNsSnapStatusCreating NsSnapStatus = "creating"
 )
 
 var pNsSnapStatusOkay NsSnapStatus
 var pNsSnapStatusDeleted NsSnapStatus
 var pNsSnapStatusDeferredDelete NsSnapStatus
 var pNsSnapStatusFailedDelete NsSnapStatus
+var pNsSnapStatusMetadataDelete NsSnapStatus
 var pNsSnapStatusForceDelete NsSnapStatus
 var pNsSnapStatusCreateRetry NsSnapStatus
 var pNsSnapStatusInvalid NsSnapStatus
@@ -37,6 +39,9 @@ var NsSnapStatusDeferredDelete *NsSnapStatus
 // NsSnapStatusFailedDelete enum exports
 var NsSnapStatusFailedDelete *NsSnapStatus
 
+// NsSnapStatusMetadataDelete enum exports
+var NsSnapStatusMetadataDelete *NsSnapStatus
+
 // NsSnapStatusForceDelete enum exports
 var NsSnapStatusForceDelete *NsSnapStatus
 
@@ -50,28 +55,32 @@ var NsSnapStatusInvalid *NsSnapStatus
 var NsSnapStatusCreating *NsSnapStatus
 
 func init() {
-	pNsSnapStatusOkay = cNsSnapStatusOkay
-	NsSnapStatusOkay = &pNsSnapStatusOkay
+ pNsSnapStatusOkay = cNsSnapStatusOkay
+ NsSnapStatusOkay = &pNsSnapStatusOkay
 
-	pNsSnapStatusDeleted = cNsSnapStatusDeleted
-	NsSnapStatusDeleted = &pNsSnapStatusDeleted
+ pNsSnapStatusDeleted = cNsSnapStatusDeleted
+ NsSnapStatusDeleted = &pNsSnapStatusDeleted
 
-	pNsSnapStatusDeferredDelete = cNsSnapStatusDeferredDelete
-	NsSnapStatusDeferredDelete = &pNsSnapStatusDeferredDelete
+ pNsSnapStatusDeferredDelete = cNsSnapStatusDeferredDelete
+ NsSnapStatusDeferredDelete = &pNsSnapStatusDeferredDelete
 
-	pNsSnapStatusFailedDelete = cNsSnapStatusFailedDelete
-	NsSnapStatusFailedDelete = &pNsSnapStatusFailedDelete
+ pNsSnapStatusFailedDelete = cNsSnapStatusFailedDelete
+ NsSnapStatusFailedDelete = &pNsSnapStatusFailedDelete
 
-	pNsSnapStatusForceDelete = cNsSnapStatusForceDelete
-	NsSnapStatusForceDelete = &pNsSnapStatusForceDelete
+ pNsSnapStatusMetadataDelete = cNsSnapStatusMetadataDelete
+ NsSnapStatusMetadataDelete = &pNsSnapStatusMetadataDelete
 
-	pNsSnapStatusCreateRetry = cNsSnapStatusCreateRetry
-	NsSnapStatusCreateRetry = &pNsSnapStatusCreateRetry
+ pNsSnapStatusForceDelete = cNsSnapStatusForceDelete
+ NsSnapStatusForceDelete = &pNsSnapStatusForceDelete
 
-	pNsSnapStatusInvalid = cNsSnapStatusInvalid
-	NsSnapStatusInvalid = &pNsSnapStatusInvalid
+ pNsSnapStatusCreateRetry = cNsSnapStatusCreateRetry
+ NsSnapStatusCreateRetry = &pNsSnapStatusCreateRetry
 
-	pNsSnapStatusCreating = cNsSnapStatusCreating
-	NsSnapStatusCreating = &pNsSnapStatusCreating
+ pNsSnapStatusInvalid = cNsSnapStatusInvalid
+ NsSnapStatusInvalid = &pNsSnapStatusInvalid
+
+ pNsSnapStatusCreating = cNsSnapStatusCreating
+ NsSnapStatusCreating = &pNsSnapStatusCreating
 
 }
+
