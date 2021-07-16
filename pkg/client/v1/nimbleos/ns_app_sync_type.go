@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsAppSyncType Enum.
@@ -6,10 +6,10 @@ package nimbleos
 type NsAppSyncType string
 
 const (
-	cNsAppSyncTypeVss     NsAppSyncType = "vss"
-	cNsAppSyncTypeVmware  NsAppSyncType = "vmware"
-	cNsAppSyncTypeNone    NsAppSyncType = "none"
-	cNsAppSyncTypeGeneric NsAppSyncType = "generic"
+ cNsAppSyncTypeVss NsAppSyncType = "vss"
+ cNsAppSyncTypeVmware NsAppSyncType = "vmware"
+ cNsAppSyncTypeNone NsAppSyncType = "none"
+ cNsAppSyncTypeGeneric NsAppSyncType = "generic"
 )
 
 var pNsAppSyncTypeVss NsAppSyncType
@@ -30,16 +30,17 @@ var NsAppSyncTypeNone *NsAppSyncType
 var NsAppSyncTypeGeneric *NsAppSyncType
 
 func init() {
-	pNsAppSyncTypeVss = cNsAppSyncTypeVss
-	NsAppSyncTypeVss = &pNsAppSyncTypeVss
+ pNsAppSyncTypeVss = cNsAppSyncTypeVss
+ NsAppSyncTypeVss = &pNsAppSyncTypeVss
 
-	pNsAppSyncTypeVmware = cNsAppSyncTypeVmware
-	NsAppSyncTypeVmware = &pNsAppSyncTypeVmware
+ pNsAppSyncTypeVmware = cNsAppSyncTypeVmware
+ NsAppSyncTypeVmware = &pNsAppSyncTypeVmware
 
-	pNsAppSyncTypeNone = cNsAppSyncTypeNone
-	NsAppSyncTypeNone = &pNsAppSyncTypeNone
+ pNsAppSyncTypeNone = cNsAppSyncTypeNone
+ NsAppSyncTypeNone = &pNsAppSyncTypeNone
 
-	pNsAppSyncTypeGeneric = cNsAppSyncTypeGeneric
-	NsAppSyncTypeGeneric = &pNsAppSyncTypeGeneric
+ pNsAppSyncTypeGeneric = cNsAppSyncTypeGeneric
+ NsAppSyncTypeGeneric = &pNsAppSyncTypeGeneric
 
 }
+

@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsPlatOrientation Enum.
@@ -6,8 +6,8 @@ package nimbleos
 type NsPlatOrientation string
 
 const (
-	cNsPlatOrientationRightToLeft NsPlatOrientation = "right_to_left"
-	cNsPlatOrientationLeftToRight NsPlatOrientation = "left_to_right"
+ cNsPlatOrientationRightToLeft NsPlatOrientation = "right_to_left"
+ cNsPlatOrientationLeftToRight NsPlatOrientation = "left_to_right"
 )
 
 var pNsPlatOrientationRightToLeft NsPlatOrientation
@@ -20,10 +20,11 @@ var NsPlatOrientationRightToLeft *NsPlatOrientation
 var NsPlatOrientationLeftToRight *NsPlatOrientation
 
 func init() {
-	pNsPlatOrientationRightToLeft = cNsPlatOrientationRightToLeft
-	NsPlatOrientationRightToLeft = &pNsPlatOrientationRightToLeft
+ pNsPlatOrientationRightToLeft = cNsPlatOrientationRightToLeft
+ NsPlatOrientationRightToLeft = &pNsPlatOrientationRightToLeft
 
-	pNsPlatOrientationLeftToRight = cNsPlatOrientationLeftToRight
-	NsPlatOrientationLeftToRight = &pNsPlatOrientationLeftToRight
+ pNsPlatOrientationLeftToRight = cNsPlatOrientationLeftToRight
+ NsPlatOrientationLeftToRight = &pNsPlatOrientationLeftToRight
 
 }
+

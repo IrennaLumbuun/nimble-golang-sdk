@@ -1,20 +1,22 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 
 package nimbleos
+
 
 // NsBitMapReturn - Return bitmap under certain request.
 // Export NsBitMapReturnFields for advance operations like search filter etc.
 var NsBitMapReturnFields *NsBitMapReturn
 
-func init() {
-	Bitmapfield := "bitmap"
+func init(){
+ Bitmapfield:= "bitmap"
 
-	NsBitMapReturnFields = &NsBitMapReturn{
-		Bitmap: &Bitmapfield,
-	}
+ NsBitMapReturnFields= &NsBitMapReturn{
+  Bitmap:&Bitmapfield,
+ }
 }
 
+
 type NsBitMapReturn struct {
-	// Bitmap - Returned bitmap.
-	Bitmap *string `json:"bitmap,omitempty"`
+ // Bitmap - Returned bitmap.
+  Bitmap *string `json:"bitmap,omitempty"`
 }

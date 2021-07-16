@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsArrayStatus Enum.
@@ -6,8 +6,8 @@ package nimbleos
 type NsArrayStatus string
 
 const (
-	cNsArrayStatusUnreachable NsArrayStatus = "unreachable"
-	cNsArrayStatusReachable   NsArrayStatus = "reachable"
+ cNsArrayStatusUnreachable NsArrayStatus = "unreachable"
+ cNsArrayStatusReachable NsArrayStatus = "reachable"
 )
 
 var pNsArrayStatusUnreachable NsArrayStatus
@@ -20,10 +20,11 @@ var NsArrayStatusUnreachable *NsArrayStatus
 var NsArrayStatusReachable *NsArrayStatus
 
 func init() {
-	pNsArrayStatusUnreachable = cNsArrayStatusUnreachable
-	NsArrayStatusUnreachable = &pNsArrayStatusUnreachable
+ pNsArrayStatusUnreachable = cNsArrayStatusUnreachable
+ NsArrayStatusUnreachable = &pNsArrayStatusUnreachable
 
-	pNsArrayStatusReachable = cNsArrayStatusReachable
-	NsArrayStatusReachable = &pNsArrayStatusReachable
+ pNsArrayStatusReachable = cNsArrayStatusReachable
+ NsArrayStatusReachable = &pNsArrayStatusReachable
 
 }
+

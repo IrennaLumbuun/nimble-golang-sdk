@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsEncryptionCipher Enum.
@@ -6,8 +6,8 @@ package nimbleos
 type NsEncryptionCipher string
 
 const (
-	cNsEncryptionCipherAes256Xts NsEncryptionCipher = "aes_256_xts"
-	cNsEncryptionCipherNone      NsEncryptionCipher = "none"
+ cNsEncryptionCipherAes256Xts NsEncryptionCipher = "aes_256_xts"
+ cNsEncryptionCipherNone NsEncryptionCipher = "none"
 )
 
 var pNsEncryptionCipherAes256Xts NsEncryptionCipher
@@ -20,10 +20,11 @@ var NsEncryptionCipherAes256Xts *NsEncryptionCipher
 var NsEncryptionCipherNone *NsEncryptionCipher
 
 func init() {
-	pNsEncryptionCipherAes256Xts = cNsEncryptionCipherAes256Xts
-	NsEncryptionCipherAes256Xts = &pNsEncryptionCipherAes256Xts
+ pNsEncryptionCipherAes256Xts = cNsEncryptionCipherAes256Xts
+ NsEncryptionCipherAes256Xts = &pNsEncryptionCipherAes256Xts
 
-	pNsEncryptionCipherNone = cNsEncryptionCipherNone
-	NsEncryptionCipherNone = &pNsEncryptionCipherNone
+ pNsEncryptionCipherNone = cNsEncryptionCipherNone
+ NsEncryptionCipherNone = &pNsEncryptionCipherNone
 
 }
+

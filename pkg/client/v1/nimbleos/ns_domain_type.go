@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsDomainType Enum.
@@ -6,9 +6,9 @@ package nimbleos
 type NsDomainType string
 
 const (
-	cNsDomainTypeAd    NsDomainType = "ad"
-	cNsDomainTypeLdap  NsDomainType = "ldap"
-	cNsDomainTypeLocal NsDomainType = "local"
+ cNsDomainTypeAd NsDomainType = "ad"
+ cNsDomainTypeLdap NsDomainType = "ldap"
+ cNsDomainTypeLocal NsDomainType = "local"
 )
 
 var pNsDomainTypeAd NsDomainType
@@ -25,13 +25,14 @@ var NsDomainTypeLdap *NsDomainType
 var NsDomainTypeLocal *NsDomainType
 
 func init() {
-	pNsDomainTypeAd = cNsDomainTypeAd
-	NsDomainTypeAd = &pNsDomainTypeAd
+ pNsDomainTypeAd = cNsDomainTypeAd
+ NsDomainTypeAd = &pNsDomainTypeAd
 
-	pNsDomainTypeLdap = cNsDomainTypeLdap
-	NsDomainTypeLdap = &pNsDomainTypeLdap
+ pNsDomainTypeLdap = cNsDomainTypeLdap
+ NsDomainTypeLdap = &pNsDomainTypeLdap
 
-	pNsDomainTypeLocal = cNsDomainTypeLocal
-	NsDomainTypeLocal = &pNsDomainTypeLocal
+ pNsDomainTypeLocal = cNsDomainTypeLocal
+ NsDomainTypeLocal = &pNsDomainTypeLocal
 
 }
+

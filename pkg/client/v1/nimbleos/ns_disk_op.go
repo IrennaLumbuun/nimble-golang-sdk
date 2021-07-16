@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsDiskOp Enum.
@@ -6,8 +6,8 @@ package nimbleos
 type NsDiskOp string
 
 const (
-	cNsDiskOpAdd    NsDiskOp = "add"
-	cNsDiskOpRemove NsDiskOp = "remove"
+ cNsDiskOpAdd NsDiskOp = "add"
+ cNsDiskOpRemove NsDiskOp = "remove"
 )
 
 var pNsDiskOpAdd NsDiskOp
@@ -20,10 +20,11 @@ var NsDiskOpAdd *NsDiskOp
 var NsDiskOpRemove *NsDiskOp
 
 func init() {
-	pNsDiskOpAdd = cNsDiskOpAdd
-	NsDiskOpAdd = &pNsDiskOpAdd
+ pNsDiskOpAdd = cNsDiskOpAdd
+ NsDiskOpAdd = &pNsDiskOpAdd
 
-	pNsDiskOpRemove = cNsDiskOpRemove
-	NsDiskOpRemove = &pNsDiskOpRemove
+ pNsDiskOpRemove = cNsDiskOpRemove
+ NsDiskOpRemove = &pNsDiskOpRemove
 
 }
+

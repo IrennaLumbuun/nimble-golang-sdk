@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsUserRoles Enum.
@@ -6,10 +6,10 @@ package nimbleos
 type NsUserRoles string
 
 const (
-	cNsUserRolesAdministrator NsUserRoles = "administrator"
-	cNsUserRolesGuest         NsUserRoles = "guest"
-	cNsUserRolesOperator      NsUserRoles = "operator"
-	cNsUserRolesPoweruser     NsUserRoles = "poweruser"
+ cNsUserRolesAdministrator NsUserRoles = "administrator"
+ cNsUserRolesGuest NsUserRoles = "guest"
+ cNsUserRolesOperator NsUserRoles = "operator"
+ cNsUserRolesPoweruser NsUserRoles = "poweruser"
 )
 
 var pNsUserRolesAdministrator NsUserRoles
@@ -30,16 +30,17 @@ var NsUserRolesOperator *NsUserRoles
 var NsUserRolesPoweruser *NsUserRoles
 
 func init() {
-	pNsUserRolesAdministrator = cNsUserRolesAdministrator
-	NsUserRolesAdministrator = &pNsUserRolesAdministrator
+ pNsUserRolesAdministrator = cNsUserRolesAdministrator
+ NsUserRolesAdministrator = &pNsUserRolesAdministrator
 
-	pNsUserRolesGuest = cNsUserRolesGuest
-	NsUserRolesGuest = &pNsUserRolesGuest
+ pNsUserRolesGuest = cNsUserRolesGuest
+ NsUserRolesGuest = &pNsUserRolesGuest
 
-	pNsUserRolesOperator = cNsUserRolesOperator
-	NsUserRolesOperator = &pNsUserRolesOperator
+ pNsUserRolesOperator = cNsUserRolesOperator
+ NsUserRolesOperator = &pNsUserRolesOperator
 
-	pNsUserRolesPoweruser = cNsUserRolesPoweruser
-	NsUserRolesPoweruser = &pNsUserRolesPoweruser
+ pNsUserRolesPoweruser = cNsUserRolesPoweruser
+ NsUserRolesPoweruser = &pNsUserRolesPoweruser
 
 }
+

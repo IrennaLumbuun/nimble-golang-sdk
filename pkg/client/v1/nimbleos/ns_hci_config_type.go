@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsHCIConfigType Enum.
@@ -6,10 +6,10 @@ package nimbleos
 type NsHCIConfigType string
 
 const (
-	cNsHCIConfigTypeNode    NsHCIConfigType = "node"
-	cNsHCIConfigTypeCluster NsHCIConfigType = "cluster"
-	cNsHCIConfigTypeBlock   NsHCIConfigType = "block"
-	cNsHCIConfigTypeSwitch  NsHCIConfigType = "switch"
+ cNsHCIConfigTypeNode NsHCIConfigType = "node"
+ cNsHCIConfigTypeCluster NsHCIConfigType = "cluster"
+ cNsHCIConfigTypeBlock NsHCIConfigType = "block"
+ cNsHCIConfigTypeSwitch NsHCIConfigType = "switch"
 )
 
 var pNsHCIConfigTypeNode NsHCIConfigType
@@ -30,16 +30,17 @@ var NsHCIConfigTypeBlock *NsHCIConfigType
 var NsHCIConfigTypeSwitch *NsHCIConfigType
 
 func init() {
-	pNsHCIConfigTypeNode = cNsHCIConfigTypeNode
-	NsHCIConfigTypeNode = &pNsHCIConfigTypeNode
+ pNsHCIConfigTypeNode = cNsHCIConfigTypeNode
+ NsHCIConfigTypeNode = &pNsHCIConfigTypeNode
 
-	pNsHCIConfigTypeCluster = cNsHCIConfigTypeCluster
-	NsHCIConfigTypeCluster = &pNsHCIConfigTypeCluster
+ pNsHCIConfigTypeCluster = cNsHCIConfigTypeCluster
+ NsHCIConfigTypeCluster = &pNsHCIConfigTypeCluster
 
-	pNsHCIConfigTypeBlock = cNsHCIConfigTypeBlock
-	NsHCIConfigTypeBlock = &pNsHCIConfigTypeBlock
+ pNsHCIConfigTypeBlock = cNsHCIConfigTypeBlock
+ NsHCIConfigTypeBlock = &pNsHCIConfigTypeBlock
 
-	pNsHCIConfigTypeSwitch = cNsHCIConfigTypeSwitch
-	NsHCIConfigTypeSwitch = &pNsHCIConfigTypeSwitch
+ pNsHCIConfigTypeSwitch = cNsHCIConfigTypeSwitch
+ NsHCIConfigTypeSwitch = &pNsHCIConfigTypeSwitch
 
 }
+

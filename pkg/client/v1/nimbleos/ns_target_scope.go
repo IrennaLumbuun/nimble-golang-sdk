@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsTargetScope Enum.
@@ -6,8 +6,8 @@ package nimbleos
 type NsTargetScope string
 
 const (
-	cNsTargetScopeVolume NsTargetScope = "volume"
-	cNsTargetScopeGroup  NsTargetScope = "group"
+ cNsTargetScopeVolume NsTargetScope = "volume"
+ cNsTargetScopeGroup NsTargetScope = "group"
 )
 
 var pNsTargetScopeVolume NsTargetScope
@@ -20,10 +20,11 @@ var NsTargetScopeVolume *NsTargetScope
 var NsTargetScopeGroup *NsTargetScope
 
 func init() {
-	pNsTargetScopeVolume = cNsTargetScopeVolume
-	NsTargetScopeVolume = &pNsTargetScopeVolume
+ pNsTargetScopeVolume = cNsTargetScopeVolume
+ NsTargetScopeVolume = &pNsTargetScopeVolume
 
-	pNsTargetScopeGroup = cNsTargetScopeGroup
-	NsTargetScopeGroup = &pNsTargetScopeGroup
+ pNsTargetScopeGroup = cNsTargetScopeGroup
+ NsTargetScopeGroup = &pNsTargetScopeGroup
 
 }
+

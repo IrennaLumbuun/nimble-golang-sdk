@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsEncryptionScope Enum.
@@ -6,10 +6,10 @@ package nimbleos
 type NsEncryptionScope string
 
 const (
-	cNsEncryptionScopeVolume NsEncryptionScope = "volume"
-	cNsEncryptionScopePool   NsEncryptionScope = "pool"
-	cNsEncryptionScopeNone   NsEncryptionScope = "none"
-	cNsEncryptionScopeGroup  NsEncryptionScope = "group"
+ cNsEncryptionScopeVolume NsEncryptionScope = "volume"
+ cNsEncryptionScopePool NsEncryptionScope = "pool"
+ cNsEncryptionScopeNone NsEncryptionScope = "none"
+ cNsEncryptionScopeGroup NsEncryptionScope = "group"
 )
 
 var pNsEncryptionScopeVolume NsEncryptionScope
@@ -30,16 +30,17 @@ var NsEncryptionScopeNone *NsEncryptionScope
 var NsEncryptionScopeGroup *NsEncryptionScope
 
 func init() {
-	pNsEncryptionScopeVolume = cNsEncryptionScopeVolume
-	NsEncryptionScopeVolume = &pNsEncryptionScopeVolume
+ pNsEncryptionScopeVolume = cNsEncryptionScopeVolume
+ NsEncryptionScopeVolume = &pNsEncryptionScopeVolume
 
-	pNsEncryptionScopePool = cNsEncryptionScopePool
-	NsEncryptionScopePool = &pNsEncryptionScopePool
+ pNsEncryptionScopePool = cNsEncryptionScopePool
+ NsEncryptionScopePool = &pNsEncryptionScopePool
 
-	pNsEncryptionScopeNone = cNsEncryptionScopeNone
-	NsEncryptionScopeNone = &pNsEncryptionScopeNone
+ pNsEncryptionScopeNone = cNsEncryptionScopeNone
+ NsEncryptionScopeNone = &pNsEncryptionScopeNone
 
-	pNsEncryptionScopeGroup = cNsEncryptionScopeGroup
-	NsEncryptionScopeGroup = &pNsEncryptionScopeGroup
+ pNsEncryptionScopeGroup = cNsEncryptionScopeGroup
+ NsEncryptionScopeGroup = &pNsEncryptionScopeGroup
 
 }
+

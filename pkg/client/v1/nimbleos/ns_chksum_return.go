@@ -1,20 +1,22 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 
 package nimbleos
+
 
 // NsChksumReturn - Return computed checksum.
 // Export NsChksumReturnFields for advance operations like search filter etc.
 var NsChksumReturnFields *NsChksumReturn
 
-func init() {
-	Cksumfield := "cksum"
+func init(){
+ Cksumfield:= "cksum"
 
-	NsChksumReturnFields = &NsChksumReturn{
-		Cksum: &Cksumfield,
-	}
+ NsChksumReturnFields= &NsChksumReturn{
+  Cksum:&Cksumfield,
+ }
 }
 
+
 type NsChksumReturn struct {
-	// Cksum - Computed checksum.
-	Cksum *string `json:"cksum,omitempty"`
+ // Cksum - Computed checksum.
+  Cksum *string `json:"cksum,omitempty"`
 }

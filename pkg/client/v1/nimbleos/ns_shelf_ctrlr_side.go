@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsShelfCtrlrSide Enum.
@@ -6,9 +6,9 @@ package nimbleos
 type NsShelfCtrlrSide string
 
 const (
-	cNsShelfCtrlrSideA       NsShelfCtrlrSide = "A"
-	cNsShelfCtrlrSideB       NsShelfCtrlrSide = "B"
-	cNsShelfCtrlrSideUnknown NsShelfCtrlrSide = "unknown"
+ cNsShelfCtrlrSideA NsShelfCtrlrSide = "A"
+ cNsShelfCtrlrSideB NsShelfCtrlrSide = "B"
+ cNsShelfCtrlrSideUnknown NsShelfCtrlrSide = "unknown"
 )
 
 var pNsShelfCtrlrSideA NsShelfCtrlrSide
@@ -25,13 +25,14 @@ var NsShelfCtrlrSideB *NsShelfCtrlrSide
 var NsShelfCtrlrSideUnknown *NsShelfCtrlrSide
 
 func init() {
-	pNsShelfCtrlrSideA = cNsShelfCtrlrSideA
-	NsShelfCtrlrSideA = &pNsShelfCtrlrSideA
+ pNsShelfCtrlrSideA = cNsShelfCtrlrSideA
+ NsShelfCtrlrSideA = &pNsShelfCtrlrSideA
 
-	pNsShelfCtrlrSideB = cNsShelfCtrlrSideB
-	NsShelfCtrlrSideB = &pNsShelfCtrlrSideB
+ pNsShelfCtrlrSideB = cNsShelfCtrlrSideB
+ NsShelfCtrlrSideB = &pNsShelfCtrlrSideB
 
-	pNsShelfCtrlrSideUnknown = cNsShelfCtrlrSideUnknown
-	NsShelfCtrlrSideUnknown = &pNsShelfCtrlrSideUnknown
+ pNsShelfCtrlrSideUnknown = cNsShelfCtrlrSideUnknown
+ NsShelfCtrlrSideUnknown = &pNsShelfCtrlrSideUnknown
 
 }
+

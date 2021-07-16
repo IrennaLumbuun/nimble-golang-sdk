@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsShelfPortType Enum.
@@ -6,9 +6,9 @@ package nimbleos
 type NsShelfPortType string
 
 const (
-	cNsShelfPortTypeUpstream   NsShelfPortType = "upstream"
-	cNsShelfPortTypeDownstream NsShelfPortType = "downstream"
-	cNsShelfPortTypeUnknown    NsShelfPortType = "unknown"
+ cNsShelfPortTypeUpstream NsShelfPortType = "upstream"
+ cNsShelfPortTypeDownstream NsShelfPortType = "downstream"
+ cNsShelfPortTypeUnknown NsShelfPortType = "unknown"
 )
 
 var pNsShelfPortTypeUpstream NsShelfPortType
@@ -25,13 +25,14 @@ var NsShelfPortTypeDownstream *NsShelfPortType
 var NsShelfPortTypeUnknown *NsShelfPortType
 
 func init() {
-	pNsShelfPortTypeUpstream = cNsShelfPortTypeUpstream
-	NsShelfPortTypeUpstream = &pNsShelfPortTypeUpstream
+ pNsShelfPortTypeUpstream = cNsShelfPortTypeUpstream
+ NsShelfPortTypeUpstream = &pNsShelfPortTypeUpstream
 
-	pNsShelfPortTypeDownstream = cNsShelfPortTypeDownstream
-	NsShelfPortTypeDownstream = &pNsShelfPortTypeDownstream
+ pNsShelfPortTypeDownstream = cNsShelfPortTypeDownstream
+ NsShelfPortTypeDownstream = &pNsShelfPortTypeDownstream
 
-	pNsShelfPortTypeUnknown = cNsShelfPortTypeUnknown
-	NsShelfPortTypeUnknown = &pNsShelfPortTypeUnknown
+ pNsShelfPortTypeUnknown = cNsShelfPortTypeUnknown
+ NsShelfPortTypeUnknown = &pNsShelfPortTypeUnknown
 
 }
+

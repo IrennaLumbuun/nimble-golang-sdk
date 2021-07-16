@@ -1,19 +1,22 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 
 package nimbleos
+
 
 // NsCtrlrFcConfig - Controller Fibre Channel configuration.
 // Export NsCtrlrFcConfigFields for advance operations like search filter etc.
 var NsCtrlrFcConfigFields *NsCtrlrFcConfig
 
-func init() {
+func init(){
 
-	NsCtrlrFcConfigFields = &NsCtrlrFcConfig{}
+ NsCtrlrFcConfigFields= &NsCtrlrFcConfig{
+ }
 }
 
+
 type NsCtrlrFcConfig struct {
-	// FcPortList - List of Fibre Channel ports.
-	FcPortList []*NsFcPortInfo `json:"fc_port_list,omitempty"`
-	// FcInterfaceList - List of Fibre Channel interfaces.
-	FcInterfaceList []*NsFcInterfaceInfo `json:"fc_interface_list,omitempty"`
+ // FcPortList - List of Fibre Channel ports.
+    FcPortList []*NsFcPortInfo `json:"fc_port_list,omitempty"`
+ // FcInterfaceList - List of Fibre Channel interfaces.
+    FcInterfaceList []*NsFcInterfaceInfo `json:"fc_interface_list,omitempty"`
 }

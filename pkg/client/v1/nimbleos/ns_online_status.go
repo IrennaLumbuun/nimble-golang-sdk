@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsOnlineStatus Enum.
@@ -6,9 +6,9 @@ package nimbleos
 type NsOnlineStatus string
 
 const (
-	cNsOnlineStatusOffline NsOnlineStatus = "offline"
-	cNsOnlineStatusOnline  NsOnlineStatus = "online"
-	cNsOnlineStatusPartial NsOnlineStatus = "partial"
+ cNsOnlineStatusOffline NsOnlineStatus = "offline"
+ cNsOnlineStatusOnline NsOnlineStatus = "online"
+ cNsOnlineStatusPartial NsOnlineStatus = "partial"
 )
 
 var pNsOnlineStatusOffline NsOnlineStatus
@@ -25,13 +25,14 @@ var NsOnlineStatusOnline *NsOnlineStatus
 var NsOnlineStatusPartial *NsOnlineStatus
 
 func init() {
-	pNsOnlineStatusOffline = cNsOnlineStatusOffline
-	NsOnlineStatusOffline = &pNsOnlineStatusOffline
+ pNsOnlineStatusOffline = cNsOnlineStatusOffline
+ NsOnlineStatusOffline = &pNsOnlineStatusOffline
 
-	pNsOnlineStatusOnline = cNsOnlineStatusOnline
-	NsOnlineStatusOnline = &pNsOnlineStatusOnline
+ pNsOnlineStatusOnline = cNsOnlineStatusOnline
+ NsOnlineStatusOnline = &pNsOnlineStatusOnline
 
-	pNsOnlineStatusPartial = cNsOnlineStatusPartial
-	NsOnlineStatusPartial = &pNsOnlineStatusPartial
+ pNsOnlineStatusPartial = cNsOnlineStatusPartial
+ NsOnlineStatusPartial = &pNsOnlineStatusPartial
 
 }
+

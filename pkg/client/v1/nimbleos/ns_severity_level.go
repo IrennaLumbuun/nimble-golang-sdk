@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsSeverityLevel Enum.
@@ -6,10 +6,10 @@ package nimbleos
 type NsSeverityLevel string
 
 const (
-	cNsSeverityLevelCritical NsSeverityLevel = "critical"
-	cNsSeverityLevelWarning  NsSeverityLevel = "warning"
-	cNsSeverityLevelInfo     NsSeverityLevel = "info"
-	cNsSeverityLevelNotice   NsSeverityLevel = "notice"
+ cNsSeverityLevelCritical NsSeverityLevel = "critical"
+ cNsSeverityLevelWarning NsSeverityLevel = "warning"
+ cNsSeverityLevelInfo NsSeverityLevel = "info"
+ cNsSeverityLevelNotice NsSeverityLevel = "notice"
 )
 
 var pNsSeverityLevelCritical NsSeverityLevel
@@ -30,16 +30,17 @@ var NsSeverityLevelInfo *NsSeverityLevel
 var NsSeverityLevelNotice *NsSeverityLevel
 
 func init() {
-	pNsSeverityLevelCritical = cNsSeverityLevelCritical
-	NsSeverityLevelCritical = &pNsSeverityLevelCritical
+ pNsSeverityLevelCritical = cNsSeverityLevelCritical
+ NsSeverityLevelCritical = &pNsSeverityLevelCritical
 
-	pNsSeverityLevelWarning = cNsSeverityLevelWarning
-	NsSeverityLevelWarning = &pNsSeverityLevelWarning
+ pNsSeverityLevelWarning = cNsSeverityLevelWarning
+ NsSeverityLevelWarning = &pNsSeverityLevelWarning
 
-	pNsSeverityLevelInfo = cNsSeverityLevelInfo
-	NsSeverityLevelInfo = &pNsSeverityLevelInfo
+ pNsSeverityLevelInfo = cNsSeverityLevelInfo
+ NsSeverityLevelInfo = &pNsSeverityLevelInfo
 
-	pNsSeverityLevelNotice = cNsSeverityLevelNotice
-	NsSeverityLevelNotice = &pNsSeverityLevelNotice
+ pNsSeverityLevelNotice = cNsSeverityLevelNotice
+ NsSeverityLevelNotice = &pNsSeverityLevelNotice
 
 }
+

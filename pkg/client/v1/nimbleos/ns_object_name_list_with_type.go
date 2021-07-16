@@ -1,19 +1,22 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 
 package nimbleos
+
 
 // NsObjectNameListWithType - List of objects of a given type.
 // Export NsObjectNameListWithTypeFields for advance operations like search filter etc.
 var NsObjectNameListWithTypeFields *NsObjectNameListWithType
 
-func init() {
+func init(){
 
-	NsObjectNameListWithTypeFields = &NsObjectNameListWithType{}
+ NsObjectNameListWithTypeFields= &NsObjectNameListWithType{
+ }
 }
 
+
 type NsObjectNameListWithType struct {
-	// ObjType - Type of the object.
-	ObjType *NsObjectType `json:"obj_type,omitempty"`
-	// ObjNameList - List of object names.
-	ObjNameList []*string `json:"obj_name_list,omitempty"`
+ // ObjType - Type of the object.
+    ObjType *NsObjectType `json:"obj_type,omitempty"`
+ // ObjNameList - List of object names.
+    ObjNameList []*string `json:"obj_name_list,omitempty"`
 }

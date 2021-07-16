@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsSnapReplStatus Enum.
@@ -6,10 +6,10 @@ package nimbleos
 type NsSnapReplStatus string
 
 const (
-	cNsSnapReplStatusFail       NsSnapReplStatus = "fail"
-	cNsSnapReplStatusInProgress NsSnapReplStatus = "in_progress"
-	cNsSnapReplStatusPending    NsSnapReplStatus = "pending"
-	cNsSnapReplStatusComplete   NsSnapReplStatus = "complete"
+ cNsSnapReplStatusFail NsSnapReplStatus = "fail"
+ cNsSnapReplStatusInProgress NsSnapReplStatus = "in_progress"
+ cNsSnapReplStatusPending NsSnapReplStatus = "pending"
+ cNsSnapReplStatusComplete NsSnapReplStatus = "complete"
 )
 
 var pNsSnapReplStatusFail NsSnapReplStatus
@@ -30,16 +30,17 @@ var NsSnapReplStatusPending *NsSnapReplStatus
 var NsSnapReplStatusComplete *NsSnapReplStatus
 
 func init() {
-	pNsSnapReplStatusFail = cNsSnapReplStatusFail
-	NsSnapReplStatusFail = &pNsSnapReplStatusFail
+ pNsSnapReplStatusFail = cNsSnapReplStatusFail
+ NsSnapReplStatusFail = &pNsSnapReplStatusFail
 
-	pNsSnapReplStatusInProgress = cNsSnapReplStatusInProgress
-	NsSnapReplStatusInProgress = &pNsSnapReplStatusInProgress
+ pNsSnapReplStatusInProgress = cNsSnapReplStatusInProgress
+ NsSnapReplStatusInProgress = &pNsSnapReplStatusInProgress
 
-	pNsSnapReplStatusPending = cNsSnapReplStatusPending
-	NsSnapReplStatusPending = &pNsSnapReplStatusPending
+ pNsSnapReplStatusPending = cNsSnapReplStatusPending
+ NsSnapReplStatusPending = &pNsSnapReplStatusPending
 
-	pNsSnapReplStatusComplete = cNsSnapReplStatusComplete
-	NsSnapReplStatusComplete = &pNsSnapReplStatusComplete
+ pNsSnapReplStatusComplete = cNsSnapReplStatusComplete
+ NsSnapReplStatusComplete = &pNsSnapReplStatusComplete
 
 }
+

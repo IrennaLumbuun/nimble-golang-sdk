@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsShelfState Enum.
@@ -6,14 +6,14 @@ package nimbleos
 type NsShelfState string
 
 const (
-	cNsShelfStateDiscovering  NsShelfState = "discovering"
-	cNsShelfStateDisconnected NsShelfState = "disconnected"
-	cNsShelfStateVoid         NsShelfState = "void"
-	cNsShelfStateAvailable    NsShelfState = "available"
-	cNsShelfStateOnline       NsShelfState = "online"
-	cNsShelfStateFaulty       NsShelfState = "faulty"
-	cNsShelfStateForeign      NsShelfState = "foreign"
-	cNsShelfStateUnknown      NsShelfState = "unknown"
+ cNsShelfStateDiscovering NsShelfState = "discovering"
+ cNsShelfStateDisconnected NsShelfState = "disconnected"
+ cNsShelfStateVoid NsShelfState = "void"
+ cNsShelfStateAvailable NsShelfState = "available"
+ cNsShelfStateOnline NsShelfState = "online"
+ cNsShelfStateFaulty NsShelfState = "faulty"
+ cNsShelfStateForeign NsShelfState = "foreign"
+ cNsShelfStateUnknown NsShelfState = "unknown"
 )
 
 var pNsShelfStateDiscovering NsShelfState
@@ -50,28 +50,29 @@ var NsShelfStateForeign *NsShelfState
 var NsShelfStateUnknown *NsShelfState
 
 func init() {
-	pNsShelfStateDiscovering = cNsShelfStateDiscovering
-	NsShelfStateDiscovering = &pNsShelfStateDiscovering
+ pNsShelfStateDiscovering = cNsShelfStateDiscovering
+ NsShelfStateDiscovering = &pNsShelfStateDiscovering
 
-	pNsShelfStateDisconnected = cNsShelfStateDisconnected
-	NsShelfStateDisconnected = &pNsShelfStateDisconnected
+ pNsShelfStateDisconnected = cNsShelfStateDisconnected
+ NsShelfStateDisconnected = &pNsShelfStateDisconnected
 
-	pNsShelfStateVoid = cNsShelfStateVoid
-	NsShelfStateVoid = &pNsShelfStateVoid
+ pNsShelfStateVoid = cNsShelfStateVoid
+ NsShelfStateVoid = &pNsShelfStateVoid
 
-	pNsShelfStateAvailable = cNsShelfStateAvailable
-	NsShelfStateAvailable = &pNsShelfStateAvailable
+ pNsShelfStateAvailable = cNsShelfStateAvailable
+ NsShelfStateAvailable = &pNsShelfStateAvailable
 
-	pNsShelfStateOnline = cNsShelfStateOnline
-	NsShelfStateOnline = &pNsShelfStateOnline
+ pNsShelfStateOnline = cNsShelfStateOnline
+ NsShelfStateOnline = &pNsShelfStateOnline
 
-	pNsShelfStateFaulty = cNsShelfStateFaulty
-	NsShelfStateFaulty = &pNsShelfStateFaulty
+ pNsShelfStateFaulty = cNsShelfStateFaulty
+ NsShelfStateFaulty = &pNsShelfStateFaulty
 
-	pNsShelfStateForeign = cNsShelfStateForeign
-	NsShelfStateForeign = &pNsShelfStateForeign
+ pNsShelfStateForeign = cNsShelfStateForeign
+ NsShelfStateForeign = &pNsShelfStateForeign
 
-	pNsShelfStateUnknown = cNsShelfStateUnknown
-	NsShelfStateUnknown = &pNsShelfStateUnknown
+ pNsShelfStateUnknown = cNsShelfStateUnknown
+ NsShelfStateUnknown = &pNsShelfStateUnknown
 
 }
+

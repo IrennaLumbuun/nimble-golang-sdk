@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsJobResult Enum.
@@ -6,10 +6,10 @@ package nimbleos
 type NsJobResult string
 
 const (
-	cNsJobResultFailed    NsJobResult = "failed"
-	cNsJobResultPartial   NsJobResult = "partial"
-	cNsJobResultUnknown   NsJobResult = "unknown"
-	cNsJobResultSucceeded NsJobResult = "succeeded"
+ cNsJobResultFailed NsJobResult = "failed"
+ cNsJobResultPartial NsJobResult = "partial"
+ cNsJobResultUnknown NsJobResult = "unknown"
+ cNsJobResultSucceeded NsJobResult = "succeeded"
 )
 
 var pNsJobResultFailed NsJobResult
@@ -30,16 +30,17 @@ var NsJobResultUnknown *NsJobResult
 var NsJobResultSucceeded *NsJobResult
 
 func init() {
-	pNsJobResultFailed = cNsJobResultFailed
-	NsJobResultFailed = &pNsJobResultFailed
+ pNsJobResultFailed = cNsJobResultFailed
+ NsJobResultFailed = &pNsJobResultFailed
 
-	pNsJobResultPartial = cNsJobResultPartial
-	NsJobResultPartial = &pNsJobResultPartial
+ pNsJobResultPartial = cNsJobResultPartial
+ NsJobResultPartial = &pNsJobResultPartial
 
-	pNsJobResultUnknown = cNsJobResultUnknown
-	NsJobResultUnknown = &pNsJobResultUnknown
+ pNsJobResultUnknown = cNsJobResultUnknown
+ NsJobResultUnknown = &pNsJobResultUnknown
 
-	pNsJobResultSucceeded = cNsJobResultSucceeded
-	NsJobResultSucceeded = &pNsJobResultSucceeded
+ pNsJobResultSucceeded = cNsJobResultSucceeded
+ NsJobResultSucceeded = &pNsJobResultSucceeded
 
 }
+

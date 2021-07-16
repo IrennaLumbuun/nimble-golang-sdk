@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsNetConfigName Enum.
@@ -6,9 +6,9 @@ package nimbleos
 type NsNetConfigName string
 
 const (
-	cNsNetConfigNameBackup NsNetConfigName = "backup"
-	cNsNetConfigNameDraft  NsNetConfigName = "draft"
-	cNsNetConfigNameActive NsNetConfigName = "active"
+ cNsNetConfigNameBackup NsNetConfigName = "backup"
+ cNsNetConfigNameDraft NsNetConfigName = "draft"
+ cNsNetConfigNameActive NsNetConfigName = "active"
 )
 
 var pNsNetConfigNameBackup NsNetConfigName
@@ -25,13 +25,14 @@ var NsNetConfigNameDraft *NsNetConfigName
 var NsNetConfigNameActive *NsNetConfigName
 
 func init() {
-	pNsNetConfigNameBackup = cNsNetConfigNameBackup
-	NsNetConfigNameBackup = &pNsNetConfigNameBackup
+ pNsNetConfigNameBackup = cNsNetConfigNameBackup
+ NsNetConfigNameBackup = &pNsNetConfigNameBackup
 
-	pNsNetConfigNameDraft = cNsNetConfigNameDraft
-	NsNetConfigNameDraft = &pNsNetConfigNameDraft
+ pNsNetConfigNameDraft = cNsNetConfigNameDraft
+ NsNetConfigNameDraft = &pNsNetConfigNameDraft
 
-	pNsNetConfigNameActive = cNsNetConfigNameActive
-	NsNetConfigNameActive = &pNsNetConfigNameActive
+ pNsNetConfigNameActive = cNsNetConfigNameActive
+ NsNetConfigNameActive = &pNsNetConfigNameActive
 
 }
+

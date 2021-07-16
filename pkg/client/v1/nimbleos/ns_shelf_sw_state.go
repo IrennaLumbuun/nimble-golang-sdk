@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsShelfSwState Enum.
@@ -6,10 +6,10 @@ package nimbleos
 type NsShelfSwState string
 
 const (
-	cNsShelfSwStateAvailable NsShelfSwState = "available"
-	cNsShelfSwStateOnline    NsShelfSwState = "online"
-	cNsShelfSwStateForeign   NsShelfSwState = "foreign"
-	cNsShelfSwStateUnknown   NsShelfSwState = "unknown"
+ cNsShelfSwStateAvailable NsShelfSwState = "available"
+ cNsShelfSwStateOnline NsShelfSwState = "online"
+ cNsShelfSwStateForeign NsShelfSwState = "foreign"
+ cNsShelfSwStateUnknown NsShelfSwState = "unknown"
 )
 
 var pNsShelfSwStateAvailable NsShelfSwState
@@ -30,16 +30,17 @@ var NsShelfSwStateForeign *NsShelfSwState
 var NsShelfSwStateUnknown *NsShelfSwState
 
 func init() {
-	pNsShelfSwStateAvailable = cNsShelfSwStateAvailable
-	NsShelfSwStateAvailable = &pNsShelfSwStateAvailable
+ pNsShelfSwStateAvailable = cNsShelfSwStateAvailable
+ NsShelfSwStateAvailable = &pNsShelfSwStateAvailable
 
-	pNsShelfSwStateOnline = cNsShelfSwStateOnline
-	NsShelfSwStateOnline = &pNsShelfSwStateOnline
+ pNsShelfSwStateOnline = cNsShelfSwStateOnline
+ NsShelfSwStateOnline = &pNsShelfSwStateOnline
 
-	pNsShelfSwStateForeign = cNsShelfSwStateForeign
-	NsShelfSwStateForeign = &pNsShelfSwStateForeign
+ pNsShelfSwStateForeign = cNsShelfSwStateForeign
+ NsShelfSwStateForeign = &pNsShelfSwStateForeign
 
-	pNsShelfSwStateUnknown = cNsShelfSwStateUnknown
-	NsShelfSwStateUnknown = &pNsShelfSwStateUnknown
+ pNsShelfSwStateUnknown = cNsShelfSwStateUnknown
+ NsShelfSwStateUnknown = &pNsShelfSwStateUnknown
 
 }
+

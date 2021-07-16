@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsAccessProtocol Enum.
@@ -6,8 +6,8 @@ package nimbleos
 type NsAccessProtocol string
 
 const (
-	cNsAccessProtocolIscsi NsAccessProtocol = "iscsi"
-	cNsAccessProtocolFc    NsAccessProtocol = "fc"
+ cNsAccessProtocolIscsi NsAccessProtocol = "iscsi"
+ cNsAccessProtocolFc NsAccessProtocol = "fc"
 )
 
 var pNsAccessProtocolIscsi NsAccessProtocol
@@ -20,10 +20,11 @@ var NsAccessProtocolIscsi *NsAccessProtocol
 var NsAccessProtocolFc *NsAccessProtocol
 
 func init() {
-	pNsAccessProtocolIscsi = cNsAccessProtocolIscsi
-	NsAccessProtocolIscsi = &pNsAccessProtocolIscsi
+ pNsAccessProtocolIscsi = cNsAccessProtocolIscsi
+ NsAccessProtocolIscsi = &pNsAccessProtocolIscsi
 
-	pNsAccessProtocolFc = cNsAccessProtocolFc
-	NsAccessProtocolFc = &pNsAccessProtocolFc
+ pNsAccessProtocolFc = cNsAccessProtocolFc
+ NsAccessProtocolFc = &pNsAccessProtocolFc
 
 }
+

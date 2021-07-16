@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsSupportPasswordMode Enum.
@@ -6,7 +6,7 @@ package nimbleos
 type NsSupportPasswordMode string
 
 const (
-	cNsSupportPasswordModeCiphertext NsSupportPasswordMode = "ciphertext"
+ cNsSupportPasswordModeCiphertext NsSupportPasswordMode = "ciphertext"
 )
 
 var pNsSupportPasswordModeCiphertext NsSupportPasswordMode
@@ -15,7 +15,8 @@ var pNsSupportPasswordModeCiphertext NsSupportPasswordMode
 var NsSupportPasswordModeCiphertext *NsSupportPasswordMode
 
 func init() {
-	pNsSupportPasswordModeCiphertext = cNsSupportPasswordModeCiphertext
-	NsSupportPasswordModeCiphertext = &pNsSupportPasswordModeCiphertext
+ pNsSupportPasswordModeCiphertext = cNsSupportPasswordModeCiphertext
+ NsSupportPasswordModeCiphertext = &pNsSupportPasswordModeCiphertext
 
 }
+

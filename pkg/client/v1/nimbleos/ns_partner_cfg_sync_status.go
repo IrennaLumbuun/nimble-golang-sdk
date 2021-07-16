@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsPartnerCfgSyncStatus Enum.
@@ -6,9 +6,9 @@ package nimbleos
 type NsPartnerCfgSyncStatus string
 
 const (
-	cNsPartnerCfgSyncStatusNA  NsPartnerCfgSyncStatus = "N/A"
-	cNsPartnerCfgSyncStatusNo  NsPartnerCfgSyncStatus = "No"
-	cNsPartnerCfgSyncStatusYes NsPartnerCfgSyncStatus = "Yes"
+ cNsPartnerCfgSyncStatusNA NsPartnerCfgSyncStatus = "N/A"
+ cNsPartnerCfgSyncStatusNo NsPartnerCfgSyncStatus = "No"
+ cNsPartnerCfgSyncStatusYes NsPartnerCfgSyncStatus = "Yes"
 )
 
 var pNsPartnerCfgSyncStatusNA NsPartnerCfgSyncStatus
@@ -25,13 +25,14 @@ var NsPartnerCfgSyncStatusNo *NsPartnerCfgSyncStatus
 var NsPartnerCfgSyncStatusYes *NsPartnerCfgSyncStatus
 
 func init() {
-	pNsPartnerCfgSyncStatusNA = cNsPartnerCfgSyncStatusNA
-	NsPartnerCfgSyncStatusNA = &pNsPartnerCfgSyncStatusNA
+ pNsPartnerCfgSyncStatusNA = cNsPartnerCfgSyncStatusNA
+ NsPartnerCfgSyncStatusNA = &pNsPartnerCfgSyncStatusNA
 
-	pNsPartnerCfgSyncStatusNo = cNsPartnerCfgSyncStatusNo
-	NsPartnerCfgSyncStatusNo = &pNsPartnerCfgSyncStatusNo
+ pNsPartnerCfgSyncStatusNo = cNsPartnerCfgSyncStatusNo
+ NsPartnerCfgSyncStatusNo = &pNsPartnerCfgSyncStatusNo
 
-	pNsPartnerCfgSyncStatusYes = cNsPartnerCfgSyncStatusYes
-	NsPartnerCfgSyncStatusYes = &pNsPartnerCfgSyncStatusYes
+ pNsPartnerCfgSyncStatusYes = cNsPartnerCfgSyncStatusYes
+ NsPartnerCfgSyncStatusYes = &pNsPartnerCfgSyncStatusYes
 
 }
+

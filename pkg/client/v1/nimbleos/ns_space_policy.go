@@ -1,4 +1,4 @@
-// Copyright 2020 Hewlett Packard Enterprise Development LP
+// Copyright 2020-2021 Hewlett Packard Enterprise Development LP
 package nimbleos
 
 // Golang package for NsSpacePolicy Enum.
@@ -6,11 +6,11 @@ package nimbleos
 type NsSpacePolicy string
 
 const (
-	cNsSpacePolicyOffline     NsSpacePolicy = "offline"
-	cNsSpacePolicyLoginOnly   NsSpacePolicy = "login_only"
-	cNsSpacePolicyNonWritable NsSpacePolicy = "non_writable"
-	cNsSpacePolicyReadOnly    NsSpacePolicy = "read_only"
-	cNsSpacePolicyInvalid     NsSpacePolicy = "invalid"
+ cNsSpacePolicyOffline NsSpacePolicy = "offline"
+ cNsSpacePolicyLoginOnly NsSpacePolicy = "login_only"
+ cNsSpacePolicyNonWritable NsSpacePolicy = "non_writable"
+ cNsSpacePolicyReadOnly NsSpacePolicy = "read_only"
+ cNsSpacePolicyInvalid NsSpacePolicy = "invalid"
 )
 
 var pNsSpacePolicyOffline NsSpacePolicy
@@ -35,19 +35,20 @@ var NsSpacePolicyReadOnly *NsSpacePolicy
 var NsSpacePolicyInvalid *NsSpacePolicy
 
 func init() {
-	pNsSpacePolicyOffline = cNsSpacePolicyOffline
-	NsSpacePolicyOffline = &pNsSpacePolicyOffline
+ pNsSpacePolicyOffline = cNsSpacePolicyOffline
+ NsSpacePolicyOffline = &pNsSpacePolicyOffline
 
-	pNsSpacePolicyLoginOnly = cNsSpacePolicyLoginOnly
-	NsSpacePolicyLoginOnly = &pNsSpacePolicyLoginOnly
+ pNsSpacePolicyLoginOnly = cNsSpacePolicyLoginOnly
+ NsSpacePolicyLoginOnly = &pNsSpacePolicyLoginOnly
 
-	pNsSpacePolicyNonWritable = cNsSpacePolicyNonWritable
-	NsSpacePolicyNonWritable = &pNsSpacePolicyNonWritable
+ pNsSpacePolicyNonWritable = cNsSpacePolicyNonWritable
+ NsSpacePolicyNonWritable = &pNsSpacePolicyNonWritable
 
-	pNsSpacePolicyReadOnly = cNsSpacePolicyReadOnly
-	NsSpacePolicyReadOnly = &pNsSpacePolicyReadOnly
+ pNsSpacePolicyReadOnly = cNsSpacePolicyReadOnly
+ NsSpacePolicyReadOnly = &pNsSpacePolicyReadOnly
 
-	pNsSpacePolicyInvalid = cNsSpacePolicyInvalid
-	NsSpacePolicyInvalid = &pNsSpacePolicyInvalid
+ pNsSpacePolicyInvalid = cNsSpacePolicyInvalid
+ NsSpacePolicyInvalid = &pNsSpacePolicyInvalid
 
 }
+
