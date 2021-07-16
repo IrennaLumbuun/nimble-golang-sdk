@@ -6,527 +6,527 @@ package nimbleos
 type NsError string
 
 const (
- cNsErrorSmReplVolcollDeletion NsError = "SM_repl_volcoll_deletion"
- cNsErrorSmEncryptionGroupCipherOverride NsError = "SM_encryption_group_cipher_override"
- cNsErrorSmEncryptionMustBeEnabled NsError = "SM_encryption_must_be_enabled"
- cNsErrorSmExtTrigSchedNotPresent NsError = "SM_ext_trig_sched_not_present"
- cNsErrorSmAppserverNotFound NsError = "SM_appserver_not_found"
- cNsErrorSmFolderReplPartner NsError = "SM_folder_repl_partner"
- cNsErrorSmArrayPoolMember NsError = "SM_array_pool_member"
- cNsErrorSmErrInvalidArg NsError = "SM_err_invalid_arg"
- cNsErrorSmErrShelfCreateRfail NsError = "SM_err_shelf_create_rfail"
- cNsErrorSmStarterVolCreate NsError = "SM_starter_vol_create"
- cNsErrorSmInvalidNetconfigName NsError = "SM_invalid_netconfig_name"
- cNsErrorSmInvalidVolaclScope NsError = "SM_invalid_volacl_scope"
- cNsErrorSmErrShelfNoElocId NsError = "SM_err_shelf_no_eloc_id"
- cNsErrorSmInvalidNetzoneType NsError = "SM_invalid_netzone_type"
- cNsErrorSmErrCannotModifyTdz NsError = "SM_err_cannot_modify_tdz"
- cNsErrorSmControllerActive NsError = "SM_controller_active"
- cNsErrorSmPoolHasVolume NsError = "SM_pool_has_volume"
- cNsErrorSmExtTrigSchedAttrib NsError = "SM_ext_trig_sched_attrib"
- cNsErrorSmMissingCriteriaFieldname NsError = "SM_missing_criteria_fieldName"
- cNsErrorSmNetconfigAlreadyActive NsError = "SM_netconfig_already_active"
- cNsErrorSmStartRowBeyondEndRow NsError = "SM_start_row_beyond_end_row"
- cNsErrorSmInsufficientFcInitiatorInput NsError = "SM_insufficient_fc_initiator_input"
- cNsErrorSmSecondMgmtSubnet NsError = "SM_second_mgmt_subnet"
- cNsErrorSmInvalidInitiatorWwpn NsError = "SM_invalid_initiator_wwpn"
- cNsErrorSmArrayFlashMismatch NsError = "SM_array_flash_mismatch"
- cNsErrorSmErrShelfPmdState NsError = "SM_err_shelf_pmd_state"
- cNsErrorSmInvalidFcConfig NsError = "SM_invalid_fc_config"
- cNsErrorSmSrepDownstreamIsUpstream NsError = "SM_srep_downstream_is_upstream"
- cNsErrorSmKeymgrLeave NsError = "SM_keymgr_leave"
- cNsErrorSmVolmvVolEinprog NsError = "SM_volmv_vol_einprog"
- cNsErrorSmSrepNameConflictVol NsError = "SM_srep_name_conflict_vol"
- cNsErrorSmMultiArrayWithoutAutomaticConnectionMethod NsError = "SM_multi_array_without_automatic_connection_method"
- cNsErrorSmFolderUsageLimitOverPoolCapacity NsError = "SM_folder_usage_limit_over_pool_capacity"
- cNsErrorSmEnomem NsError = "SM_enomem"
- cNsErrorSmErrShelfNotInuse NsError = "SM_err_shelf_not_inuse"
- cNsErrorSmErrLdapAdConflict NsError = "SM_err_ldap_ad_conflict"
- cNsErrorSmErrShelfPreactivationMfrErr NsError = "SM_err_shelf_preactivation_mfr_err"
- cNsErrorSmUpdateBusy NsError = "SM_update_busy"
- cNsErrorSmProtpolInvalidAppSync NsError = "SM_protpol_invalid_app_sync"
- cNsErrorSmErrShelfRaidDegraded NsError = "SM_err_shelf_raid_degraded"
- cNsErrorSmLimitFreqSchedGroup NsError = "SM_limit_freq_sched_group"
- cNsErrorSmSwupdateEinprog NsError = "SM_swupdate_einprog"
- cNsErrorSmMissingCriteriaParam NsError = "SM_missing_criteria_param"
- cNsErrorSmNoPathFound NsError = "SM_no_path_found"
- cNsErrorSmIncompatibleAppCategory NsError = "SM_incompatible_app_category"
- cNsErrorSmVolmvAbortEnomove NsError = "SM_volmv_abort_enomove"
- cNsErrorSmLimitSnapRetentionVolcoll NsError = "SM_limit_snap_retention_volcoll"
- cNsErrorSmKeymgrRemove NsError = "SM_keymgr_remove"
- cNsErrorSmArrayNotReachable NsError = "SM_array_not_reachable"
- cNsErrorSmErrGroupMergeEventsPending NsError = "SM_err_group_merge_events_pending"
- cNsErrorSmSrepNameConflictVols NsError = "SM_srep_name_conflict_vols"
- cNsErrorSmPoolPartnerResumeUnsup NsError = "SM_pool_partner_resume_unsup"
- cNsErrorSmErrLdapAlreadyExists NsError = "SM_err_ldap_already_exists"
- cNsErrorSmArrayNotFound NsError = "SM_array_not_found"
- cNsErrorSmNoIscsiHardware NsError = "SM_no_iscsi_hardware"
- cNsErrorSmEnospc NsError = "SM_enospc"
- cNsErrorSmReservedPerfpolName NsError = "SM_reserved_perfpol_name"
- cNsErrorSmErrInvalidCtrlrName NsError = "SM_err_invalid_ctrlr_name"
- cNsErrorSmInvalidRoute NsError = "SM_invalid_route"
- cNsErrorSmVolDedupeMoveInvalid NsError = "SM_vol_dedupe_move_invalid"
- cNsErrorSmKeymgrJoin NsError = "SM_keymgr_join"
- cNsErrorSmErrSrvUnreach NsError = "SM_err_srv_unreach"
- cNsErrorSmErrShelfDiskSasLinkDegraded NsError = "SM_err_shelf_disk_sas_link_degraded"
- cNsErrorSmErrShelfInvalidEeprom NsError = "SM_err_shelf_invalid_eeprom"
- cNsErrorSmInvalidKeyValue NsError = "SM_invalid_key_value"
- cNsErrorSmNoIscsiLunAssignment NsError = "SM_no_iscsi_lun_assignment"
- cNsErrorSmSnapshotOffline NsError = "SM_snapshot_offline"
- cNsErrorSmDefaultGatewayNotInMgmtSubnet NsError = "SM_default_gateway_not_in_mgmt_subnet"
- cNsErrorSmErrPassphraseAuth NsError = "SM_err_passphrase_auth"
- cNsErrorSmReplEexist NsError = "SM_repl_eexist"
- cNsErrorSmDisableLastProtocol NsError = "SM_disable_last_protocol"
- cNsErrorSmArrayAddExistingPoolDedupeNotConfigurable NsError = "SM_array_add_existing_pool_dedupe_not_configurable"
- cNsErrorSmSecondUntaggedAssignment NsError = "SM_second_untagged_assignment"
- cNsErrorSmPoolHasPe NsError = "SM_pool_has_pe"
- cNsErrorSmErrShelfInvalidCount NsError = "SM_err_shelf_invalid_count"
- cNsErrorSmLimitSnapRetentionGroup NsError = "SM_limit_snap_retention_group"
- cNsErrorSmVolDedupeThickProvInvalid NsError = "SM_vol_dedupe_thick_prov_invalid"
- cNsErrorSmUnknown NsError = "SM_unknown"
- cNsErrorSmErrShelfDedupeImpact NsError = "SM_err_shelf_dedupe_impact"
- cNsErrorSmInvalidInitiatorAccessProtocol NsError = "SM_invalid_initiator_access_protocol"
- cNsErrorSmInternal NsError = "SM_internal"
- cNsErrorSmAsupEbusy NsError = "SM_asup_ebusy"
- cNsErrorSmInvalidVolMbpsLimit NsError = "SM_invalid_vol_mbps_limit"
- cNsErrorSmInfoConfigSyncInprogress NsError = "SM_info_config_sync_inprogress"
- cNsErrorSmErrPoolStillMerging NsError = "SM_err_pool_still_merging"
- cNsErrorSmFolderPerfpolAgentType NsError = "SM_folder_perfpol_agent_type"
- cNsErrorSmEinval NsError = "SM_einval"
- cNsErrorSmNoAssocVols NsError = "SM_no_assoc_vols"
- cNsErrorSmShelfNotInuse NsError = "SM_shelf_not_inuse"
- cNsErrorSmErrProtpolSettingsNotAllowed NsError = "SM_err_protpol_settings_not_allowed"
- cNsErrorSmFcRegenerate NsError = "SM_fc_regenerate"
- cNsErrorSmErrMultiArrayGroup NsError = "SM_err_multi_array_group"
- cNsErrorSmReplRemoteNoBaseSnap NsError = "SM_repl_remote_no_base_snap"
- cNsErrorSmUnsupportedQueryOperator NsError = "SM_unsupported_query_operator"
- cNsErrorSmSrepSizeMismatchDownstreamVol NsError = "SM_srep_size_mismatch_downstream_vol"
- cNsErrorSmNoSuchPartner NsError = "SM_no_such_partner"
- cNsErrorSmIscsiAllAccessNotAvailable NsError = "SM_iscsi_all_access_not_available"
- cNsErrorSmVvolAlreadyEnabled NsError = "SM_vvol_already_enabled"
- cNsErrorSmUsageUnavaiable NsError = "SM_usage_unavaiable"
- cNsErrorSmEconnrefused NsError = "SM_econnrefused"
- cNsErrorSmReplRenameNotsup NsError = "SM_repl_rename_notsup"
- cNsErrorSmSessionCreate NsError = "SM_session_create"
- cNsErrorSmConflictingAclVol NsError = "SM_conflicting_acl_vol"
- cNsErrorSmNospace NsError = "SM_nospace"
- cNsErrorSmReservedVolcollName NsError = "SM_reserved_volcoll_name"
- cNsErrorSmPoolHasFolder NsError = "SM_pool_has_folder"
- cNsErrorSmPartnerOffline NsError = "SM_partner_offline"
- cNsErrorSmConflictingInitiatorAliasWithArgs NsError = "SM_conflicting_initiator_alias_with_args"
- cNsErrorSmErrShelfNotReady NsError = "SM_err_shelf_not_ready"
- cNsErrorSmReplCmprVersionUnsup NsError = "SM_repl_cmpr_version_unsup"
- cNsErrorSmErrShelfPreactivationIoErr NsError = "SM_err_shelf_preactivation_io_err"
- cNsErrorSmVolmvEinprog NsError = "SM_volmv_einprog"
- cNsErrorSmPerfpolIncompatibleAppCategory NsError = "SM_perfpol_incompatible_app_category"
- cNsErrorSmInvalidArgValue NsError = "SM_invalid_arg_value"
- cNsErrorSmErrShelfDedupeBelowFdr NsError = "SM_err_shelf_dedupe_below_fdr"
- cNsErrorSmErrShelfInvalidAfsCount NsError = "SM_err_shelf_invalid_afs_count"
- cNsErrorSmSerialNotAvail NsError = "SM_serial_not_avail"
- cNsErrorSmErrShelfSesMshipErr NsError = "SM_err_shelf_ses_mship_err"
- cNsErrorSmFolderProvisionedLimitBelowCurrentUsage NsError = "SM_folder_provisioned_limit_below_current_usage"
- cNsErrorSmPeMultiProtocolAccessNotSupported NsError = "SM_pe_multi_protocol_access_not_supported"
- cNsErrorSmLimitHretSnapRetentionPool NsError = "SM_limit_hret_snap_retention_pool"
- cNsErrorSmPeConflictingAcl NsError = "SM_pe_conflicting_acl"
- cNsErrorSmFolderOverUsageLimit NsError = "SM_folder_over_usage_limit"
- cNsErrorSmErrEncryptionMasterKeyMissing NsError = "SM_err_encryption_master_key_missing"
- cNsErrorSmProtpolInvalidDomainName NsError = "SM_protpol_invalid_domain_name"
- cNsErrorSmTooMany NsError = "SM_too_many"
- cNsErrorSmErrShelfExprRevIncompatible NsError = "SM_err_shelf_expr_rev_incompatible"
- cNsErrorSmSrvUnreachable NsError = "SM_srv_unreachable"
- cNsErrorSmVolumeConflict NsError = "SM_volume_conflict"
- cNsErrorSmInvalidArrayName NsError = "SM_invalid_array_name"
- cNsErrorSmCannotReadObject NsError = "SM_cannot_read_object"
- cNsErrorSmReservedVolName NsError = "SM_reserved_vol_name"
- cNsErrorSmPoolPartnerInUse NsError = "SM_pool_partner_in_use"
- cNsErrorSmInvalidInitiatorgrpName NsError = "SM_invalid_initiatorgrp_name"
- cNsErrorSmAsupValidateError NsError = "SM_asup_validate_error"
- cNsErrorSmVersionName NsError = "SM_version_name"
- cNsErrorSmVvolAlreadyDisabled NsError = "SM_vvol_already_disabled"
- cNsErrorSmUnexpectedArg NsError = "SM_unexpected_arg"
- cNsErrorSmErrShelfInvalidAfs NsError = "SM_err_shelf_invalid_afs"
- cNsErrorSmUnexpectedChild NsError = "SM_unexpected_child"
- cNsErrorSmFolderOverProvisionedLimit NsError = "SM_folder_over_provisioned_limit"
- cNsErrorSmPoolFlashMismatch NsError = "SM_pool_flash_mismatch"
- cNsErrorSmLimitScope NsError = "SM_limit_scope"
- cNsErrorSmSrepSizeMismatchDownstreamVols NsError = "SM_srep_size_mismatch_downstream_vols"
- cNsErrorSmFolderAppsrvrInconsistent NsError = "SM_folder_appsrvr_inconsistent"
- cNsErrorSmErrShelfDedupeReduction NsError = "SM_err_shelf_dedupe_reduction"
- cNsErrorSmIscsiSvcNotAvailable NsError = "SM_iscsi_svc_not_available"
- cNsErrorSmInvalidNetconfigToDelete NsError = "SM_invalid_netconfig_to_delete"
- cNsErrorSmErrUnknown NsError = "SM_err_unknown"
- cNsErrorSmMissingCriteriaOperator NsError = "SM_missing_criteria_operator"
- cNsErrorSmInvalidAppUuid NsError = "SM_invalid_app_uuid"
- cNsErrorSmArrayMemberOrphanWithArgs NsError = "SM_array_member_orphan_with_args"
- cNsErrorSmEmptyVol NsError = "SM_empty_vol"
- cNsErrorSmDuplicateSubnetLabel NsError = "SM_duplicate_subnet_label"
- cNsErrorSmZeroVlanIdForTaggedAssignment NsError = "SM_zero_vlan_id_for_tagged_assignment"
- cNsErrorSmNoActionFound NsError = "SM_no_action_found"
- cNsErrorSmSyncReplUnconfigureInProgress NsError = "SM_sync_repl_unconfigure_in_progress"
- cNsErrorSmErrMissingArg NsError = "SM_err_missing_arg"
- cNsErrorSmVolThickProvMoveInvalid NsError = "SM_vol_thick_prov_move_invalid"
- cNsErrorSmMissingAdvancedCriteriaConstructor NsError = "SM_missing_advanced_criteria_constructor"
- cNsErrorSmPoolUnknown NsError = "SM_pool_unknown"
- cNsErrorSmHaltGlWithLiveMemberArray NsError = "SM_halt_gl_with_live_member_array"
- cNsErrorSmInfoNeedNewCode NsError = "SM_info_need_new_code"
- cNsErrorSmReplThrottleOverlap NsError = "SM_repl_throttle_overlap"
- cNsErrorSmNetconfigUpdateMismatch NsError = "SM_netconfig_update_mismatch"
- cNsErrorSmSrepDownstreamVolsAcl NsError = "SM_srep_downstream_vols_acl"
- cNsErrorSmStatsFrequencyInvalid NsError = "SM_stats_frequency_invalid"
- cNsErrorSmDdupFolderMerge NsError = "SM_ddup_folder_merge"
- cNsErrorSmInvalidSubnet NsError = "SM_invalid_subnet"
- cNsErrorSmReplEnabled NsError = "SM_repl_enabled"
- cNsErrorSmPoolPartnerNameConflict NsError = "SM_pool_partner_name_conflict"
- cNsErrorSmAsupPingfromMgmtipError NsError = "SM_asup_pingfrom_mgmtip_error"
- cNsErrorSmEncryptionGroupScopeOverride NsError = "SM_encryption_group_scope_override"
- cNsErrorSmErrMaxSessionsReached NsError = "SM_err_max_sessions_reached"
- cNsErrorSmErrReplMultiplePartners NsError = "SM_err_repl_multiple_partners"
- cNsErrorSmStatsNoSensors NsError = "SM_stats_no_sensors"
- cNsErrorSmFolderNeedsLimit NsError = "SM_folder_needs_limit"
- cNsErrorSmVolmvVvol NsError = "SM_volmv_vvol"
- cNsErrorSmErrGroupMergeInprogress NsError = "SM_err_group_merge_inprogress"
- cNsErrorSmFolderNotFound NsError = "SM_folder_not_found"
- cNsErrorSmRouteExists NsError = "SM_route_exists"
- cNsErrorSmInvalidDiscoveryIp NsError = "SM_invalid_discovery_ip"
- cNsErrorSmErrVolmvCachePinDedupeNotsupp NsError = "SM_err_volmv_cache_pin_dedupe_notsupp"
- cNsErrorSmMissingCriteria NsError = "SM_missing_criteria"
- cNsErrorSmRootBranchPinned NsError = "SM_root_branch_pinned"
- cNsErrorSmInvalidMtu NsError = "SM_invalid_mtu"
- cNsErrorSmNoFcHardware NsError = "SM_no_fc_hardware"
- cNsErrorSmPoolNotFound NsError = "SM_pool_not_found"
- cNsErrorSmDuplicateIp NsError = "SM_duplicate_ip"
- cNsErrorSmErrOtpNotEnabled NsError = "SM_err_otp_not_enabled"
- cNsErrorSmNoAction NsError = "SM_no_action"
- cNsErrorSmProtpolAppSyncOracleParams NsError = "SM_protpol_app_sync_oracle_params"
- cNsErrorSmProtpolInvalidVssSettings NsError = "SM_protpol_invalid_vss_settings"
- cNsErrorSmEncryptionInvalidScope NsError = "SM_encryption_invalid_scope"
- cNsErrorSmLimitSnapcollVolcoll NsError = "SM_limit_snapcoll_volcoll"
- cNsErrorSmShelfRaidDegraded NsError = "SM_shelf_raid_degraded"
- cNsErrorSmInvalidNonIscsiDataSubnetType NsError = "SM_invalid_non_iscsi_data_subnet_type"
- cNsErrorSmVolmvIncompatibleAgentType NsError = "SM_volmv_incompatible_agent_type"
- cNsErrorSmReplPartnerVersionUnknown NsError = "SM_repl_partner_version_unknown"
- cNsErrorSmAsupNameresError NsError = "SM_asup_nameres_error"
- cNsErrorSmReplApiUnsup NsError = "SM_repl_api_unsup"
- cNsErrorSmEperm NsError = "SM_eperm"
- cNsErrorSmEnoentEnoent NsError = "SM_enoent,ENOENT"
- cNsErrorSmArrayGroupLeader NsError = "SM_array_group_leader"
- cNsErrorSmInvalidInitiatorIqn NsError = "SM_invalid_initiator_iqn"
- cNsErrorSmReplIntragroup NsError = "SM_repl_intragroup"
- cNsErrorSmRemoveNonemptyFolder NsError = "SM_remove_nonempty_folder"
- cNsErrorSmAddNoniscsiToIscsiGroup NsError = "SM_add_noniscsi_to_iscsi_group"
- cNsErrorSmPoolDedupeIncapable NsError = "SM_pool_dedupe_incapable"
- cNsErrorSmNoVvolSupport NsError = "SM_no_vvol_support"
- cNsErrorSmNoInitiatorgrp NsError = "SM_no_initiatorgrp"
- cNsErrorSmInvalidNetmask NsError = "SM_invalid_netmask"
- cNsErrorSmNoDiscoveryIpInManualMode NsError = "SM_no_discovery_ip_in_manual_mode"
- cNsErrorSmInvalidVolReserveValues NsError = "SM_invalid_vol_reserve_values"
- cNsErrorSmSupportIpInvalid NsError = "SM_support_ip_invalid"
- cNsErrorSmErrShelfForeignDisk NsError = "SM_err_shelf_foreign_disk"
- cNsErrorSmVolsnapAlreadyExported NsError = "SM_volsnap_already_exported"
- cNsErrorSmFcInitiatorgrpSubnetNotSupported NsError = "SM_fc_initiatorgrp_subnet_not_supported"
- cNsErrorSmIncompatibleInitiatorAccessProtocol NsError = "SM_incompatible_initiator_access_protocol"
- cNsErrorSmInvalidInitiatorgrpAccessProtocol NsError = "SM_invalid_initiatorgrp_access_protocol"
- cNsErrorSmLimitPeacl NsError = "SM_limit_peacl"
- cNsErrorSmEtimedout NsError = "SM_etimedout"
- cNsErrorSmInitiatorgrpSubnetDoesNotExist NsError = "SM_initiatorgrp_subnet_does_not_exist"
- cNsErrorSmVolOffline NsError = "SM_vol_offline"
- cNsErrorSmErrSreplMgmtOpInProgress NsError = "SM_err_srepl_mgmt_op_in_progress"
- cNsErrorSmReplFanoutMaximumCloudPartnersExceeded NsError = "SM_repl_fanout_maximum_cloud_partners_exceeded"
- cNsErrorSmMalformedUrl NsError = "SM_malformed_url"
- cNsErrorSmErrSessionCreate NsError = "SM_err_session_create"
- cNsErrorSmErrShelfCtrlrLoop NsError = "SM_err_shelf_ctrlr_loop"
- cNsErrorSmPeConflictingAclLun NsError = "SM_pe_conflicting_acl_lun"
- cNsErrorSmInvalidCtrlrName NsError = "SM_invalid_ctrlr_name"
- cNsErrorSmBackupNetconfigReadonly NsError = "SM_backup_netconfig_readonly"
- cNsErrorSmLimitSnapGroup NsError = "SM_limit_snap_group"
- cNsErrorSmEncryptionInvalidCipher NsError = "SM_encryption_invalid_cipher"
- cNsErrorSmPerfpolInvalidAppCategory NsError = "SM_perfpol_invalid_app_category"
- cNsErrorSmArrayPoolFlashMismatch NsError = "SM_array_pool_flash_mismatch"
- cNsErrorSmFolderLimitInval NsError = "SM_folder_limit_inval"
- cNsErrorSmShelfSsdDegraded NsError = "SM_shelf_ssd_degraded"
- cNsErrorSmFolderOverdraftLimitNeedsUsageLimit NsError = "SM_folder_overdraft_limit_needs_usage_limit"
- cNsErrorSmEncryptionMasterKeyMissing NsError = "SM_encryption_master_key_missing"
- cNsErrorSmSrepAgentTypeMismatchDownstreamVols NsError = "SM_srep_agent_type_mismatch_downstream_vols"
- cNsErrorSmErrVolNotOfflineOnRestore NsError = "SM_err_vol_not_offline_on_restore"
- cNsErrorSmArrayModelNotDedupeConfigurable NsError = "SM_array_model_not_dedupe_configurable"
- cNsErrorSmReplHandoverBusy NsError = "SM_repl_handover_busy"
- cNsErrorSmNotOwner NsError = "SM_not_owner"
- cNsErrorSmSrepDownstreamAcl NsError = "SM_srep_downstream_acl"
- cNsErrorSmNoSubnetWithLabel NsError = "SM_no_subnet_with_label"
- cNsErrorSmPoolUpdateInvalArrays NsError = "SM_pool_update_inval_arrays"
- cNsErrorSmVolHasOnlineSnap NsError = "SM_vol_has_online_snap"
- cNsErrorSmInvalidDataIp NsError = "SM_invalid_data_ip"
- cNsErrorSmPoolVolmvEinprog NsError = "SM_pool_volmv_einprog"
- cNsErrorSmErrLdapBindPasswordNoUser NsError = "SM_err_ldap_bind_password_no_user"
- cNsErrorSmNoDataIpOnMgmtPlusData NsError = "SM_no_data_ip_on_mgmt_plus_data"
- cNsErrorSmConflictingAclLun NsError = "SM_conflicting_acl_lun"
- cNsErrorSmVpCreatedIgrp NsError = "SM_vp_created_igrp"
- cNsErrorSmStarterVolAclCreate NsError = "SM_starter_vol_acl_create"
- cNsErrorSmBadPkg NsError = "SM_bad_pkg"
- cNsErrorSmPasswdSameAsCurrent NsError = "SM_passwd_same_as_current"
- cNsErrorSmSnaplunsOutOfSync NsError = "SM_snapluns_out_of_sync"
- cNsErrorSmLimitSnapPool NsError = "SM_limit_snap_pool"
- cNsErrorSmMultiProtocolAccessNotSupported NsError = "SM_multi_protocol_access_not_supported"
- cNsErrorSmVolHasClone NsError = "SM_vol_has_clone"
- cNsErrorSmDedupeSingleArray NsError = "SM_dedupe_single_array"
- cNsErrorSmEncryptionMasterKeyInactive NsError = "SM_encryption_master_key_inactive"
- cNsErrorSmSnapHasClone NsError = "SM_snap_has_clone"
- cNsErrorSmErrEncryptionNeeded NsError = "SM_err_encryption_needed"
- cNsErrorSmMismatchingDuplicateSubnet NsError = "SM_mismatching_duplicate_subnet"
- cNsErrorSmSrepNotGroupScopedVol NsError = "SM_srep_not_group_scoped_vol"
- cNsErrorSmOnlyVvolFolderFolset NsError = "SM_only_vvol_folder_folset"
- cNsErrorSmReplSnapshotSync NsError = "SM_repl_snapshot_sync"
- cNsErrorSmStatsNoSuchObject NsError = "SM_stats_no_such_object"
- cNsErrorSmDefaultRouteMissing NsError = "SM_default_route_missing"
- cNsErrorSmReplVasa3ApiUnsup NsError = "SM_repl_vasa3_api_unsup"
- cNsErrorSmOverlappingSubnets NsError = "SM_overlapping_subnets"
- cNsErrorSmMissingArg NsError = "SM_missing_arg"
- cNsErrorSmVolmvCachePinDedupeNotsupp NsError = "SM_volmv_cache_pin_dedupe_notsupp"
- cNsErrorSmErrMergeConflict NsError = "SM_err_merge_conflict"
- cNsErrorSmTooSmall NsError = "SM_too_small"
- cNsErrorSmVolWarnGreaterThanLimit NsError = "SM_vol_warn_greater_than_limit"
- cNsErrorSmKeymgrUnreach NsError = "SM_keymgr_unreach"
- cNsErrorSmErrFcAsymmetryNotSupported NsError = "SM_err_fc_asymmetry_not_supported"
- cNsErrorSmLunMismatch NsError = "SM_lun_mismatch"
- cNsErrorSmErrShelfInvalidDiskCount NsError = "SM_err_shelf_invalid_disk_count"
- cNsErrorSmLimitVolacl NsError = "SM_limit_volacl"
- cNsErrorSmControllerNotActive NsError = "SM_controller_not_active"
- cNsErrorSmReplNoPartnerAvail NsError = "SM_repl_no_partner_avail"
- cNsErrorSmSreplMgmtOpDisallowedWhenSolo NsError = "SM_srepl_mgmt_op_disallowed_when_solo"
- cNsErrorSmNoMgmtSubnetSpecified NsError = "SM_no_mgmt_subnet_specified"
- cNsErrorSmFolderConflict NsError = "SM_folder_conflict"
- cNsErrorSmInvalidDataSubnet NsError = "SM_invalid_data_subnet"
- cNsErrorSmVolUsageUnavailable NsError = "SM_vol_usage_unavailable"
- cNsErrorSmAclScopeOverlap NsError = "SM_acl_scope_overlap"
- cNsErrorSmErrVvolAclGrpMerge NsError = "SM_err_vvol_acl_grp_merge"
- cNsErrorSmDisabledProtocolArtifacts NsError = "SM_disabled_protocol_artifacts"
- cNsErrorSmDuplicateSubnetVlanId NsError = "SM_duplicate_subnet_vlan_id"
- cNsErrorSmReplOpenstackUnsup NsError = "SM_repl_openstack_unsup"
- cNsErrorSmNoAvailableLun NsError = "SM_no_available_lun"
- cNsErrorSmGroupPartnerNameConflict NsError = "SM_group_partner_name_conflict"
- cNsErrorSmMgmtIpNotOnMgmt NsError = "SM_mgmt_ip_not_on_mgmt"
- cNsErrorSmInUseLun NsError = "SM_in_use_lun"
- cNsErrorSmNotFcInitiatorgrp NsError = "SM_not_fc_initiatorgrp"
- cNsErrorSmErrShelfInvalidCsz NsError = "SM_err_shelf_invalid_csz"
- cNsErrorSmVolDedupeInvalidPerfPolicy NsError = "SM_vol_dedupe_invalid_perf_policy"
- cNsErrorSmEncryptionInvalidMode NsError = "SM_encryption_invalid_mode"
- cNsErrorSmAsupDisabled NsError = "SM_asup_disabled"
- cNsErrorSmErrShelfConnectedOnlyOneSide NsError = "SM_err_shelf_connected_only_one_side"
- cNsErrorSmVolmvEnospace NsError = "SM_volmv_enospace"
- cNsErrorSmIncompatibleVolumes NsError = "SM_incompatible_volumes"
- cNsErrorSmComplexTypeQueryParam NsError = "SM_complex_type_query_param"
- cNsErrorSmAsupError NsError = "SM_asup_error"
- cNsErrorSmReplUnassignedAppcat NsError = "SM_repl_unassigned_appcat"
- cNsErrorSmErrFcRegenerateInvalidOperationTdz NsError = "SM_err_fc_regenerate_invalid_operation_tdz"
- cNsErrorSmInvalidPathVariable NsError = "SM_invalid_path_variable"
- cNsErrorSmErrArgChangeNotAllowed NsError = "SM_err_arg_change_not_allowed"
- cNsErrorSmSpecifiedSnapshotLun NsError = "SM_specified_snapshot_lun"
- cNsErrorSmSrepDownstreamAssocedVol NsError = "SM_srep_downstream_assoced_vol"
- cNsErrorSmLimitScopeValues NsError = "SM_limit_scope_values"
- cNsErrorSmErrPassphraseInval NsError = "SM_err_passphrase_inval"
- cNsErrorSmInitiatorgroupsOutOfSync NsError = "SM_initiatorgroups_out_of_sync"
- cNsErrorSmCachePinnedNotsup NsError = "SM_cache_pinned_notsup"
- cNsErrorSmNoOperationFound NsError = "SM_no_operation_found"
- cNsErrorSmInvalidDataForPartnerType NsError = "SM_invalid_data_for_partner_type"
- cNsErrorSmSrvUpdatePrecheck NsError = "SM_srv_update_precheck"
- cNsErrorSmVolDedupeEncryptionInvalid NsError = "SM_vol_dedupe_encryption_invalid"
- cNsErrorSmVvolFolderNoAppsrvr NsError = "SM_vvol_folder_no_appsrvr"
- cNsErrorSmHttpConflict NsError = "SM_http_conflict"
- cNsErrorSmVolDedupeNotEnoughCache NsError = "SM_vol_dedupe_not_enough_cache"
- cNsErrorSmArrayRenameInNetconfigFailed NsError = "SM_array_rename_in_netconfig_failed"
- cNsErrorSmInvalidInitiatorIp NsError = "SM_invalid_initiator_ip"
- cNsErrorSmDuplicateVol NsError = "SM_duplicate_vol"
- cNsErrorSmErrShelfInvalidModel NsError = "SM_err_shelf_invalid_model"
- cNsErrorSmReplProtectLastSnap NsError = "SM_repl_protect_last_snap"
- cNsErrorSmErrGroupMergeBusy NsError = "SM_err_group_merge_busy"
- cNsErrorSmErrVolmvPoolMerging NsError = "SM_err_volmv_pool_merging"
- cNsErrorSmArrayNotFoundWithArgs NsError = "SM_array_not_found_with_args"
- cNsErrorSmConnectionRebalancingWithoutAutomaticMethod NsError = "SM_connection_rebalancing_without_automatic_method"
- cNsErrorSmSrepDownstreamNoCommonSnapVols NsError = "SM_srep_downstream_no_common_snap_vols"
- cNsErrorSmErrShelfWrongSasPort NsError = "SM_err_shelf_wrong_sas_port"
- cNsErrorSmFolderUsageLimitBelowCurrentUsage NsError = "SM_folder_usage_limit_below_current_usage"
- cNsErrorSmLimitSnapRetentionPool NsError = "SM_limit_snap_retention_pool"
- cNsErrorSmErrShelfExprFwVerInval NsError = "SM_err_shelf_expr_fw_ver_inval"
- cNsErrorSmSrepVolcollUnsup NsError = "SM_srep_volcoll_unsup"
- cNsErrorSmSrepNotGroupScopedVols NsError = "SM_srep_not_group_scoped_vols"
- cNsErrorSmFcIntfNotFound NsError = "SM_fc_intf_not_found"
- cNsErrorSmVolUnknown NsError = "SM_vol_unknown"
- cNsErrorSmErrShelfEbusy NsError = "SM_err_shelf_ebusy"
- cNsErrorSmAppserverInUse NsError = "SM_appserver_in_use"
- cNsErrorSmPoolDoesNotHaveFolder NsError = "SM_pool_does_not_have_folder"
- cNsErrorSmPerfpolNotFound NsError = "SM_perfpol_not_found"
- cNsErrorSmPerfpolOob NsError = "SM_perfpol_oob"
- cNsErrorSmDuplicateInitiator NsError = "SM_duplicate_initiator"
- cNsErrorSmInUseAppUuid NsError = "SM_in_use_app_uuid"
- cNsErrorSmPartnerCfgSync NsError = "SM_partner_cfg_sync"
- cNsErrorSmNotDownloadingSw NsError = "SM_not_downloading_sw"
- cNsErrorSmMissingMgmtIp NsError = "SM_missing_mgmt_ip"
- cNsErrorSmSrepDownstreamNoCommonSnapVol NsError = "SM_srep_downstream_no_common_snap_vol"
- cNsErrorSmEbusy NsError = "SM_ebusy"
- cNsErrorSmErrReplCantConnect NsError = "SM_err_repl_cant_connect"
- cNsErrorSmErrShelfExpanderErr NsError = "SM_err_shelf_expander_err"
- cNsErrorSmPeFailAclRemoval NsError = "SM_pe_fail_acl_removal"
- cNsErrorSmSupportIpNotOnMgmt NsError = "SM_support_ip_not_on_mgmt"
- cNsErrorSmAtLeastOneGroupSubnet NsError = "SM_at_least_one_group_subnet"
- cNsErrorSmUnsupportedAccessProtocol NsError = "SM_unsupported_access_protocol"
- cNsErrorSmSpaceInfoUnavail NsError = "SM_space_info_unavail"
- cNsErrorSmInfoOtpNeedCode NsError = "SM_info_otp_need_code"
- cNsErrorSmLimitVolmvHretSnapPool NsError = "SM_limit_volmv_hret_snap_pool"
- cNsErrorSmStartTimeBeyondEndTime NsError = "SM_start_time_beyond_end_time"
- cNsErrorSmReplRemotePaused NsError = "SM_repl_remote_paused"
- cNsErrorSmDataIpNotOnSubnet NsError = "SM_data_ip_not_on_subnet"
- cNsErrorSmConflictingInitiatorAlias NsError = "SM_conflicting_initiator_alias"
- cNsErrorSmReplEditPartnerNameNotPaused NsError = "SM_repl_edit_partner_name_not_paused"
- cNsErrorSmShelfForeignDisk NsError = "SM_shelf_foreign_disk"
- cNsErrorSmQosLimitNotInRange NsError = "SM_qos_limit_not_in_range"
- cNsErrorSmErrShelfNoRserial NsError = "SM_err_shelf_no_rserial"
- cNsErrorSmUntaggedMtuNotLargest NsError = "SM_untagged_mtu_not_largest"
- cNsErrorSmErrShelfDisconnected NsError = "SM_err_shelf_disconnected"
- cNsErrorSmSubnetAlreadyAssignedOnNic NsError = "SM_subnet_already_assigned_on_nic"
- cNsErrorSmFcSessionExist NsError = "SM_fc_session_exist"
- cNsErrorSmVvolCannotOfflineBoundSnap NsError = "SM_vvol_cannot_offline_bound_snap"
- cNsErrorSmArrayMemberOrphan NsError = "SM_array_member_orphan"
- cNsErrorSmArrayMissingSubnet NsError = "SM_array_missing_subnet"
- cNsErrorSmDisableVvolWithPe NsError = "SM_disable_vvol_with_pe"
- cNsErrorSmLimitSnapVol NsError = "SM_limit_snap_vol"
- cNsErrorSmPoolUsageUnavailable NsError = "SM_pool_usage_unavailable"
- cNsErrorSmInvalidQueryParam NsError = "SM_invalid_query_param"
- cNsErrorSmErrGroupMergeDbLoad NsError = "SM_err_group_merge_db_load"
- cNsErrorSmEio NsError = "SM_eio"
- cNsErrorSmSrepDownstreamOnlineVol NsError = "SM_srep_downstream_online_vol"
- cNsErrorSmPoolNoSrcArray NsError = "SM_pool_no_src_array"
- cNsErrorSmInvalidKeyvalue NsError = "SM_invalid_keyvalue"
- cNsErrorSmProtpolMaxLength NsError = "SM_protpol_max_length"
- cNsErrorSmVolAssocVolcoll NsError = "SM_vol_assoc_volcoll"
- cNsErrorSmMissingDiscoveryIp NsError = "SM_missing_discovery_ip"
- cNsErrorSmReplDeleteReplicaUnsup NsError = "SM_repl_delete_replica_unsup"
- cNsErrorSmVolSizeDecreased NsError = "SM_vol_size_decreased"
- cNsErrorSmSrepDownstreamAssocedVols NsError = "SM_srep_downstream_assoced_vols"
- cNsErrorSmAddNonfcToFcGroup NsError = "SM_add_nonfc_to_fc_group"
- cNsErrorSmNetconfigDoesNotExist NsError = "SM_netconfig_does_not_exist"
- cNsErrorSmFolderVolmvEnospace NsError = "SM_folder_volmv_enospace"
- cNsErrorSmInfoOtpNewSecret NsError = "SM_info_otp_new_secret"
- cNsErrorSmNetconfigExistNoForce NsError = "SM_netconfig_exist_no_force"
- cNsErrorSmPoolUpdateInval NsError = "SM_pool_update_inval"
- cNsErrorSmVlanSubnetInManual NsError = "SM_vlan_subnet_in_manual"
- cNsErrorSmReplVvolUnsup NsError = "SM_repl_vvol_unsup"
- cNsErrorSmErrTdzNotSupported NsError = "SM_err_tdz_not_supported"
- cNsErrorSmPoolExists NsError = "SM_pool_exists"
- cNsErrorSmAuth NsError = "SM_auth"
- cNsErrorSmInvalidObjectSetQuery NsError = "SM_invalid_object_set_query"
- cNsErrorSmSrepDownstreamOnlineVols NsError = "SM_srep_downstream_online_vols"
- cNsErrorSmNoMethodForUrlPattern NsError = "SM_no_method_for_URL_pattern"
- cNsErrorSmVolNotOnline NsError = "SM_vol_not_online"
- cNsErrorSmVolDedupeVolfamAppcat NsError = "SM_vol_dedupe_volfam_appcat"
- cNsErrorSmInvalidNic NsError = "SM_invalid_nic"
- cNsErrorSmArrayNotGroupLeader NsError = "SM_array_not_group_leader"
- cNsErrorSmInvalidVlanId NsError = "SM_invalid_vlan_id"
- cNsErrorSmLimitSnaplun NsError = "SM_limit_snaplun"
- cNsErrorSmIncompatibleCachePolicy NsError = "SM_incompatible_cache_policy"
- cNsErrorSmVolmvAbortEnospace NsError = "SM_volmv_abort_enospace"
- cNsErrorSmLimitHretSnapGroup NsError = "SM_limit_hret_snap_group"
- cNsErrorSmVolmvEalready NsError = "SM_volmv_ealready"
- cNsErrorSmAsupPingfromCtrlrbError NsError = "SM_asup_pingfrom_ctrlrB_error"
- cNsErrorSmVolDedupeUnassignedAppCategory NsError = "SM_vol_dedupe_unassigned_app_category"
- cNsErrorSmEnoent NsError = "SM_enoent"
- cNsErrorSmPerfpolDedupeUnassignedAppCategory NsError = "SM_perfpol_dedupe_unassigned_app_category"
- cNsErrorSmInvalidInitiatorLabel NsError = "SM_invalid_initiator_label"
- cNsErrorSmDuplicateInitiatorWithArgs NsError = "SM_duplicate_initiator_with_args"
- cNsErrorSmErrShelfForeign NsError = "SM_err_shelf_foreign"
- cNsErrorSmInvalidAgentType NsError = "SM_invalid_agent_type"
- cNsErrorSmEinprogress NsError = "SM_einprogress"
- cNsErrorSmNotEnoughCache NsError = "SM_not_enough_cache"
- cNsErrorSmEexist NsError = "SM_eexist"
- cNsErrorSmMissingArrayNetconfig NsError = "SM_missing_array_netconfig"
- cNsErrorSmInvalidInitiatorAlias NsError = "SM_invalid_initiator_alias"
- cNsErrorSmProtpolAppSyncOracle NsError = "SM_protpol_app_sync_oracle"
- cNsErrorSmNoSupport NsError = "SM_no_support"
- cNsErrorSmDataIpMissingSubnet NsError = "SM_data_ip_missing_subnet"
- cNsErrorSmErrShelfHddsInAfs NsError = "SM_err_shelf_hdds_in_afs"
- cNsErrorSmStartRowBeyondTotalRows NsError = "SM_start_row_beyond_total_rows"
- cNsErrorSmExtraneousArrayNetconfig NsError = "SM_extraneous_array_netconfig"
- cNsErrorSmPoolCachePinNotsupp NsError = "SM_pool_cache_pin_notsupp"
- cNsErrorSmUsageUnavailable NsError = "SM_usage_unavailable"
- cNsErrorSmReplAgentTypeUnsup NsError = "SM_repl_agent_type_unsup"
- cNsErrorSmReplFanoutMaximumPartnersExceeded NsError = "SM_repl_fanout_maximum_partners_exceeded"
- cNsErrorSmPoolDedupeInvalidFdr NsError = "SM_pool_dedupe_invalid_fdr"
- cNsErrorSmAsupPingfromCtrlraError NsError = "SM_asup_pingfrom_ctrlrA_error"
- cNsErrorSmErrShelfInvalidLoc NsError = "SM_err_shelf_invalid_loc"
- cNsErrorSmErrShelfSsdDegraded NsError = "SM_err_shelf_ssd_degraded"
- cNsErrorSmSyncReplConfigure NsError = "SM_sync_repl_configure"
- cNsErrorSmAsupHeartbeatError NsError = "SM_asup_heartbeat_error"
- cNsErrorSmLimitHretSnapRetentionPoolWarn NsError = "SM_limit_hret_snap_retention_pool_warn"
- cNsErrorSmErrAuth NsError = "SM_err_auth"
- cNsErrorSmPartnerSubnetDoesNotExist NsError = "SM_partner_subnet_does_not_exist"
- cNsErrorSmErrShelfLocOrder NsError = "SM_err_shelf_loc_order"
- cNsErrorSmFolderEnospace NsError = "SM_folder_enospace"
- cNsErrorSmErrPoolHasGroupPartners NsError = "SM_err_pool_has_group_partners"
- cNsErrorSmPoolDedupeInvalidCap NsError = "SM_pool_dedupe_invalid_cap"
- cNsErrorSmProtpolNotSpecified NsError = "SM_protpol_not_specified"
- cNsErrorSmUnexpectedQueryParam NsError = "SM_unexpected_query_param"
- cNsErrorSmVolmvAbortEalready NsError = "SM_volmv_abort_ealready"
- cNsErrorSmFcIntfAlreadyInState NsError = "SM_fc_intf_already_in_state"
- cNsErrorSmLimitHretSnapPool NsError = "SM_limit_hret_snap_pool"
- cNsErrorSmIpUpdateNoForce NsError = "SM_ip_update_no_force"
- cNsErrorSmSrepAgentTypeMismatchDownstreamVol NsError = "SM_srep_agent_type_mismatch_downstream_vol"
- cNsErrorSmVssValidationTimedout NsError = "SM_vss_validation_timedout"
- cNsErrorSmConfigSyncInprogress NsError = "SM_config_sync_inprogress"
- cNsErrorSmAsyncJobId NsError = "SM_async_job_id"
- cNsErrorSmEagain NsError = "SM_eagain"
- cNsErrorSmPerfpolVolMoveAppCategory NsError = "SM_perfpol_vol_move_app_category"
- cNsErrorSmLimitHretSnapRetentionPoolMax NsError = "SM_limit_hret_snap_retention_pool_max"
- cNsErrorSmVolHasConnections NsError = "SM_vol_has_connections"
- cNsErrorSmNoCommonLun NsError = "SM_no_common_lun"
- cNsErrorSmErrShelfSasLanesDegraded NsError = "SM_err_shelf_sas_lanes_degraded"
- cNsErrorSmVolAppCategoryMoveInvalid NsError = "SM_vol_app_category_move_invalid"
- cNsErrorSmExtTrigSchedAlreadyPresent NsError = "SM_ext_trig_sched_already_present"
- cNsErrorSmNoDataIpSpecified NsError = "SM_no_data_ip_specified"
- cNsErrorSmInvalidVolAssoc NsError = "SM_invalid_vol_assoc"
- cNsErrorSmReplObjectBusy NsError = "SM_repl_object_busy"
- cNsErrorSmPoolDedupeData NsError = "SM_pool_dedupe_data"
- cNsErrorSmVolcollOwner NsError = "SM_volcoll_owner"
- cNsErrorSmReservedUsername NsError = "SM_reserved_username"
- cNsErrorSmVvolsnapOnline NsError = "SM_vvolsnap_online"
- cNsErrorSmFolderVolmvEinprog NsError = "SM_folder_volmv_einprog"
- cNsErrorSmUnexpectedObjectSetQuery NsError = "SM_unexpected_object_set_query"
- cNsErrorSmProtpolInvalidValue NsError = "SM_protpol_invalid_value"
- cNsErrorSmFolderIncompatibleAgentType NsError = "SM_folder_incompatible_agent_type"
- cNsErrorSmProtpolVmwareInvalidVcenterHostname NsError = "SM_protpol_vmware_invalid_vcenter_hostname"
- cNsErrorSmErrVolCollMultipleSchedules NsError = "SM_err_vol_coll_multiple_schedules"
- cNsErrorSmReplPartnerNameMismatch NsError = "SM_repl_partner_name_mismatch"
- cNsErrorSmInvalidFolder NsError = "SM_invalid_folder"
- cNsErrorSmSrvUpdatePrecheckArray NsError = "SM_srv_update_precheck_array"
- cNsErrorSmGatewayNotInSubnets NsError = "SM_gateway_not_in_subnets"
- cNsErrorSmErrLdapBindUserNoPassword NsError = "SM_err_ldap_bind_user_no_password"
- cNsErrorSmDeprecatedPerfpol NsError = "SM_deprecated_perfpol"
- cNsErrorSmTakeoverSplitBrain NsError = "SM_takeover_split_brain"
- cNsErrorSmPeIgroupProtocolMismatched NsError = "SM_pe_igroup_protocol_mismatched"
- cNsErrorSmOnlyVvolFolderAppsrvr NsError = "SM_only_vvol_folder_appsrvr"
- cNsErrorSmVersionMismatch NsError = "SM_version_mismatch"
- cNsErrorSmPoolLastArray NsError = "SM_pool_last_array"
- cNsErrorSmEaccess NsError = "SM_eaccess"
- cNsErrorSmInvalidSubnetLabel NsError = "SM_invalid_subnet_label"
- cNsErrorSmInvalidArg NsError = "SM_invalid_arg"
- cNsErrorSmDedupeVolfamAppcat NsError = "SM_dedupe_volfam_appcat"
- cNsErrorSmSrvUnreach NsError = "SM_srv_unreach"
- cNsErrorSmPoolPartnerPauseUnsup NsError = "SM_pool_partner_pause_unsup"
- cNsErrorSmNetconfigCreateDraftOnly NsError = "SM_netconfig_create_draft_only"
- cNsErrorSmErrArrayNotFound NsError = "SM_err_array_not_found"
- cNsErrorSmFolsetInUse NsError = "SM_folset_in_use"
- cNsErrorSmErrShelfSesDeviceNotReady NsError = "SM_err_shelf_ses_device_not_ready"
- cNsErrorSmInvalidIp NsError = "SM_invalid_ip"
- cNsErrorSmEalready NsError = "SM_ealready"
- cNsErrorSmInvalidNonIscsiDataSubnet NsError = "SM_invalid_non_iscsi_data_subnet"
- cNsErrorSmReplHandoverUnsupPtype NsError = "SM_repl_handover_unsup_ptype"
- cNsErrorSmArrayNotAssigned NsError = "SM_array_not_assigned"
- cNsErrorSmEpartial NsError = "SM_epartial"
- cNsErrorSmErrProtpolMissingName NsError = "SM_err_protpol_missing_name"
- cNsErrorSmVfVolCachePinned NsError = "SM_vf_vol_cache_pinned"
- cNsErrorSmAtLeastOneIscsiCluster NsError = "SM_at_least_one_iscsi_cluster"
- cNsErrorSmErrTooMany NsError = "SM_err_too_many"
- cNsErrorSmErrShelfExprMfgVerInval NsError = "SM_err_shelf_expr_mfg_ver_inval"
- cNsErrorSmMgmtIpInvalid NsError = "SM_mgmt_ip_invalid"
- cNsErrorSmErrShelfWrongCtrlrSide NsError = "SM_err_shelf_wrong_ctrlr_side"
+	cNsErrorSmReplVolcollDeletion                         NsError = "SM_repl_volcoll_deletion"
+	cNsErrorSmEncryptionGroupCipherOverride               NsError = "SM_encryption_group_cipher_override"
+	cNsErrorSmEncryptionMustBeEnabled                     NsError = "SM_encryption_must_be_enabled"
+	cNsErrorSmExtTrigSchedNotPresent                      NsError = "SM_ext_trig_sched_not_present"
+	cNsErrorSmAppserverNotFound                           NsError = "SM_appserver_not_found"
+	cNsErrorSmFolderReplPartner                           NsError = "SM_folder_repl_partner"
+	cNsErrorSmArrayPoolMember                             NsError = "SM_array_pool_member"
+	cNsErrorSmErrInvalidArg                               NsError = "SM_err_invalid_arg"
+	cNsErrorSmErrShelfCreateRfail                         NsError = "SM_err_shelf_create_rfail"
+	cNsErrorSmStarterVolCreate                            NsError = "SM_starter_vol_create"
+	cNsErrorSmInvalidNetconfigName                        NsError = "SM_invalid_netconfig_name"
+	cNsErrorSmInvalidVolaclScope                          NsError = "SM_invalid_volacl_scope"
+	cNsErrorSmErrShelfNoElocId                            NsError = "SM_err_shelf_no_eloc_id"
+	cNsErrorSmInvalidNetzoneType                          NsError = "SM_invalid_netzone_type"
+	cNsErrorSmErrCannotModifyTdz                          NsError = "SM_err_cannot_modify_tdz"
+	cNsErrorSmControllerActive                            NsError = "SM_controller_active"
+	cNsErrorSmPoolHasVolume                               NsError = "SM_pool_has_volume"
+	cNsErrorSmExtTrigSchedAttrib                          NsError = "SM_ext_trig_sched_attrib"
+	cNsErrorSmMissingCriteriaFieldname                    NsError = "SM_missing_criteria_fieldName"
+	cNsErrorSmNetconfigAlreadyActive                      NsError = "SM_netconfig_already_active"
+	cNsErrorSmStartRowBeyondEndRow                        NsError = "SM_start_row_beyond_end_row"
+	cNsErrorSmInsufficientFcInitiatorInput                NsError = "SM_insufficient_fc_initiator_input"
+	cNsErrorSmSecondMgmtSubnet                            NsError = "SM_second_mgmt_subnet"
+	cNsErrorSmInvalidInitiatorWwpn                        NsError = "SM_invalid_initiator_wwpn"
+	cNsErrorSmArrayFlashMismatch                          NsError = "SM_array_flash_mismatch"
+	cNsErrorSmErrShelfPmdState                            NsError = "SM_err_shelf_pmd_state"
+	cNsErrorSmInvalidFcConfig                             NsError = "SM_invalid_fc_config"
+	cNsErrorSmSrepDownstreamIsUpstream                    NsError = "SM_srep_downstream_is_upstream"
+	cNsErrorSmKeymgrLeave                                 NsError = "SM_keymgr_leave"
+	cNsErrorSmVolmvVolEinprog                             NsError = "SM_volmv_vol_einprog"
+	cNsErrorSmSrepNameConflictVol                         NsError = "SM_srep_name_conflict_vol"
+	cNsErrorSmMultiArrayWithoutAutomaticConnectionMethod  NsError = "SM_multi_array_without_automatic_connection_method"
+	cNsErrorSmFolderUsageLimitOverPoolCapacity            NsError = "SM_folder_usage_limit_over_pool_capacity"
+	cNsErrorSmEnomem                                      NsError = "SM_enomem"
+	cNsErrorSmErrShelfNotInuse                            NsError = "SM_err_shelf_not_inuse"
+	cNsErrorSmErrLdapAdConflict                           NsError = "SM_err_ldap_ad_conflict"
+	cNsErrorSmErrShelfPreactivationMfrErr                 NsError = "SM_err_shelf_preactivation_mfr_err"
+	cNsErrorSmUpdateBusy                                  NsError = "SM_update_busy"
+	cNsErrorSmProtpolInvalidAppSync                       NsError = "SM_protpol_invalid_app_sync"
+	cNsErrorSmErrShelfRaidDegraded                        NsError = "SM_err_shelf_raid_degraded"
+	cNsErrorSmLimitFreqSchedGroup                         NsError = "SM_limit_freq_sched_group"
+	cNsErrorSmSwupdateEinprog                             NsError = "SM_swupdate_einprog"
+	cNsErrorSmMissingCriteriaParam                        NsError = "SM_missing_criteria_param"
+	cNsErrorSmNoPathFound                                 NsError = "SM_no_path_found"
+	cNsErrorSmIncompatibleAppCategory                     NsError = "SM_incompatible_app_category"
+	cNsErrorSmVolmvAbortEnomove                           NsError = "SM_volmv_abort_enomove"
+	cNsErrorSmLimitSnapRetentionVolcoll                   NsError = "SM_limit_snap_retention_volcoll"
+	cNsErrorSmKeymgrRemove                                NsError = "SM_keymgr_remove"
+	cNsErrorSmArrayNotReachable                           NsError = "SM_array_not_reachable"
+	cNsErrorSmErrGroupMergeEventsPending                  NsError = "SM_err_group_merge_events_pending"
+	cNsErrorSmSrepNameConflictVols                        NsError = "SM_srep_name_conflict_vols"
+	cNsErrorSmPoolPartnerResumeUnsup                      NsError = "SM_pool_partner_resume_unsup"
+	cNsErrorSmErrLdapAlreadyExists                        NsError = "SM_err_ldap_already_exists"
+	cNsErrorSmArrayNotFound                               NsError = "SM_array_not_found"
+	cNsErrorSmNoIscsiHardware                             NsError = "SM_no_iscsi_hardware"
+	cNsErrorSmEnospc                                      NsError = "SM_enospc"
+	cNsErrorSmReservedPerfpolName                         NsError = "SM_reserved_perfpol_name"
+	cNsErrorSmErrInvalidCtrlrName                         NsError = "SM_err_invalid_ctrlr_name"
+	cNsErrorSmInvalidRoute                                NsError = "SM_invalid_route"
+	cNsErrorSmVolDedupeMoveInvalid                        NsError = "SM_vol_dedupe_move_invalid"
+	cNsErrorSmKeymgrJoin                                  NsError = "SM_keymgr_join"
+	cNsErrorSmErrSrvUnreach                               NsError = "SM_err_srv_unreach"
+	cNsErrorSmErrShelfDiskSasLinkDegraded                 NsError = "SM_err_shelf_disk_sas_link_degraded"
+	cNsErrorSmErrShelfInvalidEeprom                       NsError = "SM_err_shelf_invalid_eeprom"
+	cNsErrorSmInvalidKeyValue                             NsError = "SM_invalid_key_value"
+	cNsErrorSmNoIscsiLunAssignment                        NsError = "SM_no_iscsi_lun_assignment"
+	cNsErrorSmSnapshotOffline                             NsError = "SM_snapshot_offline"
+	cNsErrorSmDefaultGatewayNotInMgmtSubnet               NsError = "SM_default_gateway_not_in_mgmt_subnet"
+	cNsErrorSmErrPassphraseAuth                           NsError = "SM_err_passphrase_auth"
+	cNsErrorSmReplEexist                                  NsError = "SM_repl_eexist"
+	cNsErrorSmDisableLastProtocol                         NsError = "SM_disable_last_protocol"
+	cNsErrorSmArrayAddExistingPoolDedupeNotConfigurable   NsError = "SM_array_add_existing_pool_dedupe_not_configurable"
+	cNsErrorSmSecondUntaggedAssignment                    NsError = "SM_second_untagged_assignment"
+	cNsErrorSmPoolHasPe                                   NsError = "SM_pool_has_pe"
+	cNsErrorSmErrShelfInvalidCount                        NsError = "SM_err_shelf_invalid_count"
+	cNsErrorSmLimitSnapRetentionGroup                     NsError = "SM_limit_snap_retention_group"
+	cNsErrorSmVolDedupeThickProvInvalid                   NsError = "SM_vol_dedupe_thick_prov_invalid"
+	cNsErrorSmUnknown                                     NsError = "SM_unknown"
+	cNsErrorSmErrShelfDedupeImpact                        NsError = "SM_err_shelf_dedupe_impact"
+	cNsErrorSmInvalidInitiatorAccessProtocol              NsError = "SM_invalid_initiator_access_protocol"
+	cNsErrorSmInternal                                    NsError = "SM_internal"
+	cNsErrorSmAsupEbusy                                   NsError = "SM_asup_ebusy"
+	cNsErrorSmInvalidVolMbpsLimit                         NsError = "SM_invalid_vol_mbps_limit"
+	cNsErrorSmInfoConfigSyncInprogress                    NsError = "SM_info_config_sync_inprogress"
+	cNsErrorSmErrPoolStillMerging                         NsError = "SM_err_pool_still_merging"
+	cNsErrorSmFolderPerfpolAgentType                      NsError = "SM_folder_perfpol_agent_type"
+	cNsErrorSmEinval                                      NsError = "SM_einval"
+	cNsErrorSmNoAssocVols                                 NsError = "SM_no_assoc_vols"
+	cNsErrorSmShelfNotInuse                               NsError = "SM_shelf_not_inuse"
+	cNsErrorSmErrProtpolSettingsNotAllowed                NsError = "SM_err_protpol_settings_not_allowed"
+	cNsErrorSmFcRegenerate                                NsError = "SM_fc_regenerate"
+	cNsErrorSmErrMultiArrayGroup                          NsError = "SM_err_multi_array_group"
+	cNsErrorSmReplRemoteNoBaseSnap                        NsError = "SM_repl_remote_no_base_snap"
+	cNsErrorSmUnsupportedQueryOperator                    NsError = "SM_unsupported_query_operator"
+	cNsErrorSmSrepSizeMismatchDownstreamVol               NsError = "SM_srep_size_mismatch_downstream_vol"
+	cNsErrorSmNoSuchPartner                               NsError = "SM_no_such_partner"
+	cNsErrorSmIscsiAllAccessNotAvailable                  NsError = "SM_iscsi_all_access_not_available"
+	cNsErrorSmVvolAlreadyEnabled                          NsError = "SM_vvol_already_enabled"
+	cNsErrorSmUsageUnavaiable                             NsError = "SM_usage_unavaiable"
+	cNsErrorSmEconnrefused                                NsError = "SM_econnrefused"
+	cNsErrorSmReplRenameNotsup                            NsError = "SM_repl_rename_notsup"
+	cNsErrorSmSessionCreate                               NsError = "SM_session_create"
+	cNsErrorSmConflictingAclVol                           NsError = "SM_conflicting_acl_vol"
+	cNsErrorSmNospace                                     NsError = "SM_nospace"
+	cNsErrorSmReservedVolcollName                         NsError = "SM_reserved_volcoll_name"
+	cNsErrorSmPoolHasFolder                               NsError = "SM_pool_has_folder"
+	cNsErrorSmPartnerOffline                              NsError = "SM_partner_offline"
+	cNsErrorSmConflictingInitiatorAliasWithArgs           NsError = "SM_conflicting_initiator_alias_with_args"
+	cNsErrorSmErrShelfNotReady                            NsError = "SM_err_shelf_not_ready"
+	cNsErrorSmReplCmprVersionUnsup                        NsError = "SM_repl_cmpr_version_unsup"
+	cNsErrorSmErrShelfPreactivationIoErr                  NsError = "SM_err_shelf_preactivation_io_err"
+	cNsErrorSmVolmvEinprog                                NsError = "SM_volmv_einprog"
+	cNsErrorSmPerfpolIncompatibleAppCategory              NsError = "SM_perfpol_incompatible_app_category"
+	cNsErrorSmInvalidArgValue                             NsError = "SM_invalid_arg_value"
+	cNsErrorSmErrShelfDedupeBelowFdr                      NsError = "SM_err_shelf_dedupe_below_fdr"
+	cNsErrorSmErrShelfInvalidAfsCount                     NsError = "SM_err_shelf_invalid_afs_count"
+	cNsErrorSmSerialNotAvail                              NsError = "SM_serial_not_avail"
+	cNsErrorSmErrShelfSesMshipErr                         NsError = "SM_err_shelf_ses_mship_err"
+	cNsErrorSmFolderProvisionedLimitBelowCurrentUsage     NsError = "SM_folder_provisioned_limit_below_current_usage"
+	cNsErrorSmPeMultiProtocolAccessNotSupported           NsError = "SM_pe_multi_protocol_access_not_supported"
+	cNsErrorSmLimitHretSnapRetentionPool                  NsError = "SM_limit_hret_snap_retention_pool"
+	cNsErrorSmPeConflictingAcl                            NsError = "SM_pe_conflicting_acl"
+	cNsErrorSmFolderOverUsageLimit                        NsError = "SM_folder_over_usage_limit"
+	cNsErrorSmErrEncryptionMasterKeyMissing               NsError = "SM_err_encryption_master_key_missing"
+	cNsErrorSmProtpolInvalidDomainName                    NsError = "SM_protpol_invalid_domain_name"
+	cNsErrorSmTooMany                                     NsError = "SM_too_many"
+	cNsErrorSmErrShelfExprRevIncompatible                 NsError = "SM_err_shelf_expr_rev_incompatible"
+	cNsErrorSmSrvUnreachable                              NsError = "SM_srv_unreachable"
+	cNsErrorSmVolumeConflict                              NsError = "SM_volume_conflict"
+	cNsErrorSmInvalidArrayName                            NsError = "SM_invalid_array_name"
+	cNsErrorSmCannotReadObject                            NsError = "SM_cannot_read_object"
+	cNsErrorSmReservedVolName                             NsError = "SM_reserved_vol_name"
+	cNsErrorSmPoolPartnerInUse                            NsError = "SM_pool_partner_in_use"
+	cNsErrorSmInvalidInitiatorgrpName                     NsError = "SM_invalid_initiatorgrp_name"
+	cNsErrorSmAsupValidateError                           NsError = "SM_asup_validate_error"
+	cNsErrorSmVersionName                                 NsError = "SM_version_name"
+	cNsErrorSmVvolAlreadyDisabled                         NsError = "SM_vvol_already_disabled"
+	cNsErrorSmUnexpectedArg                               NsError = "SM_unexpected_arg"
+	cNsErrorSmErrShelfInvalidAfs                          NsError = "SM_err_shelf_invalid_afs"
+	cNsErrorSmUnexpectedChild                             NsError = "SM_unexpected_child"
+	cNsErrorSmFolderOverProvisionedLimit                  NsError = "SM_folder_over_provisioned_limit"
+	cNsErrorSmPoolFlashMismatch                           NsError = "SM_pool_flash_mismatch"
+	cNsErrorSmLimitScope                                  NsError = "SM_limit_scope"
+	cNsErrorSmSrepSizeMismatchDownstreamVols              NsError = "SM_srep_size_mismatch_downstream_vols"
+	cNsErrorSmFolderAppsrvrInconsistent                   NsError = "SM_folder_appsrvr_inconsistent"
+	cNsErrorSmErrShelfDedupeReduction                     NsError = "SM_err_shelf_dedupe_reduction"
+	cNsErrorSmIscsiSvcNotAvailable                        NsError = "SM_iscsi_svc_not_available"
+	cNsErrorSmInvalidNetconfigToDelete                    NsError = "SM_invalid_netconfig_to_delete"
+	cNsErrorSmErrUnknown                                  NsError = "SM_err_unknown"
+	cNsErrorSmMissingCriteriaOperator                     NsError = "SM_missing_criteria_operator"
+	cNsErrorSmInvalidAppUuid                              NsError = "SM_invalid_app_uuid"
+	cNsErrorSmArrayMemberOrphanWithArgs                   NsError = "SM_array_member_orphan_with_args"
+	cNsErrorSmEmptyVol                                    NsError = "SM_empty_vol"
+	cNsErrorSmDuplicateSubnetLabel                        NsError = "SM_duplicate_subnet_label"
+	cNsErrorSmZeroVlanIdForTaggedAssignment               NsError = "SM_zero_vlan_id_for_tagged_assignment"
+	cNsErrorSmNoActionFound                               NsError = "SM_no_action_found"
+	cNsErrorSmSyncReplUnconfigureInProgress               NsError = "SM_sync_repl_unconfigure_in_progress"
+	cNsErrorSmErrMissingArg                               NsError = "SM_err_missing_arg"
+	cNsErrorSmVolThickProvMoveInvalid                     NsError = "SM_vol_thick_prov_move_invalid"
+	cNsErrorSmMissingAdvancedCriteriaConstructor          NsError = "SM_missing_advanced_criteria_constructor"
+	cNsErrorSmPoolUnknown                                 NsError = "SM_pool_unknown"
+	cNsErrorSmHaltGlWithLiveMemberArray                   NsError = "SM_halt_gl_with_live_member_array"
+	cNsErrorSmInfoNeedNewCode                             NsError = "SM_info_need_new_code"
+	cNsErrorSmReplThrottleOverlap                         NsError = "SM_repl_throttle_overlap"
+	cNsErrorSmNetconfigUpdateMismatch                     NsError = "SM_netconfig_update_mismatch"
+	cNsErrorSmSrepDownstreamVolsAcl                       NsError = "SM_srep_downstream_vols_acl"
+	cNsErrorSmStatsFrequencyInvalid                       NsError = "SM_stats_frequency_invalid"
+	cNsErrorSmDdupFolderMerge                             NsError = "SM_ddup_folder_merge"
+	cNsErrorSmInvalidSubnet                               NsError = "SM_invalid_subnet"
+	cNsErrorSmReplEnabled                                 NsError = "SM_repl_enabled"
+	cNsErrorSmPoolPartnerNameConflict                     NsError = "SM_pool_partner_name_conflict"
+	cNsErrorSmAsupPingfromMgmtipError                     NsError = "SM_asup_pingfrom_mgmtip_error"
+	cNsErrorSmEncryptionGroupScopeOverride                NsError = "SM_encryption_group_scope_override"
+	cNsErrorSmErrMaxSessionsReached                       NsError = "SM_err_max_sessions_reached"
+	cNsErrorSmErrReplMultiplePartners                     NsError = "SM_err_repl_multiple_partners"
+	cNsErrorSmStatsNoSensors                              NsError = "SM_stats_no_sensors"
+	cNsErrorSmFolderNeedsLimit                            NsError = "SM_folder_needs_limit"
+	cNsErrorSmVolmvVvol                                   NsError = "SM_volmv_vvol"
+	cNsErrorSmErrGroupMergeInprogress                     NsError = "SM_err_group_merge_inprogress"
+	cNsErrorSmFolderNotFound                              NsError = "SM_folder_not_found"
+	cNsErrorSmRouteExists                                 NsError = "SM_route_exists"
+	cNsErrorSmInvalidDiscoveryIp                          NsError = "SM_invalid_discovery_ip"
+	cNsErrorSmErrVolmvCachePinDedupeNotsupp               NsError = "SM_err_volmv_cache_pin_dedupe_notsupp"
+	cNsErrorSmMissingCriteria                             NsError = "SM_missing_criteria"
+	cNsErrorSmRootBranchPinned                            NsError = "SM_root_branch_pinned"
+	cNsErrorSmInvalidMtu                                  NsError = "SM_invalid_mtu"
+	cNsErrorSmNoFcHardware                                NsError = "SM_no_fc_hardware"
+	cNsErrorSmPoolNotFound                                NsError = "SM_pool_not_found"
+	cNsErrorSmDuplicateIp                                 NsError = "SM_duplicate_ip"
+	cNsErrorSmErrOtpNotEnabled                            NsError = "SM_err_otp_not_enabled"
+	cNsErrorSmNoAction                                    NsError = "SM_no_action"
+	cNsErrorSmProtpolAppSyncOracleParams                  NsError = "SM_protpol_app_sync_oracle_params"
+	cNsErrorSmProtpolInvalidVssSettings                   NsError = "SM_protpol_invalid_vss_settings"
+	cNsErrorSmEncryptionInvalidScope                      NsError = "SM_encryption_invalid_scope"
+	cNsErrorSmLimitSnapcollVolcoll                        NsError = "SM_limit_snapcoll_volcoll"
+	cNsErrorSmShelfRaidDegraded                           NsError = "SM_shelf_raid_degraded"
+	cNsErrorSmInvalidNonIscsiDataSubnetType               NsError = "SM_invalid_non_iscsi_data_subnet_type"
+	cNsErrorSmVolmvIncompatibleAgentType                  NsError = "SM_volmv_incompatible_agent_type"
+	cNsErrorSmReplPartnerVersionUnknown                   NsError = "SM_repl_partner_version_unknown"
+	cNsErrorSmAsupNameresError                            NsError = "SM_asup_nameres_error"
+	cNsErrorSmReplApiUnsup                                NsError = "SM_repl_api_unsup"
+	cNsErrorSmEperm                                       NsError = "SM_eperm"
+	cNsErrorSmEnoentEnoent                                NsError = "SM_enoent,ENOENT"
+	cNsErrorSmArrayGroupLeader                            NsError = "SM_array_group_leader"
+	cNsErrorSmInvalidInitiatorIqn                         NsError = "SM_invalid_initiator_iqn"
+	cNsErrorSmReplIntragroup                              NsError = "SM_repl_intragroup"
+	cNsErrorSmRemoveNonemptyFolder                        NsError = "SM_remove_nonempty_folder"
+	cNsErrorSmAddNoniscsiToIscsiGroup                     NsError = "SM_add_noniscsi_to_iscsi_group"
+	cNsErrorSmPoolDedupeIncapable                         NsError = "SM_pool_dedupe_incapable"
+	cNsErrorSmNoVvolSupport                               NsError = "SM_no_vvol_support"
+	cNsErrorSmNoInitiatorgrp                              NsError = "SM_no_initiatorgrp"
+	cNsErrorSmInvalidNetmask                              NsError = "SM_invalid_netmask"
+	cNsErrorSmNoDiscoveryIpInManualMode                   NsError = "SM_no_discovery_ip_in_manual_mode"
+	cNsErrorSmInvalidVolReserveValues                     NsError = "SM_invalid_vol_reserve_values"
+	cNsErrorSmSupportIpInvalid                            NsError = "SM_support_ip_invalid"
+	cNsErrorSmErrShelfForeignDisk                         NsError = "SM_err_shelf_foreign_disk"
+	cNsErrorSmVolsnapAlreadyExported                      NsError = "SM_volsnap_already_exported"
+	cNsErrorSmFcInitiatorgrpSubnetNotSupported            NsError = "SM_fc_initiatorgrp_subnet_not_supported"
+	cNsErrorSmIncompatibleInitiatorAccessProtocol         NsError = "SM_incompatible_initiator_access_protocol"
+	cNsErrorSmInvalidInitiatorgrpAccessProtocol           NsError = "SM_invalid_initiatorgrp_access_protocol"
+	cNsErrorSmLimitPeacl                                  NsError = "SM_limit_peacl"
+	cNsErrorSmEtimedout                                   NsError = "SM_etimedout"
+	cNsErrorSmInitiatorgrpSubnetDoesNotExist              NsError = "SM_initiatorgrp_subnet_does_not_exist"
+	cNsErrorSmVolOffline                                  NsError = "SM_vol_offline"
+	cNsErrorSmErrSreplMgmtOpInProgress                    NsError = "SM_err_srepl_mgmt_op_in_progress"
+	cNsErrorSmReplFanoutMaximumCloudPartnersExceeded      NsError = "SM_repl_fanout_maximum_cloud_partners_exceeded"
+	cNsErrorSmMalformedUrl                                NsError = "SM_malformed_url"
+	cNsErrorSmErrSessionCreate                            NsError = "SM_err_session_create"
+	cNsErrorSmErrShelfCtrlrLoop                           NsError = "SM_err_shelf_ctrlr_loop"
+	cNsErrorSmPeConflictingAclLun                         NsError = "SM_pe_conflicting_acl_lun"
+	cNsErrorSmInvalidCtrlrName                            NsError = "SM_invalid_ctrlr_name"
+	cNsErrorSmBackupNetconfigReadonly                     NsError = "SM_backup_netconfig_readonly"
+	cNsErrorSmLimitSnapGroup                              NsError = "SM_limit_snap_group"
+	cNsErrorSmEncryptionInvalidCipher                     NsError = "SM_encryption_invalid_cipher"
+	cNsErrorSmPerfpolInvalidAppCategory                   NsError = "SM_perfpol_invalid_app_category"
+	cNsErrorSmArrayPoolFlashMismatch                      NsError = "SM_array_pool_flash_mismatch"
+	cNsErrorSmFolderLimitInval                            NsError = "SM_folder_limit_inval"
+	cNsErrorSmShelfSsdDegraded                            NsError = "SM_shelf_ssd_degraded"
+	cNsErrorSmFolderOverdraftLimitNeedsUsageLimit         NsError = "SM_folder_overdraft_limit_needs_usage_limit"
+	cNsErrorSmEncryptionMasterKeyMissing                  NsError = "SM_encryption_master_key_missing"
+	cNsErrorSmSrepAgentTypeMismatchDownstreamVols         NsError = "SM_srep_agent_type_mismatch_downstream_vols"
+	cNsErrorSmErrVolNotOfflineOnRestore                   NsError = "SM_err_vol_not_offline_on_restore"
+	cNsErrorSmArrayModelNotDedupeConfigurable             NsError = "SM_array_model_not_dedupe_configurable"
+	cNsErrorSmReplHandoverBusy                            NsError = "SM_repl_handover_busy"
+	cNsErrorSmNotOwner                                    NsError = "SM_not_owner"
+	cNsErrorSmSrepDownstreamAcl                           NsError = "SM_srep_downstream_acl"
+	cNsErrorSmNoSubnetWithLabel                           NsError = "SM_no_subnet_with_label"
+	cNsErrorSmPoolUpdateInvalArrays                       NsError = "SM_pool_update_inval_arrays"
+	cNsErrorSmVolHasOnlineSnap                            NsError = "SM_vol_has_online_snap"
+	cNsErrorSmInvalidDataIp                               NsError = "SM_invalid_data_ip"
+	cNsErrorSmPoolVolmvEinprog                            NsError = "SM_pool_volmv_einprog"
+	cNsErrorSmErrLdapBindPasswordNoUser                   NsError = "SM_err_ldap_bind_password_no_user"
+	cNsErrorSmNoDataIpOnMgmtPlusData                      NsError = "SM_no_data_ip_on_mgmt_plus_data"
+	cNsErrorSmConflictingAclLun                           NsError = "SM_conflicting_acl_lun"
+	cNsErrorSmVpCreatedIgrp                               NsError = "SM_vp_created_igrp"
+	cNsErrorSmStarterVolAclCreate                         NsError = "SM_starter_vol_acl_create"
+	cNsErrorSmBadPkg                                      NsError = "SM_bad_pkg"
+	cNsErrorSmPasswdSameAsCurrent                         NsError = "SM_passwd_same_as_current"
+	cNsErrorSmSnaplunsOutOfSync                           NsError = "SM_snapluns_out_of_sync"
+	cNsErrorSmLimitSnapPool                               NsError = "SM_limit_snap_pool"
+	cNsErrorSmMultiProtocolAccessNotSupported             NsError = "SM_multi_protocol_access_not_supported"
+	cNsErrorSmVolHasClone                                 NsError = "SM_vol_has_clone"
+	cNsErrorSmDedupeSingleArray                           NsError = "SM_dedupe_single_array"
+	cNsErrorSmEncryptionMasterKeyInactive                 NsError = "SM_encryption_master_key_inactive"
+	cNsErrorSmSnapHasClone                                NsError = "SM_snap_has_clone"
+	cNsErrorSmErrEncryptionNeeded                         NsError = "SM_err_encryption_needed"
+	cNsErrorSmMismatchingDuplicateSubnet                  NsError = "SM_mismatching_duplicate_subnet"
+	cNsErrorSmSrepNotGroupScopedVol                       NsError = "SM_srep_not_group_scoped_vol"
+	cNsErrorSmOnlyVvolFolderFolset                        NsError = "SM_only_vvol_folder_folset"
+	cNsErrorSmReplSnapshotSync                            NsError = "SM_repl_snapshot_sync"
+	cNsErrorSmStatsNoSuchObject                           NsError = "SM_stats_no_such_object"
+	cNsErrorSmDefaultRouteMissing                         NsError = "SM_default_route_missing"
+	cNsErrorSmReplVasa3ApiUnsup                           NsError = "SM_repl_vasa3_api_unsup"
+	cNsErrorSmOverlappingSubnets                          NsError = "SM_overlapping_subnets"
+	cNsErrorSmMissingArg                                  NsError = "SM_missing_arg"
+	cNsErrorSmVolmvCachePinDedupeNotsupp                  NsError = "SM_volmv_cache_pin_dedupe_notsupp"
+	cNsErrorSmErrMergeConflict                            NsError = "SM_err_merge_conflict"
+	cNsErrorSmTooSmall                                    NsError = "SM_too_small"
+	cNsErrorSmVolWarnGreaterThanLimit                     NsError = "SM_vol_warn_greater_than_limit"
+	cNsErrorSmKeymgrUnreach                               NsError = "SM_keymgr_unreach"
+	cNsErrorSmErrFcAsymmetryNotSupported                  NsError = "SM_err_fc_asymmetry_not_supported"
+	cNsErrorSmLunMismatch                                 NsError = "SM_lun_mismatch"
+	cNsErrorSmErrShelfInvalidDiskCount                    NsError = "SM_err_shelf_invalid_disk_count"
+	cNsErrorSmLimitVolacl                                 NsError = "SM_limit_volacl"
+	cNsErrorSmControllerNotActive                         NsError = "SM_controller_not_active"
+	cNsErrorSmReplNoPartnerAvail                          NsError = "SM_repl_no_partner_avail"
+	cNsErrorSmSreplMgmtOpDisallowedWhenSolo               NsError = "SM_srepl_mgmt_op_disallowed_when_solo"
+	cNsErrorSmNoMgmtSubnetSpecified                       NsError = "SM_no_mgmt_subnet_specified"
+	cNsErrorSmFolderConflict                              NsError = "SM_folder_conflict"
+	cNsErrorSmInvalidDataSubnet                           NsError = "SM_invalid_data_subnet"
+	cNsErrorSmVolUsageUnavailable                         NsError = "SM_vol_usage_unavailable"
+	cNsErrorSmAclScopeOverlap                             NsError = "SM_acl_scope_overlap"
+	cNsErrorSmErrVvolAclGrpMerge                          NsError = "SM_err_vvol_acl_grp_merge"
+	cNsErrorSmDisabledProtocolArtifacts                   NsError = "SM_disabled_protocol_artifacts"
+	cNsErrorSmDuplicateSubnetVlanId                       NsError = "SM_duplicate_subnet_vlan_id"
+	cNsErrorSmReplOpenstackUnsup                          NsError = "SM_repl_openstack_unsup"
+	cNsErrorSmNoAvailableLun                              NsError = "SM_no_available_lun"
+	cNsErrorSmGroupPartnerNameConflict                    NsError = "SM_group_partner_name_conflict"
+	cNsErrorSmMgmtIpNotOnMgmt                             NsError = "SM_mgmt_ip_not_on_mgmt"
+	cNsErrorSmInUseLun                                    NsError = "SM_in_use_lun"
+	cNsErrorSmNotFcInitiatorgrp                           NsError = "SM_not_fc_initiatorgrp"
+	cNsErrorSmErrShelfInvalidCsz                          NsError = "SM_err_shelf_invalid_csz"
+	cNsErrorSmVolDedupeInvalidPerfPolicy                  NsError = "SM_vol_dedupe_invalid_perf_policy"
+	cNsErrorSmEncryptionInvalidMode                       NsError = "SM_encryption_invalid_mode"
+	cNsErrorSmAsupDisabled                                NsError = "SM_asup_disabled"
+	cNsErrorSmErrShelfConnectedOnlyOneSide                NsError = "SM_err_shelf_connected_only_one_side"
+	cNsErrorSmVolmvEnospace                               NsError = "SM_volmv_enospace"
+	cNsErrorSmIncompatibleVolumes                         NsError = "SM_incompatible_volumes"
+	cNsErrorSmComplexTypeQueryParam                       NsError = "SM_complex_type_query_param"
+	cNsErrorSmAsupError                                   NsError = "SM_asup_error"
+	cNsErrorSmReplUnassignedAppcat                        NsError = "SM_repl_unassigned_appcat"
+	cNsErrorSmErrFcRegenerateInvalidOperationTdz          NsError = "SM_err_fc_regenerate_invalid_operation_tdz"
+	cNsErrorSmInvalidPathVariable                         NsError = "SM_invalid_path_variable"
+	cNsErrorSmErrArgChangeNotAllowed                      NsError = "SM_err_arg_change_not_allowed"
+	cNsErrorSmSpecifiedSnapshotLun                        NsError = "SM_specified_snapshot_lun"
+	cNsErrorSmSrepDownstreamAssocedVol                    NsError = "SM_srep_downstream_assoced_vol"
+	cNsErrorSmLimitScopeValues                            NsError = "SM_limit_scope_values"
+	cNsErrorSmErrPassphraseInval                          NsError = "SM_err_passphrase_inval"
+	cNsErrorSmInitiatorgroupsOutOfSync                    NsError = "SM_initiatorgroups_out_of_sync"
+	cNsErrorSmCachePinnedNotsup                           NsError = "SM_cache_pinned_notsup"
+	cNsErrorSmNoOperationFound                            NsError = "SM_no_operation_found"
+	cNsErrorSmInvalidDataForPartnerType                   NsError = "SM_invalid_data_for_partner_type"
+	cNsErrorSmSrvUpdatePrecheck                           NsError = "SM_srv_update_precheck"
+	cNsErrorSmVolDedupeEncryptionInvalid                  NsError = "SM_vol_dedupe_encryption_invalid"
+	cNsErrorSmVvolFolderNoAppsrvr                         NsError = "SM_vvol_folder_no_appsrvr"
+	cNsErrorSmHttpConflict                                NsError = "SM_http_conflict"
+	cNsErrorSmVolDedupeNotEnoughCache                     NsError = "SM_vol_dedupe_not_enough_cache"
+	cNsErrorSmArrayRenameInNetconfigFailed                NsError = "SM_array_rename_in_netconfig_failed"
+	cNsErrorSmInvalidInitiatorIp                          NsError = "SM_invalid_initiator_ip"
+	cNsErrorSmDuplicateVol                                NsError = "SM_duplicate_vol"
+	cNsErrorSmErrShelfInvalidModel                        NsError = "SM_err_shelf_invalid_model"
+	cNsErrorSmReplProtectLastSnap                         NsError = "SM_repl_protect_last_snap"
+	cNsErrorSmErrGroupMergeBusy                           NsError = "SM_err_group_merge_busy"
+	cNsErrorSmErrVolmvPoolMerging                         NsError = "SM_err_volmv_pool_merging"
+	cNsErrorSmArrayNotFoundWithArgs                       NsError = "SM_array_not_found_with_args"
+	cNsErrorSmConnectionRebalancingWithoutAutomaticMethod NsError = "SM_connection_rebalancing_without_automatic_method"
+	cNsErrorSmSrepDownstreamNoCommonSnapVols              NsError = "SM_srep_downstream_no_common_snap_vols"
+	cNsErrorSmErrShelfWrongSasPort                        NsError = "SM_err_shelf_wrong_sas_port"
+	cNsErrorSmFolderUsageLimitBelowCurrentUsage           NsError = "SM_folder_usage_limit_below_current_usage"
+	cNsErrorSmLimitSnapRetentionPool                      NsError = "SM_limit_snap_retention_pool"
+	cNsErrorSmErrShelfExprFwVerInval                      NsError = "SM_err_shelf_expr_fw_ver_inval"
+	cNsErrorSmSrepVolcollUnsup                            NsError = "SM_srep_volcoll_unsup"
+	cNsErrorSmSrepNotGroupScopedVols                      NsError = "SM_srep_not_group_scoped_vols"
+	cNsErrorSmFcIntfNotFound                              NsError = "SM_fc_intf_not_found"
+	cNsErrorSmVolUnknown                                  NsError = "SM_vol_unknown"
+	cNsErrorSmErrShelfEbusy                               NsError = "SM_err_shelf_ebusy"
+	cNsErrorSmAppserverInUse                              NsError = "SM_appserver_in_use"
+	cNsErrorSmPoolDoesNotHaveFolder                       NsError = "SM_pool_does_not_have_folder"
+	cNsErrorSmPerfpolNotFound                             NsError = "SM_perfpol_not_found"
+	cNsErrorSmPerfpolOob                                  NsError = "SM_perfpol_oob"
+	cNsErrorSmDuplicateInitiator                          NsError = "SM_duplicate_initiator"
+	cNsErrorSmInUseAppUuid                                NsError = "SM_in_use_app_uuid"
+	cNsErrorSmPartnerCfgSync                              NsError = "SM_partner_cfg_sync"
+	cNsErrorSmNotDownloadingSw                            NsError = "SM_not_downloading_sw"
+	cNsErrorSmMissingMgmtIp                               NsError = "SM_missing_mgmt_ip"
+	cNsErrorSmSrepDownstreamNoCommonSnapVol               NsError = "SM_srep_downstream_no_common_snap_vol"
+	cNsErrorSmEbusy                                       NsError = "SM_ebusy"
+	cNsErrorSmErrReplCantConnect                          NsError = "SM_err_repl_cant_connect"
+	cNsErrorSmErrShelfExpanderErr                         NsError = "SM_err_shelf_expander_err"
+	cNsErrorSmPeFailAclRemoval                            NsError = "SM_pe_fail_acl_removal"
+	cNsErrorSmSupportIpNotOnMgmt                          NsError = "SM_support_ip_not_on_mgmt"
+	cNsErrorSmAtLeastOneGroupSubnet                       NsError = "SM_at_least_one_group_subnet"
+	cNsErrorSmUnsupportedAccessProtocol                   NsError = "SM_unsupported_access_protocol"
+	cNsErrorSmSpaceInfoUnavail                            NsError = "SM_space_info_unavail"
+	cNsErrorSmInfoOtpNeedCode                             NsError = "SM_info_otp_need_code"
+	cNsErrorSmLimitVolmvHretSnapPool                      NsError = "SM_limit_volmv_hret_snap_pool"
+	cNsErrorSmStartTimeBeyondEndTime                      NsError = "SM_start_time_beyond_end_time"
+	cNsErrorSmReplRemotePaused                            NsError = "SM_repl_remote_paused"
+	cNsErrorSmDataIpNotOnSubnet                           NsError = "SM_data_ip_not_on_subnet"
+	cNsErrorSmConflictingInitiatorAlias                   NsError = "SM_conflicting_initiator_alias"
+	cNsErrorSmReplEditPartnerNameNotPaused                NsError = "SM_repl_edit_partner_name_not_paused"
+	cNsErrorSmShelfForeignDisk                            NsError = "SM_shelf_foreign_disk"
+	cNsErrorSmQosLimitNotInRange                          NsError = "SM_qos_limit_not_in_range"
+	cNsErrorSmErrShelfNoRserial                           NsError = "SM_err_shelf_no_rserial"
+	cNsErrorSmUntaggedMtuNotLargest                       NsError = "SM_untagged_mtu_not_largest"
+	cNsErrorSmErrShelfDisconnected                        NsError = "SM_err_shelf_disconnected"
+	cNsErrorSmSubnetAlreadyAssignedOnNic                  NsError = "SM_subnet_already_assigned_on_nic"
+	cNsErrorSmFcSessionExist                              NsError = "SM_fc_session_exist"
+	cNsErrorSmVvolCannotOfflineBoundSnap                  NsError = "SM_vvol_cannot_offline_bound_snap"
+	cNsErrorSmArrayMemberOrphan                           NsError = "SM_array_member_orphan"
+	cNsErrorSmArrayMissingSubnet                          NsError = "SM_array_missing_subnet"
+	cNsErrorSmDisableVvolWithPe                           NsError = "SM_disable_vvol_with_pe"
+	cNsErrorSmLimitSnapVol                                NsError = "SM_limit_snap_vol"
+	cNsErrorSmPoolUsageUnavailable                        NsError = "SM_pool_usage_unavailable"
+	cNsErrorSmInvalidQueryParam                           NsError = "SM_invalid_query_param"
+	cNsErrorSmErrGroupMergeDbLoad                         NsError = "SM_err_group_merge_db_load"
+	cNsErrorSmEio                                         NsError = "SM_eio"
+	cNsErrorSmSrepDownstreamOnlineVol                     NsError = "SM_srep_downstream_online_vol"
+	cNsErrorSmPoolNoSrcArray                              NsError = "SM_pool_no_src_array"
+	cNsErrorSmInvalidKeyvalue                             NsError = "SM_invalid_keyvalue"
+	cNsErrorSmProtpolMaxLength                            NsError = "SM_protpol_max_length"
+	cNsErrorSmVolAssocVolcoll                             NsError = "SM_vol_assoc_volcoll"
+	cNsErrorSmMissingDiscoveryIp                          NsError = "SM_missing_discovery_ip"
+	cNsErrorSmReplDeleteReplicaUnsup                      NsError = "SM_repl_delete_replica_unsup"
+	cNsErrorSmVolSizeDecreased                            NsError = "SM_vol_size_decreased"
+	cNsErrorSmSrepDownstreamAssocedVols                   NsError = "SM_srep_downstream_assoced_vols"
+	cNsErrorSmAddNonfcToFcGroup                           NsError = "SM_add_nonfc_to_fc_group"
+	cNsErrorSmNetconfigDoesNotExist                       NsError = "SM_netconfig_does_not_exist"
+	cNsErrorSmFolderVolmvEnospace                         NsError = "SM_folder_volmv_enospace"
+	cNsErrorSmInfoOtpNewSecret                            NsError = "SM_info_otp_new_secret"
+	cNsErrorSmNetconfigExistNoForce                       NsError = "SM_netconfig_exist_no_force"
+	cNsErrorSmPoolUpdateInval                             NsError = "SM_pool_update_inval"
+	cNsErrorSmVlanSubnetInManual                          NsError = "SM_vlan_subnet_in_manual"
+	cNsErrorSmReplVvolUnsup                               NsError = "SM_repl_vvol_unsup"
+	cNsErrorSmErrTdzNotSupported                          NsError = "SM_err_tdz_not_supported"
+	cNsErrorSmPoolExists                                  NsError = "SM_pool_exists"
+	cNsErrorSmAuth                                        NsError = "SM_auth"
+	cNsErrorSmInvalidObjectSetQuery                       NsError = "SM_invalid_object_set_query"
+	cNsErrorSmSrepDownstreamOnlineVols                    NsError = "SM_srep_downstream_online_vols"
+	cNsErrorSmNoMethodForUrlPattern                       NsError = "SM_no_method_for_URL_pattern"
+	cNsErrorSmVolNotOnline                                NsError = "SM_vol_not_online"
+	cNsErrorSmVolDedupeVolfamAppcat                       NsError = "SM_vol_dedupe_volfam_appcat"
+	cNsErrorSmInvalidNic                                  NsError = "SM_invalid_nic"
+	cNsErrorSmArrayNotGroupLeader                         NsError = "SM_array_not_group_leader"
+	cNsErrorSmInvalidVlanId                               NsError = "SM_invalid_vlan_id"
+	cNsErrorSmLimitSnaplun                                NsError = "SM_limit_snaplun"
+	cNsErrorSmIncompatibleCachePolicy                     NsError = "SM_incompatible_cache_policy"
+	cNsErrorSmVolmvAbortEnospace                          NsError = "SM_volmv_abort_enospace"
+	cNsErrorSmLimitHretSnapGroup                          NsError = "SM_limit_hret_snap_group"
+	cNsErrorSmVolmvEalready                               NsError = "SM_volmv_ealready"
+	cNsErrorSmAsupPingfromCtrlrbError                     NsError = "SM_asup_pingfrom_ctrlrB_error"
+	cNsErrorSmVolDedupeUnassignedAppCategory              NsError = "SM_vol_dedupe_unassigned_app_category"
+	cNsErrorSmEnoent                                      NsError = "SM_enoent"
+	cNsErrorSmPerfpolDedupeUnassignedAppCategory          NsError = "SM_perfpol_dedupe_unassigned_app_category"
+	cNsErrorSmInvalidInitiatorLabel                       NsError = "SM_invalid_initiator_label"
+	cNsErrorSmDuplicateInitiatorWithArgs                  NsError = "SM_duplicate_initiator_with_args"
+	cNsErrorSmErrShelfForeign                             NsError = "SM_err_shelf_foreign"
+	cNsErrorSmInvalidAgentType                            NsError = "SM_invalid_agent_type"
+	cNsErrorSmEinprogress                                 NsError = "SM_einprogress"
+	cNsErrorSmNotEnoughCache                              NsError = "SM_not_enough_cache"
+	cNsErrorSmEexist                                      NsError = "SM_eexist"
+	cNsErrorSmMissingArrayNetconfig                       NsError = "SM_missing_array_netconfig"
+	cNsErrorSmInvalidInitiatorAlias                       NsError = "SM_invalid_initiator_alias"
+	cNsErrorSmProtpolAppSyncOracle                        NsError = "SM_protpol_app_sync_oracle"
+	cNsErrorSmNoSupport                                   NsError = "SM_no_support"
+	cNsErrorSmDataIpMissingSubnet                         NsError = "SM_data_ip_missing_subnet"
+	cNsErrorSmErrShelfHddsInAfs                           NsError = "SM_err_shelf_hdds_in_afs"
+	cNsErrorSmStartRowBeyondTotalRows                     NsError = "SM_start_row_beyond_total_rows"
+	cNsErrorSmExtraneousArrayNetconfig                    NsError = "SM_extraneous_array_netconfig"
+	cNsErrorSmPoolCachePinNotsupp                         NsError = "SM_pool_cache_pin_notsupp"
+	cNsErrorSmUsageUnavailable                            NsError = "SM_usage_unavailable"
+	cNsErrorSmReplAgentTypeUnsup                          NsError = "SM_repl_agent_type_unsup"
+	cNsErrorSmReplFanoutMaximumPartnersExceeded           NsError = "SM_repl_fanout_maximum_partners_exceeded"
+	cNsErrorSmPoolDedupeInvalidFdr                        NsError = "SM_pool_dedupe_invalid_fdr"
+	cNsErrorSmAsupPingfromCtrlraError                     NsError = "SM_asup_pingfrom_ctrlrA_error"
+	cNsErrorSmErrShelfInvalidLoc                          NsError = "SM_err_shelf_invalid_loc"
+	cNsErrorSmErrShelfSsdDegraded                         NsError = "SM_err_shelf_ssd_degraded"
+	cNsErrorSmSyncReplConfigure                           NsError = "SM_sync_repl_configure"
+	cNsErrorSmAsupHeartbeatError                          NsError = "SM_asup_heartbeat_error"
+	cNsErrorSmLimitHretSnapRetentionPoolWarn              NsError = "SM_limit_hret_snap_retention_pool_warn"
+	cNsErrorSmErrAuth                                     NsError = "SM_err_auth"
+	cNsErrorSmPartnerSubnetDoesNotExist                   NsError = "SM_partner_subnet_does_not_exist"
+	cNsErrorSmErrShelfLocOrder                            NsError = "SM_err_shelf_loc_order"
+	cNsErrorSmFolderEnospace                              NsError = "SM_folder_enospace"
+	cNsErrorSmErrPoolHasGroupPartners                     NsError = "SM_err_pool_has_group_partners"
+	cNsErrorSmPoolDedupeInvalidCap                        NsError = "SM_pool_dedupe_invalid_cap"
+	cNsErrorSmProtpolNotSpecified                         NsError = "SM_protpol_not_specified"
+	cNsErrorSmUnexpectedQueryParam                        NsError = "SM_unexpected_query_param"
+	cNsErrorSmVolmvAbortEalready                          NsError = "SM_volmv_abort_ealready"
+	cNsErrorSmFcIntfAlreadyInState                        NsError = "SM_fc_intf_already_in_state"
+	cNsErrorSmLimitHretSnapPool                           NsError = "SM_limit_hret_snap_pool"
+	cNsErrorSmIpUpdateNoForce                             NsError = "SM_ip_update_no_force"
+	cNsErrorSmSrepAgentTypeMismatchDownstreamVol          NsError = "SM_srep_agent_type_mismatch_downstream_vol"
+	cNsErrorSmVssValidationTimedout                       NsError = "SM_vss_validation_timedout"
+	cNsErrorSmConfigSyncInprogress                        NsError = "SM_config_sync_inprogress"
+	cNsErrorSmAsyncJobId                                  NsError = "SM_async_job_id"
+	cNsErrorSmEagain                                      NsError = "SM_eagain"
+	cNsErrorSmPerfpolVolMoveAppCategory                   NsError = "SM_perfpol_vol_move_app_category"
+	cNsErrorSmLimitHretSnapRetentionPoolMax               NsError = "SM_limit_hret_snap_retention_pool_max"
+	cNsErrorSmVolHasConnections                           NsError = "SM_vol_has_connections"
+	cNsErrorSmNoCommonLun                                 NsError = "SM_no_common_lun"
+	cNsErrorSmErrShelfSasLanesDegraded                    NsError = "SM_err_shelf_sas_lanes_degraded"
+	cNsErrorSmVolAppCategoryMoveInvalid                   NsError = "SM_vol_app_category_move_invalid"
+	cNsErrorSmExtTrigSchedAlreadyPresent                  NsError = "SM_ext_trig_sched_already_present"
+	cNsErrorSmNoDataIpSpecified                           NsError = "SM_no_data_ip_specified"
+	cNsErrorSmInvalidVolAssoc                             NsError = "SM_invalid_vol_assoc"
+	cNsErrorSmReplObjectBusy                              NsError = "SM_repl_object_busy"
+	cNsErrorSmPoolDedupeData                              NsError = "SM_pool_dedupe_data"
+	cNsErrorSmVolcollOwner                                NsError = "SM_volcoll_owner"
+	cNsErrorSmReservedUsername                            NsError = "SM_reserved_username"
+	cNsErrorSmVvolsnapOnline                              NsError = "SM_vvolsnap_online"
+	cNsErrorSmFolderVolmvEinprog                          NsError = "SM_folder_volmv_einprog"
+	cNsErrorSmUnexpectedObjectSetQuery                    NsError = "SM_unexpected_object_set_query"
+	cNsErrorSmProtpolInvalidValue                         NsError = "SM_protpol_invalid_value"
+	cNsErrorSmFolderIncompatibleAgentType                 NsError = "SM_folder_incompatible_agent_type"
+	cNsErrorSmProtpolVmwareInvalidVcenterHostname         NsError = "SM_protpol_vmware_invalid_vcenter_hostname"
+	cNsErrorSmErrVolCollMultipleSchedules                 NsError = "SM_err_vol_coll_multiple_schedules"
+	cNsErrorSmReplPartnerNameMismatch                     NsError = "SM_repl_partner_name_mismatch"
+	cNsErrorSmInvalidFolder                               NsError = "SM_invalid_folder"
+	cNsErrorSmSrvUpdatePrecheckArray                      NsError = "SM_srv_update_precheck_array"
+	cNsErrorSmGatewayNotInSubnets                         NsError = "SM_gateway_not_in_subnets"
+	cNsErrorSmErrLdapBindUserNoPassword                   NsError = "SM_err_ldap_bind_user_no_password"
+	cNsErrorSmDeprecatedPerfpol                           NsError = "SM_deprecated_perfpol"
+	cNsErrorSmTakeoverSplitBrain                          NsError = "SM_takeover_split_brain"
+	cNsErrorSmPeIgroupProtocolMismatched                  NsError = "SM_pe_igroup_protocol_mismatched"
+	cNsErrorSmOnlyVvolFolderAppsrvr                       NsError = "SM_only_vvol_folder_appsrvr"
+	cNsErrorSmVersionMismatch                             NsError = "SM_version_mismatch"
+	cNsErrorSmPoolLastArray                               NsError = "SM_pool_last_array"
+	cNsErrorSmEaccess                                     NsError = "SM_eaccess"
+	cNsErrorSmInvalidSubnetLabel                          NsError = "SM_invalid_subnet_label"
+	cNsErrorSmInvalidArg                                  NsError = "SM_invalid_arg"
+	cNsErrorSmDedupeVolfamAppcat                          NsError = "SM_dedupe_volfam_appcat"
+	cNsErrorSmSrvUnreach                                  NsError = "SM_srv_unreach"
+	cNsErrorSmPoolPartnerPauseUnsup                       NsError = "SM_pool_partner_pause_unsup"
+	cNsErrorSmNetconfigCreateDraftOnly                    NsError = "SM_netconfig_create_draft_only"
+	cNsErrorSmErrArrayNotFound                            NsError = "SM_err_array_not_found"
+	cNsErrorSmFolsetInUse                                 NsError = "SM_folset_in_use"
+	cNsErrorSmErrShelfSesDeviceNotReady                   NsError = "SM_err_shelf_ses_device_not_ready"
+	cNsErrorSmInvalidIp                                   NsError = "SM_invalid_ip"
+	cNsErrorSmEalready                                    NsError = "SM_ealready"
+	cNsErrorSmInvalidNonIscsiDataSubnet                   NsError = "SM_invalid_non_iscsi_data_subnet"
+	cNsErrorSmReplHandoverUnsupPtype                      NsError = "SM_repl_handover_unsup_ptype"
+	cNsErrorSmArrayNotAssigned                            NsError = "SM_array_not_assigned"
+	cNsErrorSmEpartial                                    NsError = "SM_epartial"
+	cNsErrorSmErrProtpolMissingName                       NsError = "SM_err_protpol_missing_name"
+	cNsErrorSmVfVolCachePinned                            NsError = "SM_vf_vol_cache_pinned"
+	cNsErrorSmAtLeastOneIscsiCluster                      NsError = "SM_at_least_one_iscsi_cluster"
+	cNsErrorSmErrTooMany                                  NsError = "SM_err_too_many"
+	cNsErrorSmErrShelfExprMfgVerInval                     NsError = "SM_err_shelf_expr_mfg_ver_inval"
+	cNsErrorSmMgmtIpInvalid                               NsError = "SM_mgmt_ip_invalid"
+	cNsErrorSmErrShelfWrongCtrlrSide                      NsError = "SM_err_shelf_wrong_ctrlr_side"
 )
 
 var pNsErrorSmReplVolcollDeletion NsError
@@ -2615,1568 +2615,1567 @@ var NsErrorSmMgmtIpInvalid *NsError
 var NsErrorSmErrShelfWrongCtrlrSide *NsError
 
 func init() {
- pNsErrorSmReplVolcollDeletion = cNsErrorSmReplVolcollDeletion
- NsErrorSmReplVolcollDeletion = &pNsErrorSmReplVolcollDeletion
+	pNsErrorSmReplVolcollDeletion = cNsErrorSmReplVolcollDeletion
+	NsErrorSmReplVolcollDeletion = &pNsErrorSmReplVolcollDeletion
 
- pNsErrorSmEncryptionGroupCipherOverride = cNsErrorSmEncryptionGroupCipherOverride
- NsErrorSmEncryptionGroupCipherOverride = &pNsErrorSmEncryptionGroupCipherOverride
+	pNsErrorSmEncryptionGroupCipherOverride = cNsErrorSmEncryptionGroupCipherOverride
+	NsErrorSmEncryptionGroupCipherOverride = &pNsErrorSmEncryptionGroupCipherOverride
 
- pNsErrorSmEncryptionMustBeEnabled = cNsErrorSmEncryptionMustBeEnabled
- NsErrorSmEncryptionMustBeEnabled = &pNsErrorSmEncryptionMustBeEnabled
+	pNsErrorSmEncryptionMustBeEnabled = cNsErrorSmEncryptionMustBeEnabled
+	NsErrorSmEncryptionMustBeEnabled = &pNsErrorSmEncryptionMustBeEnabled
 
- pNsErrorSmExtTrigSchedNotPresent = cNsErrorSmExtTrigSchedNotPresent
- NsErrorSmExtTrigSchedNotPresent = &pNsErrorSmExtTrigSchedNotPresent
+	pNsErrorSmExtTrigSchedNotPresent = cNsErrorSmExtTrigSchedNotPresent
+	NsErrorSmExtTrigSchedNotPresent = &pNsErrorSmExtTrigSchedNotPresent
 
- pNsErrorSmAppserverNotFound = cNsErrorSmAppserverNotFound
- NsErrorSmAppserverNotFound = &pNsErrorSmAppserverNotFound
+	pNsErrorSmAppserverNotFound = cNsErrorSmAppserverNotFound
+	NsErrorSmAppserverNotFound = &pNsErrorSmAppserverNotFound
 
- pNsErrorSmFolderReplPartner = cNsErrorSmFolderReplPartner
- NsErrorSmFolderReplPartner = &pNsErrorSmFolderReplPartner
+	pNsErrorSmFolderReplPartner = cNsErrorSmFolderReplPartner
+	NsErrorSmFolderReplPartner = &pNsErrorSmFolderReplPartner
 
- pNsErrorSmArrayPoolMember = cNsErrorSmArrayPoolMember
- NsErrorSmArrayPoolMember = &pNsErrorSmArrayPoolMember
+	pNsErrorSmArrayPoolMember = cNsErrorSmArrayPoolMember
+	NsErrorSmArrayPoolMember = &pNsErrorSmArrayPoolMember
 
- pNsErrorSmErrInvalidArg = cNsErrorSmErrInvalidArg
- NsErrorSmErrInvalidArg = &pNsErrorSmErrInvalidArg
+	pNsErrorSmErrInvalidArg = cNsErrorSmErrInvalidArg
+	NsErrorSmErrInvalidArg = &pNsErrorSmErrInvalidArg
 
- pNsErrorSmErrShelfCreateRfail = cNsErrorSmErrShelfCreateRfail
- NsErrorSmErrShelfCreateRfail = &pNsErrorSmErrShelfCreateRfail
+	pNsErrorSmErrShelfCreateRfail = cNsErrorSmErrShelfCreateRfail
+	NsErrorSmErrShelfCreateRfail = &pNsErrorSmErrShelfCreateRfail
 
- pNsErrorSmStarterVolCreate = cNsErrorSmStarterVolCreate
- NsErrorSmStarterVolCreate = &pNsErrorSmStarterVolCreate
+	pNsErrorSmStarterVolCreate = cNsErrorSmStarterVolCreate
+	NsErrorSmStarterVolCreate = &pNsErrorSmStarterVolCreate
 
- pNsErrorSmInvalidNetconfigName = cNsErrorSmInvalidNetconfigName
- NsErrorSmInvalidNetconfigName = &pNsErrorSmInvalidNetconfigName
+	pNsErrorSmInvalidNetconfigName = cNsErrorSmInvalidNetconfigName
+	NsErrorSmInvalidNetconfigName = &pNsErrorSmInvalidNetconfigName
 
- pNsErrorSmInvalidVolaclScope = cNsErrorSmInvalidVolaclScope
- NsErrorSmInvalidVolaclScope = &pNsErrorSmInvalidVolaclScope
+	pNsErrorSmInvalidVolaclScope = cNsErrorSmInvalidVolaclScope
+	NsErrorSmInvalidVolaclScope = &pNsErrorSmInvalidVolaclScope
 
- pNsErrorSmErrShelfNoElocId = cNsErrorSmErrShelfNoElocId
- NsErrorSmErrShelfNoElocId = &pNsErrorSmErrShelfNoElocId
+	pNsErrorSmErrShelfNoElocId = cNsErrorSmErrShelfNoElocId
+	NsErrorSmErrShelfNoElocId = &pNsErrorSmErrShelfNoElocId
 
- pNsErrorSmInvalidNetzoneType = cNsErrorSmInvalidNetzoneType
- NsErrorSmInvalidNetzoneType = &pNsErrorSmInvalidNetzoneType
+	pNsErrorSmInvalidNetzoneType = cNsErrorSmInvalidNetzoneType
+	NsErrorSmInvalidNetzoneType = &pNsErrorSmInvalidNetzoneType
 
- pNsErrorSmErrCannotModifyTdz = cNsErrorSmErrCannotModifyTdz
- NsErrorSmErrCannotModifyTdz = &pNsErrorSmErrCannotModifyTdz
+	pNsErrorSmErrCannotModifyTdz = cNsErrorSmErrCannotModifyTdz
+	NsErrorSmErrCannotModifyTdz = &pNsErrorSmErrCannotModifyTdz
 
- pNsErrorSmControllerActive = cNsErrorSmControllerActive
- NsErrorSmControllerActive = &pNsErrorSmControllerActive
+	pNsErrorSmControllerActive = cNsErrorSmControllerActive
+	NsErrorSmControllerActive = &pNsErrorSmControllerActive
 
- pNsErrorSmPoolHasVolume = cNsErrorSmPoolHasVolume
- NsErrorSmPoolHasVolume = &pNsErrorSmPoolHasVolume
+	pNsErrorSmPoolHasVolume = cNsErrorSmPoolHasVolume
+	NsErrorSmPoolHasVolume = &pNsErrorSmPoolHasVolume
 
- pNsErrorSmExtTrigSchedAttrib = cNsErrorSmExtTrigSchedAttrib
- NsErrorSmExtTrigSchedAttrib = &pNsErrorSmExtTrigSchedAttrib
+	pNsErrorSmExtTrigSchedAttrib = cNsErrorSmExtTrigSchedAttrib
+	NsErrorSmExtTrigSchedAttrib = &pNsErrorSmExtTrigSchedAttrib
 
- pNsErrorSmMissingCriteriaFieldname = cNsErrorSmMissingCriteriaFieldname
- NsErrorSmMissingCriteriaFieldname = &pNsErrorSmMissingCriteriaFieldname
+	pNsErrorSmMissingCriteriaFieldname = cNsErrorSmMissingCriteriaFieldname
+	NsErrorSmMissingCriteriaFieldname = &pNsErrorSmMissingCriteriaFieldname
 
- pNsErrorSmNetconfigAlreadyActive = cNsErrorSmNetconfigAlreadyActive
- NsErrorSmNetconfigAlreadyActive = &pNsErrorSmNetconfigAlreadyActive
+	pNsErrorSmNetconfigAlreadyActive = cNsErrorSmNetconfigAlreadyActive
+	NsErrorSmNetconfigAlreadyActive = &pNsErrorSmNetconfigAlreadyActive
 
- pNsErrorSmStartRowBeyondEndRow = cNsErrorSmStartRowBeyondEndRow
- NsErrorSmStartRowBeyondEndRow = &pNsErrorSmStartRowBeyondEndRow
+	pNsErrorSmStartRowBeyondEndRow = cNsErrorSmStartRowBeyondEndRow
+	NsErrorSmStartRowBeyondEndRow = &pNsErrorSmStartRowBeyondEndRow
 
- pNsErrorSmInsufficientFcInitiatorInput = cNsErrorSmInsufficientFcInitiatorInput
- NsErrorSmInsufficientFcInitiatorInput = &pNsErrorSmInsufficientFcInitiatorInput
+	pNsErrorSmInsufficientFcInitiatorInput = cNsErrorSmInsufficientFcInitiatorInput
+	NsErrorSmInsufficientFcInitiatorInput = &pNsErrorSmInsufficientFcInitiatorInput
 
- pNsErrorSmSecondMgmtSubnet = cNsErrorSmSecondMgmtSubnet
- NsErrorSmSecondMgmtSubnet = &pNsErrorSmSecondMgmtSubnet
+	pNsErrorSmSecondMgmtSubnet = cNsErrorSmSecondMgmtSubnet
+	NsErrorSmSecondMgmtSubnet = &pNsErrorSmSecondMgmtSubnet
 
- pNsErrorSmInvalidInitiatorWwpn = cNsErrorSmInvalidInitiatorWwpn
- NsErrorSmInvalidInitiatorWwpn = &pNsErrorSmInvalidInitiatorWwpn
+	pNsErrorSmInvalidInitiatorWwpn = cNsErrorSmInvalidInitiatorWwpn
+	NsErrorSmInvalidInitiatorWwpn = &pNsErrorSmInvalidInitiatorWwpn
 
- pNsErrorSmArrayFlashMismatch = cNsErrorSmArrayFlashMismatch
- NsErrorSmArrayFlashMismatch = &pNsErrorSmArrayFlashMismatch
+	pNsErrorSmArrayFlashMismatch = cNsErrorSmArrayFlashMismatch
+	NsErrorSmArrayFlashMismatch = &pNsErrorSmArrayFlashMismatch
 
- pNsErrorSmErrShelfPmdState = cNsErrorSmErrShelfPmdState
- NsErrorSmErrShelfPmdState = &pNsErrorSmErrShelfPmdState
+	pNsErrorSmErrShelfPmdState = cNsErrorSmErrShelfPmdState
+	NsErrorSmErrShelfPmdState = &pNsErrorSmErrShelfPmdState
 
- pNsErrorSmInvalidFcConfig = cNsErrorSmInvalidFcConfig
- NsErrorSmInvalidFcConfig = &pNsErrorSmInvalidFcConfig
+	pNsErrorSmInvalidFcConfig = cNsErrorSmInvalidFcConfig
+	NsErrorSmInvalidFcConfig = &pNsErrorSmInvalidFcConfig
 
- pNsErrorSmSrepDownstreamIsUpstream = cNsErrorSmSrepDownstreamIsUpstream
- NsErrorSmSrepDownstreamIsUpstream = &pNsErrorSmSrepDownstreamIsUpstream
+	pNsErrorSmSrepDownstreamIsUpstream = cNsErrorSmSrepDownstreamIsUpstream
+	NsErrorSmSrepDownstreamIsUpstream = &pNsErrorSmSrepDownstreamIsUpstream
 
- pNsErrorSmKeymgrLeave = cNsErrorSmKeymgrLeave
- NsErrorSmKeymgrLeave = &pNsErrorSmKeymgrLeave
+	pNsErrorSmKeymgrLeave = cNsErrorSmKeymgrLeave
+	NsErrorSmKeymgrLeave = &pNsErrorSmKeymgrLeave
 
- pNsErrorSmVolmvVolEinprog = cNsErrorSmVolmvVolEinprog
- NsErrorSmVolmvVolEinprog = &pNsErrorSmVolmvVolEinprog
+	pNsErrorSmVolmvVolEinprog = cNsErrorSmVolmvVolEinprog
+	NsErrorSmVolmvVolEinprog = &pNsErrorSmVolmvVolEinprog
 
- pNsErrorSmSrepNameConflictVol = cNsErrorSmSrepNameConflictVol
- NsErrorSmSrepNameConflictVol = &pNsErrorSmSrepNameConflictVol
+	pNsErrorSmSrepNameConflictVol = cNsErrorSmSrepNameConflictVol
+	NsErrorSmSrepNameConflictVol = &pNsErrorSmSrepNameConflictVol
 
- pNsErrorSmMultiArrayWithoutAutomaticConnectionMethod = cNsErrorSmMultiArrayWithoutAutomaticConnectionMethod
- NsErrorSmMultiArrayWithoutAutomaticConnectionMethod = &pNsErrorSmMultiArrayWithoutAutomaticConnectionMethod
+	pNsErrorSmMultiArrayWithoutAutomaticConnectionMethod = cNsErrorSmMultiArrayWithoutAutomaticConnectionMethod
+	NsErrorSmMultiArrayWithoutAutomaticConnectionMethod = &pNsErrorSmMultiArrayWithoutAutomaticConnectionMethod
 
- pNsErrorSmFolderUsageLimitOverPoolCapacity = cNsErrorSmFolderUsageLimitOverPoolCapacity
- NsErrorSmFolderUsageLimitOverPoolCapacity = &pNsErrorSmFolderUsageLimitOverPoolCapacity
+	pNsErrorSmFolderUsageLimitOverPoolCapacity = cNsErrorSmFolderUsageLimitOverPoolCapacity
+	NsErrorSmFolderUsageLimitOverPoolCapacity = &pNsErrorSmFolderUsageLimitOverPoolCapacity
 
- pNsErrorSmEnomem = cNsErrorSmEnomem
- NsErrorSmEnomem = &pNsErrorSmEnomem
+	pNsErrorSmEnomem = cNsErrorSmEnomem
+	NsErrorSmEnomem = &pNsErrorSmEnomem
 
- pNsErrorSmErrShelfNotInuse = cNsErrorSmErrShelfNotInuse
- NsErrorSmErrShelfNotInuse = &pNsErrorSmErrShelfNotInuse
+	pNsErrorSmErrShelfNotInuse = cNsErrorSmErrShelfNotInuse
+	NsErrorSmErrShelfNotInuse = &pNsErrorSmErrShelfNotInuse
 
- pNsErrorSmErrLdapAdConflict = cNsErrorSmErrLdapAdConflict
- NsErrorSmErrLdapAdConflict = &pNsErrorSmErrLdapAdConflict
+	pNsErrorSmErrLdapAdConflict = cNsErrorSmErrLdapAdConflict
+	NsErrorSmErrLdapAdConflict = &pNsErrorSmErrLdapAdConflict
 
- pNsErrorSmErrShelfPreactivationMfrErr = cNsErrorSmErrShelfPreactivationMfrErr
- NsErrorSmErrShelfPreactivationMfrErr = &pNsErrorSmErrShelfPreactivationMfrErr
+	pNsErrorSmErrShelfPreactivationMfrErr = cNsErrorSmErrShelfPreactivationMfrErr
+	NsErrorSmErrShelfPreactivationMfrErr = &pNsErrorSmErrShelfPreactivationMfrErr
 
- pNsErrorSmUpdateBusy = cNsErrorSmUpdateBusy
- NsErrorSmUpdateBusy = &pNsErrorSmUpdateBusy
+	pNsErrorSmUpdateBusy = cNsErrorSmUpdateBusy
+	NsErrorSmUpdateBusy = &pNsErrorSmUpdateBusy
 
- pNsErrorSmProtpolInvalidAppSync = cNsErrorSmProtpolInvalidAppSync
- NsErrorSmProtpolInvalidAppSync = &pNsErrorSmProtpolInvalidAppSync
+	pNsErrorSmProtpolInvalidAppSync = cNsErrorSmProtpolInvalidAppSync
+	NsErrorSmProtpolInvalidAppSync = &pNsErrorSmProtpolInvalidAppSync
 
- pNsErrorSmErrShelfRaidDegraded = cNsErrorSmErrShelfRaidDegraded
- NsErrorSmErrShelfRaidDegraded = &pNsErrorSmErrShelfRaidDegraded
+	pNsErrorSmErrShelfRaidDegraded = cNsErrorSmErrShelfRaidDegraded
+	NsErrorSmErrShelfRaidDegraded = &pNsErrorSmErrShelfRaidDegraded
 
- pNsErrorSmLimitFreqSchedGroup = cNsErrorSmLimitFreqSchedGroup
- NsErrorSmLimitFreqSchedGroup = &pNsErrorSmLimitFreqSchedGroup
+	pNsErrorSmLimitFreqSchedGroup = cNsErrorSmLimitFreqSchedGroup
+	NsErrorSmLimitFreqSchedGroup = &pNsErrorSmLimitFreqSchedGroup
 
- pNsErrorSmSwupdateEinprog = cNsErrorSmSwupdateEinprog
- NsErrorSmSwupdateEinprog = &pNsErrorSmSwupdateEinprog
+	pNsErrorSmSwupdateEinprog = cNsErrorSmSwupdateEinprog
+	NsErrorSmSwupdateEinprog = &pNsErrorSmSwupdateEinprog
 
- pNsErrorSmMissingCriteriaParam = cNsErrorSmMissingCriteriaParam
- NsErrorSmMissingCriteriaParam = &pNsErrorSmMissingCriteriaParam
+	pNsErrorSmMissingCriteriaParam = cNsErrorSmMissingCriteriaParam
+	NsErrorSmMissingCriteriaParam = &pNsErrorSmMissingCriteriaParam
 
- pNsErrorSmNoPathFound = cNsErrorSmNoPathFound
- NsErrorSmNoPathFound = &pNsErrorSmNoPathFound
+	pNsErrorSmNoPathFound = cNsErrorSmNoPathFound
+	NsErrorSmNoPathFound = &pNsErrorSmNoPathFound
 
- pNsErrorSmIncompatibleAppCategory = cNsErrorSmIncompatibleAppCategory
- NsErrorSmIncompatibleAppCategory = &pNsErrorSmIncompatibleAppCategory
+	pNsErrorSmIncompatibleAppCategory = cNsErrorSmIncompatibleAppCategory
+	NsErrorSmIncompatibleAppCategory = &pNsErrorSmIncompatibleAppCategory
 
- pNsErrorSmVolmvAbortEnomove = cNsErrorSmVolmvAbortEnomove
- NsErrorSmVolmvAbortEnomove = &pNsErrorSmVolmvAbortEnomove
+	pNsErrorSmVolmvAbortEnomove = cNsErrorSmVolmvAbortEnomove
+	NsErrorSmVolmvAbortEnomove = &pNsErrorSmVolmvAbortEnomove
 
- pNsErrorSmLimitSnapRetentionVolcoll = cNsErrorSmLimitSnapRetentionVolcoll
- NsErrorSmLimitSnapRetentionVolcoll = &pNsErrorSmLimitSnapRetentionVolcoll
+	pNsErrorSmLimitSnapRetentionVolcoll = cNsErrorSmLimitSnapRetentionVolcoll
+	NsErrorSmLimitSnapRetentionVolcoll = &pNsErrorSmLimitSnapRetentionVolcoll
 
- pNsErrorSmKeymgrRemove = cNsErrorSmKeymgrRemove
- NsErrorSmKeymgrRemove = &pNsErrorSmKeymgrRemove
+	pNsErrorSmKeymgrRemove = cNsErrorSmKeymgrRemove
+	NsErrorSmKeymgrRemove = &pNsErrorSmKeymgrRemove
 
- pNsErrorSmArrayNotReachable = cNsErrorSmArrayNotReachable
- NsErrorSmArrayNotReachable = &pNsErrorSmArrayNotReachable
+	pNsErrorSmArrayNotReachable = cNsErrorSmArrayNotReachable
+	NsErrorSmArrayNotReachable = &pNsErrorSmArrayNotReachable
 
- pNsErrorSmErrGroupMergeEventsPending = cNsErrorSmErrGroupMergeEventsPending
- NsErrorSmErrGroupMergeEventsPending = &pNsErrorSmErrGroupMergeEventsPending
+	pNsErrorSmErrGroupMergeEventsPending = cNsErrorSmErrGroupMergeEventsPending
+	NsErrorSmErrGroupMergeEventsPending = &pNsErrorSmErrGroupMergeEventsPending
 
- pNsErrorSmSrepNameConflictVols = cNsErrorSmSrepNameConflictVols
- NsErrorSmSrepNameConflictVols = &pNsErrorSmSrepNameConflictVols
+	pNsErrorSmSrepNameConflictVols = cNsErrorSmSrepNameConflictVols
+	NsErrorSmSrepNameConflictVols = &pNsErrorSmSrepNameConflictVols
 
- pNsErrorSmPoolPartnerResumeUnsup = cNsErrorSmPoolPartnerResumeUnsup
- NsErrorSmPoolPartnerResumeUnsup = &pNsErrorSmPoolPartnerResumeUnsup
+	pNsErrorSmPoolPartnerResumeUnsup = cNsErrorSmPoolPartnerResumeUnsup
+	NsErrorSmPoolPartnerResumeUnsup = &pNsErrorSmPoolPartnerResumeUnsup
 
- pNsErrorSmErrLdapAlreadyExists = cNsErrorSmErrLdapAlreadyExists
- NsErrorSmErrLdapAlreadyExists = &pNsErrorSmErrLdapAlreadyExists
+	pNsErrorSmErrLdapAlreadyExists = cNsErrorSmErrLdapAlreadyExists
+	NsErrorSmErrLdapAlreadyExists = &pNsErrorSmErrLdapAlreadyExists
 
- pNsErrorSmArrayNotFound = cNsErrorSmArrayNotFound
- NsErrorSmArrayNotFound = &pNsErrorSmArrayNotFound
+	pNsErrorSmArrayNotFound = cNsErrorSmArrayNotFound
+	NsErrorSmArrayNotFound = &pNsErrorSmArrayNotFound
 
- pNsErrorSmNoIscsiHardware = cNsErrorSmNoIscsiHardware
- NsErrorSmNoIscsiHardware = &pNsErrorSmNoIscsiHardware
+	pNsErrorSmNoIscsiHardware = cNsErrorSmNoIscsiHardware
+	NsErrorSmNoIscsiHardware = &pNsErrorSmNoIscsiHardware
 
- pNsErrorSmEnospc = cNsErrorSmEnospc
- NsErrorSmEnospc = &pNsErrorSmEnospc
+	pNsErrorSmEnospc = cNsErrorSmEnospc
+	NsErrorSmEnospc = &pNsErrorSmEnospc
 
- pNsErrorSmReservedPerfpolName = cNsErrorSmReservedPerfpolName
- NsErrorSmReservedPerfpolName = &pNsErrorSmReservedPerfpolName
+	pNsErrorSmReservedPerfpolName = cNsErrorSmReservedPerfpolName
+	NsErrorSmReservedPerfpolName = &pNsErrorSmReservedPerfpolName
 
- pNsErrorSmErrInvalidCtrlrName = cNsErrorSmErrInvalidCtrlrName
- NsErrorSmErrInvalidCtrlrName = &pNsErrorSmErrInvalidCtrlrName
+	pNsErrorSmErrInvalidCtrlrName = cNsErrorSmErrInvalidCtrlrName
+	NsErrorSmErrInvalidCtrlrName = &pNsErrorSmErrInvalidCtrlrName
 
- pNsErrorSmInvalidRoute = cNsErrorSmInvalidRoute
- NsErrorSmInvalidRoute = &pNsErrorSmInvalidRoute
+	pNsErrorSmInvalidRoute = cNsErrorSmInvalidRoute
+	NsErrorSmInvalidRoute = &pNsErrorSmInvalidRoute
 
- pNsErrorSmVolDedupeMoveInvalid = cNsErrorSmVolDedupeMoveInvalid
- NsErrorSmVolDedupeMoveInvalid = &pNsErrorSmVolDedupeMoveInvalid
+	pNsErrorSmVolDedupeMoveInvalid = cNsErrorSmVolDedupeMoveInvalid
+	NsErrorSmVolDedupeMoveInvalid = &pNsErrorSmVolDedupeMoveInvalid
 
- pNsErrorSmKeymgrJoin = cNsErrorSmKeymgrJoin
- NsErrorSmKeymgrJoin = &pNsErrorSmKeymgrJoin
+	pNsErrorSmKeymgrJoin = cNsErrorSmKeymgrJoin
+	NsErrorSmKeymgrJoin = &pNsErrorSmKeymgrJoin
 
- pNsErrorSmErrSrvUnreach = cNsErrorSmErrSrvUnreach
- NsErrorSmErrSrvUnreach = &pNsErrorSmErrSrvUnreach
+	pNsErrorSmErrSrvUnreach = cNsErrorSmErrSrvUnreach
+	NsErrorSmErrSrvUnreach = &pNsErrorSmErrSrvUnreach
 
- pNsErrorSmErrShelfDiskSasLinkDegraded = cNsErrorSmErrShelfDiskSasLinkDegraded
- NsErrorSmErrShelfDiskSasLinkDegraded = &pNsErrorSmErrShelfDiskSasLinkDegraded
+	pNsErrorSmErrShelfDiskSasLinkDegraded = cNsErrorSmErrShelfDiskSasLinkDegraded
+	NsErrorSmErrShelfDiskSasLinkDegraded = &pNsErrorSmErrShelfDiskSasLinkDegraded
 
- pNsErrorSmErrShelfInvalidEeprom = cNsErrorSmErrShelfInvalidEeprom
- NsErrorSmErrShelfInvalidEeprom = &pNsErrorSmErrShelfInvalidEeprom
+	pNsErrorSmErrShelfInvalidEeprom = cNsErrorSmErrShelfInvalidEeprom
+	NsErrorSmErrShelfInvalidEeprom = &pNsErrorSmErrShelfInvalidEeprom
 
- pNsErrorSmInvalidKeyValue = cNsErrorSmInvalidKeyValue
- NsErrorSmInvalidKeyValue = &pNsErrorSmInvalidKeyValue
+	pNsErrorSmInvalidKeyValue = cNsErrorSmInvalidKeyValue
+	NsErrorSmInvalidKeyValue = &pNsErrorSmInvalidKeyValue
 
- pNsErrorSmNoIscsiLunAssignment = cNsErrorSmNoIscsiLunAssignment
- NsErrorSmNoIscsiLunAssignment = &pNsErrorSmNoIscsiLunAssignment
+	pNsErrorSmNoIscsiLunAssignment = cNsErrorSmNoIscsiLunAssignment
+	NsErrorSmNoIscsiLunAssignment = &pNsErrorSmNoIscsiLunAssignment
 
- pNsErrorSmSnapshotOffline = cNsErrorSmSnapshotOffline
- NsErrorSmSnapshotOffline = &pNsErrorSmSnapshotOffline
+	pNsErrorSmSnapshotOffline = cNsErrorSmSnapshotOffline
+	NsErrorSmSnapshotOffline = &pNsErrorSmSnapshotOffline
 
- pNsErrorSmDefaultGatewayNotInMgmtSubnet = cNsErrorSmDefaultGatewayNotInMgmtSubnet
- NsErrorSmDefaultGatewayNotInMgmtSubnet = &pNsErrorSmDefaultGatewayNotInMgmtSubnet
+	pNsErrorSmDefaultGatewayNotInMgmtSubnet = cNsErrorSmDefaultGatewayNotInMgmtSubnet
+	NsErrorSmDefaultGatewayNotInMgmtSubnet = &pNsErrorSmDefaultGatewayNotInMgmtSubnet
 
- pNsErrorSmErrPassphraseAuth = cNsErrorSmErrPassphraseAuth
- NsErrorSmErrPassphraseAuth = &pNsErrorSmErrPassphraseAuth
+	pNsErrorSmErrPassphraseAuth = cNsErrorSmErrPassphraseAuth
+	NsErrorSmErrPassphraseAuth = &pNsErrorSmErrPassphraseAuth
 
- pNsErrorSmReplEexist = cNsErrorSmReplEexist
- NsErrorSmReplEexist = &pNsErrorSmReplEexist
+	pNsErrorSmReplEexist = cNsErrorSmReplEexist
+	NsErrorSmReplEexist = &pNsErrorSmReplEexist
 
- pNsErrorSmDisableLastProtocol = cNsErrorSmDisableLastProtocol
- NsErrorSmDisableLastProtocol = &pNsErrorSmDisableLastProtocol
+	pNsErrorSmDisableLastProtocol = cNsErrorSmDisableLastProtocol
+	NsErrorSmDisableLastProtocol = &pNsErrorSmDisableLastProtocol
 
- pNsErrorSmArrayAddExistingPoolDedupeNotConfigurable = cNsErrorSmArrayAddExistingPoolDedupeNotConfigurable
- NsErrorSmArrayAddExistingPoolDedupeNotConfigurable = &pNsErrorSmArrayAddExistingPoolDedupeNotConfigurable
+	pNsErrorSmArrayAddExistingPoolDedupeNotConfigurable = cNsErrorSmArrayAddExistingPoolDedupeNotConfigurable
+	NsErrorSmArrayAddExistingPoolDedupeNotConfigurable = &pNsErrorSmArrayAddExistingPoolDedupeNotConfigurable
 
- pNsErrorSmSecondUntaggedAssignment = cNsErrorSmSecondUntaggedAssignment
- NsErrorSmSecondUntaggedAssignment = &pNsErrorSmSecondUntaggedAssignment
+	pNsErrorSmSecondUntaggedAssignment = cNsErrorSmSecondUntaggedAssignment
+	NsErrorSmSecondUntaggedAssignment = &pNsErrorSmSecondUntaggedAssignment
 
- pNsErrorSmPoolHasPe = cNsErrorSmPoolHasPe
- NsErrorSmPoolHasPe = &pNsErrorSmPoolHasPe
+	pNsErrorSmPoolHasPe = cNsErrorSmPoolHasPe
+	NsErrorSmPoolHasPe = &pNsErrorSmPoolHasPe
 
- pNsErrorSmErrShelfInvalidCount = cNsErrorSmErrShelfInvalidCount
- NsErrorSmErrShelfInvalidCount = &pNsErrorSmErrShelfInvalidCount
+	pNsErrorSmErrShelfInvalidCount = cNsErrorSmErrShelfInvalidCount
+	NsErrorSmErrShelfInvalidCount = &pNsErrorSmErrShelfInvalidCount
 
- pNsErrorSmLimitSnapRetentionGroup = cNsErrorSmLimitSnapRetentionGroup
- NsErrorSmLimitSnapRetentionGroup = &pNsErrorSmLimitSnapRetentionGroup
+	pNsErrorSmLimitSnapRetentionGroup = cNsErrorSmLimitSnapRetentionGroup
+	NsErrorSmLimitSnapRetentionGroup = &pNsErrorSmLimitSnapRetentionGroup
 
- pNsErrorSmVolDedupeThickProvInvalid = cNsErrorSmVolDedupeThickProvInvalid
- NsErrorSmVolDedupeThickProvInvalid = &pNsErrorSmVolDedupeThickProvInvalid
+	pNsErrorSmVolDedupeThickProvInvalid = cNsErrorSmVolDedupeThickProvInvalid
+	NsErrorSmVolDedupeThickProvInvalid = &pNsErrorSmVolDedupeThickProvInvalid
 
- pNsErrorSmUnknown = cNsErrorSmUnknown
- NsErrorSmUnknown = &pNsErrorSmUnknown
+	pNsErrorSmUnknown = cNsErrorSmUnknown
+	NsErrorSmUnknown = &pNsErrorSmUnknown
 
- pNsErrorSmErrShelfDedupeImpact = cNsErrorSmErrShelfDedupeImpact
- NsErrorSmErrShelfDedupeImpact = &pNsErrorSmErrShelfDedupeImpact
+	pNsErrorSmErrShelfDedupeImpact = cNsErrorSmErrShelfDedupeImpact
+	NsErrorSmErrShelfDedupeImpact = &pNsErrorSmErrShelfDedupeImpact
 
- pNsErrorSmInvalidInitiatorAccessProtocol = cNsErrorSmInvalidInitiatorAccessProtocol
- NsErrorSmInvalidInitiatorAccessProtocol = &pNsErrorSmInvalidInitiatorAccessProtocol
+	pNsErrorSmInvalidInitiatorAccessProtocol = cNsErrorSmInvalidInitiatorAccessProtocol
+	NsErrorSmInvalidInitiatorAccessProtocol = &pNsErrorSmInvalidInitiatorAccessProtocol
 
- pNsErrorSmInternal = cNsErrorSmInternal
- NsErrorSmInternal = &pNsErrorSmInternal
+	pNsErrorSmInternal = cNsErrorSmInternal
+	NsErrorSmInternal = &pNsErrorSmInternal
 
- pNsErrorSmAsupEbusy = cNsErrorSmAsupEbusy
- NsErrorSmAsupEbusy = &pNsErrorSmAsupEbusy
+	pNsErrorSmAsupEbusy = cNsErrorSmAsupEbusy
+	NsErrorSmAsupEbusy = &pNsErrorSmAsupEbusy
 
- pNsErrorSmInvalidVolMbpsLimit = cNsErrorSmInvalidVolMbpsLimit
- NsErrorSmInvalidVolMbpsLimit = &pNsErrorSmInvalidVolMbpsLimit
+	pNsErrorSmInvalidVolMbpsLimit = cNsErrorSmInvalidVolMbpsLimit
+	NsErrorSmInvalidVolMbpsLimit = &pNsErrorSmInvalidVolMbpsLimit
 
- pNsErrorSmInfoConfigSyncInprogress = cNsErrorSmInfoConfigSyncInprogress
- NsErrorSmInfoConfigSyncInprogress = &pNsErrorSmInfoConfigSyncInprogress
+	pNsErrorSmInfoConfigSyncInprogress = cNsErrorSmInfoConfigSyncInprogress
+	NsErrorSmInfoConfigSyncInprogress = &pNsErrorSmInfoConfigSyncInprogress
 
- pNsErrorSmErrPoolStillMerging = cNsErrorSmErrPoolStillMerging
- NsErrorSmErrPoolStillMerging = &pNsErrorSmErrPoolStillMerging
+	pNsErrorSmErrPoolStillMerging = cNsErrorSmErrPoolStillMerging
+	NsErrorSmErrPoolStillMerging = &pNsErrorSmErrPoolStillMerging
 
- pNsErrorSmFolderPerfpolAgentType = cNsErrorSmFolderPerfpolAgentType
- NsErrorSmFolderPerfpolAgentType = &pNsErrorSmFolderPerfpolAgentType
+	pNsErrorSmFolderPerfpolAgentType = cNsErrorSmFolderPerfpolAgentType
+	NsErrorSmFolderPerfpolAgentType = &pNsErrorSmFolderPerfpolAgentType
 
- pNsErrorSmEinval = cNsErrorSmEinval
- NsErrorSmEinval = &pNsErrorSmEinval
+	pNsErrorSmEinval = cNsErrorSmEinval
+	NsErrorSmEinval = &pNsErrorSmEinval
 
- pNsErrorSmNoAssocVols = cNsErrorSmNoAssocVols
- NsErrorSmNoAssocVols = &pNsErrorSmNoAssocVols
+	pNsErrorSmNoAssocVols = cNsErrorSmNoAssocVols
+	NsErrorSmNoAssocVols = &pNsErrorSmNoAssocVols
 
- pNsErrorSmShelfNotInuse = cNsErrorSmShelfNotInuse
- NsErrorSmShelfNotInuse = &pNsErrorSmShelfNotInuse
+	pNsErrorSmShelfNotInuse = cNsErrorSmShelfNotInuse
+	NsErrorSmShelfNotInuse = &pNsErrorSmShelfNotInuse
 
- pNsErrorSmErrProtpolSettingsNotAllowed = cNsErrorSmErrProtpolSettingsNotAllowed
- NsErrorSmErrProtpolSettingsNotAllowed = &pNsErrorSmErrProtpolSettingsNotAllowed
+	pNsErrorSmErrProtpolSettingsNotAllowed = cNsErrorSmErrProtpolSettingsNotAllowed
+	NsErrorSmErrProtpolSettingsNotAllowed = &pNsErrorSmErrProtpolSettingsNotAllowed
 
- pNsErrorSmFcRegenerate = cNsErrorSmFcRegenerate
- NsErrorSmFcRegenerate = &pNsErrorSmFcRegenerate
+	pNsErrorSmFcRegenerate = cNsErrorSmFcRegenerate
+	NsErrorSmFcRegenerate = &pNsErrorSmFcRegenerate
 
- pNsErrorSmErrMultiArrayGroup = cNsErrorSmErrMultiArrayGroup
- NsErrorSmErrMultiArrayGroup = &pNsErrorSmErrMultiArrayGroup
+	pNsErrorSmErrMultiArrayGroup = cNsErrorSmErrMultiArrayGroup
+	NsErrorSmErrMultiArrayGroup = &pNsErrorSmErrMultiArrayGroup
 
- pNsErrorSmReplRemoteNoBaseSnap = cNsErrorSmReplRemoteNoBaseSnap
- NsErrorSmReplRemoteNoBaseSnap = &pNsErrorSmReplRemoteNoBaseSnap
+	pNsErrorSmReplRemoteNoBaseSnap = cNsErrorSmReplRemoteNoBaseSnap
+	NsErrorSmReplRemoteNoBaseSnap = &pNsErrorSmReplRemoteNoBaseSnap
 
- pNsErrorSmUnsupportedQueryOperator = cNsErrorSmUnsupportedQueryOperator
- NsErrorSmUnsupportedQueryOperator = &pNsErrorSmUnsupportedQueryOperator
+	pNsErrorSmUnsupportedQueryOperator = cNsErrorSmUnsupportedQueryOperator
+	NsErrorSmUnsupportedQueryOperator = &pNsErrorSmUnsupportedQueryOperator
 
- pNsErrorSmSrepSizeMismatchDownstreamVol = cNsErrorSmSrepSizeMismatchDownstreamVol
- NsErrorSmSrepSizeMismatchDownstreamVol = &pNsErrorSmSrepSizeMismatchDownstreamVol
+	pNsErrorSmSrepSizeMismatchDownstreamVol = cNsErrorSmSrepSizeMismatchDownstreamVol
+	NsErrorSmSrepSizeMismatchDownstreamVol = &pNsErrorSmSrepSizeMismatchDownstreamVol
 
- pNsErrorSmNoSuchPartner = cNsErrorSmNoSuchPartner
- NsErrorSmNoSuchPartner = &pNsErrorSmNoSuchPartner
+	pNsErrorSmNoSuchPartner = cNsErrorSmNoSuchPartner
+	NsErrorSmNoSuchPartner = &pNsErrorSmNoSuchPartner
 
- pNsErrorSmIscsiAllAccessNotAvailable = cNsErrorSmIscsiAllAccessNotAvailable
- NsErrorSmIscsiAllAccessNotAvailable = &pNsErrorSmIscsiAllAccessNotAvailable
+	pNsErrorSmIscsiAllAccessNotAvailable = cNsErrorSmIscsiAllAccessNotAvailable
+	NsErrorSmIscsiAllAccessNotAvailable = &pNsErrorSmIscsiAllAccessNotAvailable
 
- pNsErrorSmVvolAlreadyEnabled = cNsErrorSmVvolAlreadyEnabled
- NsErrorSmVvolAlreadyEnabled = &pNsErrorSmVvolAlreadyEnabled
+	pNsErrorSmVvolAlreadyEnabled = cNsErrorSmVvolAlreadyEnabled
+	NsErrorSmVvolAlreadyEnabled = &pNsErrorSmVvolAlreadyEnabled
 
- pNsErrorSmUsageUnavaiable = cNsErrorSmUsageUnavaiable
- NsErrorSmUsageUnavaiable = &pNsErrorSmUsageUnavaiable
+	pNsErrorSmUsageUnavaiable = cNsErrorSmUsageUnavaiable
+	NsErrorSmUsageUnavaiable = &pNsErrorSmUsageUnavaiable
 
- pNsErrorSmEconnrefused = cNsErrorSmEconnrefused
- NsErrorSmEconnrefused = &pNsErrorSmEconnrefused
+	pNsErrorSmEconnrefused = cNsErrorSmEconnrefused
+	NsErrorSmEconnrefused = &pNsErrorSmEconnrefused
 
- pNsErrorSmReplRenameNotsup = cNsErrorSmReplRenameNotsup
- NsErrorSmReplRenameNotsup = &pNsErrorSmReplRenameNotsup
+	pNsErrorSmReplRenameNotsup = cNsErrorSmReplRenameNotsup
+	NsErrorSmReplRenameNotsup = &pNsErrorSmReplRenameNotsup
 
- pNsErrorSmSessionCreate = cNsErrorSmSessionCreate
- NsErrorSmSessionCreate = &pNsErrorSmSessionCreate
+	pNsErrorSmSessionCreate = cNsErrorSmSessionCreate
+	NsErrorSmSessionCreate = &pNsErrorSmSessionCreate
 
- pNsErrorSmConflictingAclVol = cNsErrorSmConflictingAclVol
- NsErrorSmConflictingAclVol = &pNsErrorSmConflictingAclVol
+	pNsErrorSmConflictingAclVol = cNsErrorSmConflictingAclVol
+	NsErrorSmConflictingAclVol = &pNsErrorSmConflictingAclVol
 
- pNsErrorSmNospace = cNsErrorSmNospace
- NsErrorSmNospace = &pNsErrorSmNospace
+	pNsErrorSmNospace = cNsErrorSmNospace
+	NsErrorSmNospace = &pNsErrorSmNospace
 
- pNsErrorSmReservedVolcollName = cNsErrorSmReservedVolcollName
- NsErrorSmReservedVolcollName = &pNsErrorSmReservedVolcollName
+	pNsErrorSmReservedVolcollName = cNsErrorSmReservedVolcollName
+	NsErrorSmReservedVolcollName = &pNsErrorSmReservedVolcollName
 
- pNsErrorSmPoolHasFolder = cNsErrorSmPoolHasFolder
- NsErrorSmPoolHasFolder = &pNsErrorSmPoolHasFolder
+	pNsErrorSmPoolHasFolder = cNsErrorSmPoolHasFolder
+	NsErrorSmPoolHasFolder = &pNsErrorSmPoolHasFolder
 
- pNsErrorSmPartnerOffline = cNsErrorSmPartnerOffline
- NsErrorSmPartnerOffline = &pNsErrorSmPartnerOffline
+	pNsErrorSmPartnerOffline = cNsErrorSmPartnerOffline
+	NsErrorSmPartnerOffline = &pNsErrorSmPartnerOffline
 
- pNsErrorSmConflictingInitiatorAliasWithArgs = cNsErrorSmConflictingInitiatorAliasWithArgs
- NsErrorSmConflictingInitiatorAliasWithArgs = &pNsErrorSmConflictingInitiatorAliasWithArgs
+	pNsErrorSmConflictingInitiatorAliasWithArgs = cNsErrorSmConflictingInitiatorAliasWithArgs
+	NsErrorSmConflictingInitiatorAliasWithArgs = &pNsErrorSmConflictingInitiatorAliasWithArgs
 
- pNsErrorSmErrShelfNotReady = cNsErrorSmErrShelfNotReady
- NsErrorSmErrShelfNotReady = &pNsErrorSmErrShelfNotReady
+	pNsErrorSmErrShelfNotReady = cNsErrorSmErrShelfNotReady
+	NsErrorSmErrShelfNotReady = &pNsErrorSmErrShelfNotReady
 
- pNsErrorSmReplCmprVersionUnsup = cNsErrorSmReplCmprVersionUnsup
- NsErrorSmReplCmprVersionUnsup = &pNsErrorSmReplCmprVersionUnsup
+	pNsErrorSmReplCmprVersionUnsup = cNsErrorSmReplCmprVersionUnsup
+	NsErrorSmReplCmprVersionUnsup = &pNsErrorSmReplCmprVersionUnsup
 
- pNsErrorSmErrShelfPreactivationIoErr = cNsErrorSmErrShelfPreactivationIoErr
- NsErrorSmErrShelfPreactivationIoErr = &pNsErrorSmErrShelfPreactivationIoErr
+	pNsErrorSmErrShelfPreactivationIoErr = cNsErrorSmErrShelfPreactivationIoErr
+	NsErrorSmErrShelfPreactivationIoErr = &pNsErrorSmErrShelfPreactivationIoErr
 
- pNsErrorSmVolmvEinprog = cNsErrorSmVolmvEinprog
- NsErrorSmVolmvEinprog = &pNsErrorSmVolmvEinprog
+	pNsErrorSmVolmvEinprog = cNsErrorSmVolmvEinprog
+	NsErrorSmVolmvEinprog = &pNsErrorSmVolmvEinprog
 
- pNsErrorSmPerfpolIncompatibleAppCategory = cNsErrorSmPerfpolIncompatibleAppCategory
- NsErrorSmPerfpolIncompatibleAppCategory = &pNsErrorSmPerfpolIncompatibleAppCategory
+	pNsErrorSmPerfpolIncompatibleAppCategory = cNsErrorSmPerfpolIncompatibleAppCategory
+	NsErrorSmPerfpolIncompatibleAppCategory = &pNsErrorSmPerfpolIncompatibleAppCategory
 
- pNsErrorSmInvalidArgValue = cNsErrorSmInvalidArgValue
- NsErrorSmInvalidArgValue = &pNsErrorSmInvalidArgValue
+	pNsErrorSmInvalidArgValue = cNsErrorSmInvalidArgValue
+	NsErrorSmInvalidArgValue = &pNsErrorSmInvalidArgValue
 
- pNsErrorSmErrShelfDedupeBelowFdr = cNsErrorSmErrShelfDedupeBelowFdr
- NsErrorSmErrShelfDedupeBelowFdr = &pNsErrorSmErrShelfDedupeBelowFdr
+	pNsErrorSmErrShelfDedupeBelowFdr = cNsErrorSmErrShelfDedupeBelowFdr
+	NsErrorSmErrShelfDedupeBelowFdr = &pNsErrorSmErrShelfDedupeBelowFdr
 
- pNsErrorSmErrShelfInvalidAfsCount = cNsErrorSmErrShelfInvalidAfsCount
- NsErrorSmErrShelfInvalidAfsCount = &pNsErrorSmErrShelfInvalidAfsCount
+	pNsErrorSmErrShelfInvalidAfsCount = cNsErrorSmErrShelfInvalidAfsCount
+	NsErrorSmErrShelfInvalidAfsCount = &pNsErrorSmErrShelfInvalidAfsCount
 
- pNsErrorSmSerialNotAvail = cNsErrorSmSerialNotAvail
- NsErrorSmSerialNotAvail = &pNsErrorSmSerialNotAvail
+	pNsErrorSmSerialNotAvail = cNsErrorSmSerialNotAvail
+	NsErrorSmSerialNotAvail = &pNsErrorSmSerialNotAvail
 
- pNsErrorSmErrShelfSesMshipErr = cNsErrorSmErrShelfSesMshipErr
- NsErrorSmErrShelfSesMshipErr = &pNsErrorSmErrShelfSesMshipErr
+	pNsErrorSmErrShelfSesMshipErr = cNsErrorSmErrShelfSesMshipErr
+	NsErrorSmErrShelfSesMshipErr = &pNsErrorSmErrShelfSesMshipErr
 
- pNsErrorSmFolderProvisionedLimitBelowCurrentUsage = cNsErrorSmFolderProvisionedLimitBelowCurrentUsage
- NsErrorSmFolderProvisionedLimitBelowCurrentUsage = &pNsErrorSmFolderProvisionedLimitBelowCurrentUsage
+	pNsErrorSmFolderProvisionedLimitBelowCurrentUsage = cNsErrorSmFolderProvisionedLimitBelowCurrentUsage
+	NsErrorSmFolderProvisionedLimitBelowCurrentUsage = &pNsErrorSmFolderProvisionedLimitBelowCurrentUsage
 
- pNsErrorSmPeMultiProtocolAccessNotSupported = cNsErrorSmPeMultiProtocolAccessNotSupported
- NsErrorSmPeMultiProtocolAccessNotSupported = &pNsErrorSmPeMultiProtocolAccessNotSupported
+	pNsErrorSmPeMultiProtocolAccessNotSupported = cNsErrorSmPeMultiProtocolAccessNotSupported
+	NsErrorSmPeMultiProtocolAccessNotSupported = &pNsErrorSmPeMultiProtocolAccessNotSupported
 
- pNsErrorSmLimitHretSnapRetentionPool = cNsErrorSmLimitHretSnapRetentionPool
- NsErrorSmLimitHretSnapRetentionPool = &pNsErrorSmLimitHretSnapRetentionPool
+	pNsErrorSmLimitHretSnapRetentionPool = cNsErrorSmLimitHretSnapRetentionPool
+	NsErrorSmLimitHretSnapRetentionPool = &pNsErrorSmLimitHretSnapRetentionPool
 
- pNsErrorSmPeConflictingAcl = cNsErrorSmPeConflictingAcl
- NsErrorSmPeConflictingAcl = &pNsErrorSmPeConflictingAcl
+	pNsErrorSmPeConflictingAcl = cNsErrorSmPeConflictingAcl
+	NsErrorSmPeConflictingAcl = &pNsErrorSmPeConflictingAcl
 
- pNsErrorSmFolderOverUsageLimit = cNsErrorSmFolderOverUsageLimit
- NsErrorSmFolderOverUsageLimit = &pNsErrorSmFolderOverUsageLimit
+	pNsErrorSmFolderOverUsageLimit = cNsErrorSmFolderOverUsageLimit
+	NsErrorSmFolderOverUsageLimit = &pNsErrorSmFolderOverUsageLimit
 
- pNsErrorSmErrEncryptionMasterKeyMissing = cNsErrorSmErrEncryptionMasterKeyMissing
- NsErrorSmErrEncryptionMasterKeyMissing = &pNsErrorSmErrEncryptionMasterKeyMissing
+	pNsErrorSmErrEncryptionMasterKeyMissing = cNsErrorSmErrEncryptionMasterKeyMissing
+	NsErrorSmErrEncryptionMasterKeyMissing = &pNsErrorSmErrEncryptionMasterKeyMissing
 
- pNsErrorSmProtpolInvalidDomainName = cNsErrorSmProtpolInvalidDomainName
- NsErrorSmProtpolInvalidDomainName = &pNsErrorSmProtpolInvalidDomainName
+	pNsErrorSmProtpolInvalidDomainName = cNsErrorSmProtpolInvalidDomainName
+	NsErrorSmProtpolInvalidDomainName = &pNsErrorSmProtpolInvalidDomainName
 
- pNsErrorSmTooMany = cNsErrorSmTooMany
- NsErrorSmTooMany = &pNsErrorSmTooMany
+	pNsErrorSmTooMany = cNsErrorSmTooMany
+	NsErrorSmTooMany = &pNsErrorSmTooMany
 
- pNsErrorSmErrShelfExprRevIncompatible = cNsErrorSmErrShelfExprRevIncompatible
- NsErrorSmErrShelfExprRevIncompatible = &pNsErrorSmErrShelfExprRevIncompatible
+	pNsErrorSmErrShelfExprRevIncompatible = cNsErrorSmErrShelfExprRevIncompatible
+	NsErrorSmErrShelfExprRevIncompatible = &pNsErrorSmErrShelfExprRevIncompatible
 
- pNsErrorSmSrvUnreachable = cNsErrorSmSrvUnreachable
- NsErrorSmSrvUnreachable = &pNsErrorSmSrvUnreachable
+	pNsErrorSmSrvUnreachable = cNsErrorSmSrvUnreachable
+	NsErrorSmSrvUnreachable = &pNsErrorSmSrvUnreachable
 
- pNsErrorSmVolumeConflict = cNsErrorSmVolumeConflict
- NsErrorSmVolumeConflict = &pNsErrorSmVolumeConflict
+	pNsErrorSmVolumeConflict = cNsErrorSmVolumeConflict
+	NsErrorSmVolumeConflict = &pNsErrorSmVolumeConflict
 
- pNsErrorSmInvalidArrayName = cNsErrorSmInvalidArrayName
- NsErrorSmInvalidArrayName = &pNsErrorSmInvalidArrayName
+	pNsErrorSmInvalidArrayName = cNsErrorSmInvalidArrayName
+	NsErrorSmInvalidArrayName = &pNsErrorSmInvalidArrayName
 
- pNsErrorSmCannotReadObject = cNsErrorSmCannotReadObject
- NsErrorSmCannotReadObject = &pNsErrorSmCannotReadObject
+	pNsErrorSmCannotReadObject = cNsErrorSmCannotReadObject
+	NsErrorSmCannotReadObject = &pNsErrorSmCannotReadObject
 
- pNsErrorSmReservedVolName = cNsErrorSmReservedVolName
- NsErrorSmReservedVolName = &pNsErrorSmReservedVolName
+	pNsErrorSmReservedVolName = cNsErrorSmReservedVolName
+	NsErrorSmReservedVolName = &pNsErrorSmReservedVolName
 
- pNsErrorSmPoolPartnerInUse = cNsErrorSmPoolPartnerInUse
- NsErrorSmPoolPartnerInUse = &pNsErrorSmPoolPartnerInUse
+	pNsErrorSmPoolPartnerInUse = cNsErrorSmPoolPartnerInUse
+	NsErrorSmPoolPartnerInUse = &pNsErrorSmPoolPartnerInUse
 
- pNsErrorSmInvalidInitiatorgrpName = cNsErrorSmInvalidInitiatorgrpName
- NsErrorSmInvalidInitiatorgrpName = &pNsErrorSmInvalidInitiatorgrpName
+	pNsErrorSmInvalidInitiatorgrpName = cNsErrorSmInvalidInitiatorgrpName
+	NsErrorSmInvalidInitiatorgrpName = &pNsErrorSmInvalidInitiatorgrpName
 
- pNsErrorSmAsupValidateError = cNsErrorSmAsupValidateError
- NsErrorSmAsupValidateError = &pNsErrorSmAsupValidateError
+	pNsErrorSmAsupValidateError = cNsErrorSmAsupValidateError
+	NsErrorSmAsupValidateError = &pNsErrorSmAsupValidateError
 
- pNsErrorSmVersionName = cNsErrorSmVersionName
- NsErrorSmVersionName = &pNsErrorSmVersionName
+	pNsErrorSmVersionName = cNsErrorSmVersionName
+	NsErrorSmVersionName = &pNsErrorSmVersionName
 
- pNsErrorSmVvolAlreadyDisabled = cNsErrorSmVvolAlreadyDisabled
- NsErrorSmVvolAlreadyDisabled = &pNsErrorSmVvolAlreadyDisabled
+	pNsErrorSmVvolAlreadyDisabled = cNsErrorSmVvolAlreadyDisabled
+	NsErrorSmVvolAlreadyDisabled = &pNsErrorSmVvolAlreadyDisabled
 
- pNsErrorSmUnexpectedArg = cNsErrorSmUnexpectedArg
- NsErrorSmUnexpectedArg = &pNsErrorSmUnexpectedArg
+	pNsErrorSmUnexpectedArg = cNsErrorSmUnexpectedArg
+	NsErrorSmUnexpectedArg = &pNsErrorSmUnexpectedArg
 
- pNsErrorSmErrShelfInvalidAfs = cNsErrorSmErrShelfInvalidAfs
- NsErrorSmErrShelfInvalidAfs = &pNsErrorSmErrShelfInvalidAfs
+	pNsErrorSmErrShelfInvalidAfs = cNsErrorSmErrShelfInvalidAfs
+	NsErrorSmErrShelfInvalidAfs = &pNsErrorSmErrShelfInvalidAfs
 
- pNsErrorSmUnexpectedChild = cNsErrorSmUnexpectedChild
- NsErrorSmUnexpectedChild = &pNsErrorSmUnexpectedChild
+	pNsErrorSmUnexpectedChild = cNsErrorSmUnexpectedChild
+	NsErrorSmUnexpectedChild = &pNsErrorSmUnexpectedChild
 
- pNsErrorSmFolderOverProvisionedLimit = cNsErrorSmFolderOverProvisionedLimit
- NsErrorSmFolderOverProvisionedLimit = &pNsErrorSmFolderOverProvisionedLimit
+	pNsErrorSmFolderOverProvisionedLimit = cNsErrorSmFolderOverProvisionedLimit
+	NsErrorSmFolderOverProvisionedLimit = &pNsErrorSmFolderOverProvisionedLimit
 
- pNsErrorSmPoolFlashMismatch = cNsErrorSmPoolFlashMismatch
- NsErrorSmPoolFlashMismatch = &pNsErrorSmPoolFlashMismatch
+	pNsErrorSmPoolFlashMismatch = cNsErrorSmPoolFlashMismatch
+	NsErrorSmPoolFlashMismatch = &pNsErrorSmPoolFlashMismatch
 
- pNsErrorSmLimitScope = cNsErrorSmLimitScope
- NsErrorSmLimitScope = &pNsErrorSmLimitScope
+	pNsErrorSmLimitScope = cNsErrorSmLimitScope
+	NsErrorSmLimitScope = &pNsErrorSmLimitScope
 
- pNsErrorSmSrepSizeMismatchDownstreamVols = cNsErrorSmSrepSizeMismatchDownstreamVols
- NsErrorSmSrepSizeMismatchDownstreamVols = &pNsErrorSmSrepSizeMismatchDownstreamVols
+	pNsErrorSmSrepSizeMismatchDownstreamVols = cNsErrorSmSrepSizeMismatchDownstreamVols
+	NsErrorSmSrepSizeMismatchDownstreamVols = &pNsErrorSmSrepSizeMismatchDownstreamVols
 
- pNsErrorSmFolderAppsrvrInconsistent = cNsErrorSmFolderAppsrvrInconsistent
- NsErrorSmFolderAppsrvrInconsistent = &pNsErrorSmFolderAppsrvrInconsistent
+	pNsErrorSmFolderAppsrvrInconsistent = cNsErrorSmFolderAppsrvrInconsistent
+	NsErrorSmFolderAppsrvrInconsistent = &pNsErrorSmFolderAppsrvrInconsistent
 
- pNsErrorSmErrShelfDedupeReduction = cNsErrorSmErrShelfDedupeReduction
- NsErrorSmErrShelfDedupeReduction = &pNsErrorSmErrShelfDedupeReduction
+	pNsErrorSmErrShelfDedupeReduction = cNsErrorSmErrShelfDedupeReduction
+	NsErrorSmErrShelfDedupeReduction = &pNsErrorSmErrShelfDedupeReduction
 
- pNsErrorSmIscsiSvcNotAvailable = cNsErrorSmIscsiSvcNotAvailable
- NsErrorSmIscsiSvcNotAvailable = &pNsErrorSmIscsiSvcNotAvailable
+	pNsErrorSmIscsiSvcNotAvailable = cNsErrorSmIscsiSvcNotAvailable
+	NsErrorSmIscsiSvcNotAvailable = &pNsErrorSmIscsiSvcNotAvailable
 
- pNsErrorSmInvalidNetconfigToDelete = cNsErrorSmInvalidNetconfigToDelete
- NsErrorSmInvalidNetconfigToDelete = &pNsErrorSmInvalidNetconfigToDelete
+	pNsErrorSmInvalidNetconfigToDelete = cNsErrorSmInvalidNetconfigToDelete
+	NsErrorSmInvalidNetconfigToDelete = &pNsErrorSmInvalidNetconfigToDelete
 
- pNsErrorSmErrUnknown = cNsErrorSmErrUnknown
- NsErrorSmErrUnknown = &pNsErrorSmErrUnknown
+	pNsErrorSmErrUnknown = cNsErrorSmErrUnknown
+	NsErrorSmErrUnknown = &pNsErrorSmErrUnknown
 
- pNsErrorSmMissingCriteriaOperator = cNsErrorSmMissingCriteriaOperator
- NsErrorSmMissingCriteriaOperator = &pNsErrorSmMissingCriteriaOperator
+	pNsErrorSmMissingCriteriaOperator = cNsErrorSmMissingCriteriaOperator
+	NsErrorSmMissingCriteriaOperator = &pNsErrorSmMissingCriteriaOperator
 
- pNsErrorSmInvalidAppUuid = cNsErrorSmInvalidAppUuid
- NsErrorSmInvalidAppUuid = &pNsErrorSmInvalidAppUuid
+	pNsErrorSmInvalidAppUuid = cNsErrorSmInvalidAppUuid
+	NsErrorSmInvalidAppUuid = &pNsErrorSmInvalidAppUuid
 
- pNsErrorSmArrayMemberOrphanWithArgs = cNsErrorSmArrayMemberOrphanWithArgs
- NsErrorSmArrayMemberOrphanWithArgs = &pNsErrorSmArrayMemberOrphanWithArgs
+	pNsErrorSmArrayMemberOrphanWithArgs = cNsErrorSmArrayMemberOrphanWithArgs
+	NsErrorSmArrayMemberOrphanWithArgs = &pNsErrorSmArrayMemberOrphanWithArgs
 
- pNsErrorSmEmptyVol = cNsErrorSmEmptyVol
- NsErrorSmEmptyVol = &pNsErrorSmEmptyVol
+	pNsErrorSmEmptyVol = cNsErrorSmEmptyVol
+	NsErrorSmEmptyVol = &pNsErrorSmEmptyVol
 
- pNsErrorSmDuplicateSubnetLabel = cNsErrorSmDuplicateSubnetLabel
- NsErrorSmDuplicateSubnetLabel = &pNsErrorSmDuplicateSubnetLabel
+	pNsErrorSmDuplicateSubnetLabel = cNsErrorSmDuplicateSubnetLabel
+	NsErrorSmDuplicateSubnetLabel = &pNsErrorSmDuplicateSubnetLabel
 
- pNsErrorSmZeroVlanIdForTaggedAssignment = cNsErrorSmZeroVlanIdForTaggedAssignment
- NsErrorSmZeroVlanIdForTaggedAssignment = &pNsErrorSmZeroVlanIdForTaggedAssignment
+	pNsErrorSmZeroVlanIdForTaggedAssignment = cNsErrorSmZeroVlanIdForTaggedAssignment
+	NsErrorSmZeroVlanIdForTaggedAssignment = &pNsErrorSmZeroVlanIdForTaggedAssignment
 
- pNsErrorSmNoActionFound = cNsErrorSmNoActionFound
- NsErrorSmNoActionFound = &pNsErrorSmNoActionFound
+	pNsErrorSmNoActionFound = cNsErrorSmNoActionFound
+	NsErrorSmNoActionFound = &pNsErrorSmNoActionFound
 
- pNsErrorSmSyncReplUnconfigureInProgress = cNsErrorSmSyncReplUnconfigureInProgress
- NsErrorSmSyncReplUnconfigureInProgress = &pNsErrorSmSyncReplUnconfigureInProgress
+	pNsErrorSmSyncReplUnconfigureInProgress = cNsErrorSmSyncReplUnconfigureInProgress
+	NsErrorSmSyncReplUnconfigureInProgress = &pNsErrorSmSyncReplUnconfigureInProgress
 
- pNsErrorSmErrMissingArg = cNsErrorSmErrMissingArg
- NsErrorSmErrMissingArg = &pNsErrorSmErrMissingArg
+	pNsErrorSmErrMissingArg = cNsErrorSmErrMissingArg
+	NsErrorSmErrMissingArg = &pNsErrorSmErrMissingArg
 
- pNsErrorSmVolThickProvMoveInvalid = cNsErrorSmVolThickProvMoveInvalid
- NsErrorSmVolThickProvMoveInvalid = &pNsErrorSmVolThickProvMoveInvalid
+	pNsErrorSmVolThickProvMoveInvalid = cNsErrorSmVolThickProvMoveInvalid
+	NsErrorSmVolThickProvMoveInvalid = &pNsErrorSmVolThickProvMoveInvalid
 
- pNsErrorSmMissingAdvancedCriteriaConstructor = cNsErrorSmMissingAdvancedCriteriaConstructor
- NsErrorSmMissingAdvancedCriteriaConstructor = &pNsErrorSmMissingAdvancedCriteriaConstructor
+	pNsErrorSmMissingAdvancedCriteriaConstructor = cNsErrorSmMissingAdvancedCriteriaConstructor
+	NsErrorSmMissingAdvancedCriteriaConstructor = &pNsErrorSmMissingAdvancedCriteriaConstructor
 
- pNsErrorSmPoolUnknown = cNsErrorSmPoolUnknown
- NsErrorSmPoolUnknown = &pNsErrorSmPoolUnknown
+	pNsErrorSmPoolUnknown = cNsErrorSmPoolUnknown
+	NsErrorSmPoolUnknown = &pNsErrorSmPoolUnknown
 
- pNsErrorSmHaltGlWithLiveMemberArray = cNsErrorSmHaltGlWithLiveMemberArray
- NsErrorSmHaltGlWithLiveMemberArray = &pNsErrorSmHaltGlWithLiveMemberArray
+	pNsErrorSmHaltGlWithLiveMemberArray = cNsErrorSmHaltGlWithLiveMemberArray
+	NsErrorSmHaltGlWithLiveMemberArray = &pNsErrorSmHaltGlWithLiveMemberArray
 
- pNsErrorSmInfoNeedNewCode = cNsErrorSmInfoNeedNewCode
- NsErrorSmInfoNeedNewCode = &pNsErrorSmInfoNeedNewCode
+	pNsErrorSmInfoNeedNewCode = cNsErrorSmInfoNeedNewCode
+	NsErrorSmInfoNeedNewCode = &pNsErrorSmInfoNeedNewCode
 
- pNsErrorSmReplThrottleOverlap = cNsErrorSmReplThrottleOverlap
- NsErrorSmReplThrottleOverlap = &pNsErrorSmReplThrottleOverlap
+	pNsErrorSmReplThrottleOverlap = cNsErrorSmReplThrottleOverlap
+	NsErrorSmReplThrottleOverlap = &pNsErrorSmReplThrottleOverlap
 
- pNsErrorSmNetconfigUpdateMismatch = cNsErrorSmNetconfigUpdateMismatch
- NsErrorSmNetconfigUpdateMismatch = &pNsErrorSmNetconfigUpdateMismatch
+	pNsErrorSmNetconfigUpdateMismatch = cNsErrorSmNetconfigUpdateMismatch
+	NsErrorSmNetconfigUpdateMismatch = &pNsErrorSmNetconfigUpdateMismatch
 
- pNsErrorSmSrepDownstreamVolsAcl = cNsErrorSmSrepDownstreamVolsAcl
- NsErrorSmSrepDownstreamVolsAcl = &pNsErrorSmSrepDownstreamVolsAcl
+	pNsErrorSmSrepDownstreamVolsAcl = cNsErrorSmSrepDownstreamVolsAcl
+	NsErrorSmSrepDownstreamVolsAcl = &pNsErrorSmSrepDownstreamVolsAcl
 
- pNsErrorSmStatsFrequencyInvalid = cNsErrorSmStatsFrequencyInvalid
- NsErrorSmStatsFrequencyInvalid = &pNsErrorSmStatsFrequencyInvalid
+	pNsErrorSmStatsFrequencyInvalid = cNsErrorSmStatsFrequencyInvalid
+	NsErrorSmStatsFrequencyInvalid = &pNsErrorSmStatsFrequencyInvalid
 
- pNsErrorSmDdupFolderMerge = cNsErrorSmDdupFolderMerge
- NsErrorSmDdupFolderMerge = &pNsErrorSmDdupFolderMerge
+	pNsErrorSmDdupFolderMerge = cNsErrorSmDdupFolderMerge
+	NsErrorSmDdupFolderMerge = &pNsErrorSmDdupFolderMerge
 
- pNsErrorSmInvalidSubnet = cNsErrorSmInvalidSubnet
- NsErrorSmInvalidSubnet = &pNsErrorSmInvalidSubnet
+	pNsErrorSmInvalidSubnet = cNsErrorSmInvalidSubnet
+	NsErrorSmInvalidSubnet = &pNsErrorSmInvalidSubnet
 
- pNsErrorSmReplEnabled = cNsErrorSmReplEnabled
- NsErrorSmReplEnabled = &pNsErrorSmReplEnabled
+	pNsErrorSmReplEnabled = cNsErrorSmReplEnabled
+	NsErrorSmReplEnabled = &pNsErrorSmReplEnabled
 
- pNsErrorSmPoolPartnerNameConflict = cNsErrorSmPoolPartnerNameConflict
- NsErrorSmPoolPartnerNameConflict = &pNsErrorSmPoolPartnerNameConflict
+	pNsErrorSmPoolPartnerNameConflict = cNsErrorSmPoolPartnerNameConflict
+	NsErrorSmPoolPartnerNameConflict = &pNsErrorSmPoolPartnerNameConflict
 
- pNsErrorSmAsupPingfromMgmtipError = cNsErrorSmAsupPingfromMgmtipError
- NsErrorSmAsupPingfromMgmtipError = &pNsErrorSmAsupPingfromMgmtipError
+	pNsErrorSmAsupPingfromMgmtipError = cNsErrorSmAsupPingfromMgmtipError
+	NsErrorSmAsupPingfromMgmtipError = &pNsErrorSmAsupPingfromMgmtipError
 
- pNsErrorSmEncryptionGroupScopeOverride = cNsErrorSmEncryptionGroupScopeOverride
- NsErrorSmEncryptionGroupScopeOverride = &pNsErrorSmEncryptionGroupScopeOverride
+	pNsErrorSmEncryptionGroupScopeOverride = cNsErrorSmEncryptionGroupScopeOverride
+	NsErrorSmEncryptionGroupScopeOverride = &pNsErrorSmEncryptionGroupScopeOverride
 
- pNsErrorSmErrMaxSessionsReached = cNsErrorSmErrMaxSessionsReached
- NsErrorSmErrMaxSessionsReached = &pNsErrorSmErrMaxSessionsReached
+	pNsErrorSmErrMaxSessionsReached = cNsErrorSmErrMaxSessionsReached
+	NsErrorSmErrMaxSessionsReached = &pNsErrorSmErrMaxSessionsReached
 
- pNsErrorSmErrReplMultiplePartners = cNsErrorSmErrReplMultiplePartners
- NsErrorSmErrReplMultiplePartners = &pNsErrorSmErrReplMultiplePartners
+	pNsErrorSmErrReplMultiplePartners = cNsErrorSmErrReplMultiplePartners
+	NsErrorSmErrReplMultiplePartners = &pNsErrorSmErrReplMultiplePartners
 
- pNsErrorSmStatsNoSensors = cNsErrorSmStatsNoSensors
- NsErrorSmStatsNoSensors = &pNsErrorSmStatsNoSensors
+	pNsErrorSmStatsNoSensors = cNsErrorSmStatsNoSensors
+	NsErrorSmStatsNoSensors = &pNsErrorSmStatsNoSensors
 
- pNsErrorSmFolderNeedsLimit = cNsErrorSmFolderNeedsLimit
- NsErrorSmFolderNeedsLimit = &pNsErrorSmFolderNeedsLimit
+	pNsErrorSmFolderNeedsLimit = cNsErrorSmFolderNeedsLimit
+	NsErrorSmFolderNeedsLimit = &pNsErrorSmFolderNeedsLimit
 
- pNsErrorSmVolmvVvol = cNsErrorSmVolmvVvol
- NsErrorSmVolmvVvol = &pNsErrorSmVolmvVvol
+	pNsErrorSmVolmvVvol = cNsErrorSmVolmvVvol
+	NsErrorSmVolmvVvol = &pNsErrorSmVolmvVvol
 
- pNsErrorSmErrGroupMergeInprogress = cNsErrorSmErrGroupMergeInprogress
- NsErrorSmErrGroupMergeInprogress = &pNsErrorSmErrGroupMergeInprogress
+	pNsErrorSmErrGroupMergeInprogress = cNsErrorSmErrGroupMergeInprogress
+	NsErrorSmErrGroupMergeInprogress = &pNsErrorSmErrGroupMergeInprogress
 
- pNsErrorSmFolderNotFound = cNsErrorSmFolderNotFound
- NsErrorSmFolderNotFound = &pNsErrorSmFolderNotFound
+	pNsErrorSmFolderNotFound = cNsErrorSmFolderNotFound
+	NsErrorSmFolderNotFound = &pNsErrorSmFolderNotFound
 
- pNsErrorSmRouteExists = cNsErrorSmRouteExists
- NsErrorSmRouteExists = &pNsErrorSmRouteExists
+	pNsErrorSmRouteExists = cNsErrorSmRouteExists
+	NsErrorSmRouteExists = &pNsErrorSmRouteExists
 
- pNsErrorSmInvalidDiscoveryIp = cNsErrorSmInvalidDiscoveryIp
- NsErrorSmInvalidDiscoveryIp = &pNsErrorSmInvalidDiscoveryIp
+	pNsErrorSmInvalidDiscoveryIp = cNsErrorSmInvalidDiscoveryIp
+	NsErrorSmInvalidDiscoveryIp = &pNsErrorSmInvalidDiscoveryIp
 
- pNsErrorSmErrVolmvCachePinDedupeNotsupp = cNsErrorSmErrVolmvCachePinDedupeNotsupp
- NsErrorSmErrVolmvCachePinDedupeNotsupp = &pNsErrorSmErrVolmvCachePinDedupeNotsupp
+	pNsErrorSmErrVolmvCachePinDedupeNotsupp = cNsErrorSmErrVolmvCachePinDedupeNotsupp
+	NsErrorSmErrVolmvCachePinDedupeNotsupp = &pNsErrorSmErrVolmvCachePinDedupeNotsupp
 
- pNsErrorSmMissingCriteria = cNsErrorSmMissingCriteria
- NsErrorSmMissingCriteria = &pNsErrorSmMissingCriteria
+	pNsErrorSmMissingCriteria = cNsErrorSmMissingCriteria
+	NsErrorSmMissingCriteria = &pNsErrorSmMissingCriteria
 
- pNsErrorSmRootBranchPinned = cNsErrorSmRootBranchPinned
- NsErrorSmRootBranchPinned = &pNsErrorSmRootBranchPinned
+	pNsErrorSmRootBranchPinned = cNsErrorSmRootBranchPinned
+	NsErrorSmRootBranchPinned = &pNsErrorSmRootBranchPinned
 
- pNsErrorSmInvalidMtu = cNsErrorSmInvalidMtu
- NsErrorSmInvalidMtu = &pNsErrorSmInvalidMtu
+	pNsErrorSmInvalidMtu = cNsErrorSmInvalidMtu
+	NsErrorSmInvalidMtu = &pNsErrorSmInvalidMtu
 
- pNsErrorSmNoFcHardware = cNsErrorSmNoFcHardware
- NsErrorSmNoFcHardware = &pNsErrorSmNoFcHardware
+	pNsErrorSmNoFcHardware = cNsErrorSmNoFcHardware
+	NsErrorSmNoFcHardware = &pNsErrorSmNoFcHardware
 
- pNsErrorSmPoolNotFound = cNsErrorSmPoolNotFound
- NsErrorSmPoolNotFound = &pNsErrorSmPoolNotFound
+	pNsErrorSmPoolNotFound = cNsErrorSmPoolNotFound
+	NsErrorSmPoolNotFound = &pNsErrorSmPoolNotFound
 
- pNsErrorSmDuplicateIp = cNsErrorSmDuplicateIp
- NsErrorSmDuplicateIp = &pNsErrorSmDuplicateIp
+	pNsErrorSmDuplicateIp = cNsErrorSmDuplicateIp
+	NsErrorSmDuplicateIp = &pNsErrorSmDuplicateIp
 
- pNsErrorSmErrOtpNotEnabled = cNsErrorSmErrOtpNotEnabled
- NsErrorSmErrOtpNotEnabled = &pNsErrorSmErrOtpNotEnabled
+	pNsErrorSmErrOtpNotEnabled = cNsErrorSmErrOtpNotEnabled
+	NsErrorSmErrOtpNotEnabled = &pNsErrorSmErrOtpNotEnabled
 
- pNsErrorSmNoAction = cNsErrorSmNoAction
- NsErrorSmNoAction = &pNsErrorSmNoAction
+	pNsErrorSmNoAction = cNsErrorSmNoAction
+	NsErrorSmNoAction = &pNsErrorSmNoAction
 
- pNsErrorSmProtpolAppSyncOracleParams = cNsErrorSmProtpolAppSyncOracleParams
- NsErrorSmProtpolAppSyncOracleParams = &pNsErrorSmProtpolAppSyncOracleParams
+	pNsErrorSmProtpolAppSyncOracleParams = cNsErrorSmProtpolAppSyncOracleParams
+	NsErrorSmProtpolAppSyncOracleParams = &pNsErrorSmProtpolAppSyncOracleParams
 
- pNsErrorSmProtpolInvalidVssSettings = cNsErrorSmProtpolInvalidVssSettings
- NsErrorSmProtpolInvalidVssSettings = &pNsErrorSmProtpolInvalidVssSettings
+	pNsErrorSmProtpolInvalidVssSettings = cNsErrorSmProtpolInvalidVssSettings
+	NsErrorSmProtpolInvalidVssSettings = &pNsErrorSmProtpolInvalidVssSettings
 
- pNsErrorSmEncryptionInvalidScope = cNsErrorSmEncryptionInvalidScope
- NsErrorSmEncryptionInvalidScope = &pNsErrorSmEncryptionInvalidScope
+	pNsErrorSmEncryptionInvalidScope = cNsErrorSmEncryptionInvalidScope
+	NsErrorSmEncryptionInvalidScope = &pNsErrorSmEncryptionInvalidScope
 
- pNsErrorSmLimitSnapcollVolcoll = cNsErrorSmLimitSnapcollVolcoll
- NsErrorSmLimitSnapcollVolcoll = &pNsErrorSmLimitSnapcollVolcoll
+	pNsErrorSmLimitSnapcollVolcoll = cNsErrorSmLimitSnapcollVolcoll
+	NsErrorSmLimitSnapcollVolcoll = &pNsErrorSmLimitSnapcollVolcoll
 
- pNsErrorSmShelfRaidDegraded = cNsErrorSmShelfRaidDegraded
- NsErrorSmShelfRaidDegraded = &pNsErrorSmShelfRaidDegraded
+	pNsErrorSmShelfRaidDegraded = cNsErrorSmShelfRaidDegraded
+	NsErrorSmShelfRaidDegraded = &pNsErrorSmShelfRaidDegraded
 
- pNsErrorSmInvalidNonIscsiDataSubnetType = cNsErrorSmInvalidNonIscsiDataSubnetType
- NsErrorSmInvalidNonIscsiDataSubnetType = &pNsErrorSmInvalidNonIscsiDataSubnetType
+	pNsErrorSmInvalidNonIscsiDataSubnetType = cNsErrorSmInvalidNonIscsiDataSubnetType
+	NsErrorSmInvalidNonIscsiDataSubnetType = &pNsErrorSmInvalidNonIscsiDataSubnetType
 
- pNsErrorSmVolmvIncompatibleAgentType = cNsErrorSmVolmvIncompatibleAgentType
- NsErrorSmVolmvIncompatibleAgentType = &pNsErrorSmVolmvIncompatibleAgentType
+	pNsErrorSmVolmvIncompatibleAgentType = cNsErrorSmVolmvIncompatibleAgentType
+	NsErrorSmVolmvIncompatibleAgentType = &pNsErrorSmVolmvIncompatibleAgentType
 
- pNsErrorSmReplPartnerVersionUnknown = cNsErrorSmReplPartnerVersionUnknown
- NsErrorSmReplPartnerVersionUnknown = &pNsErrorSmReplPartnerVersionUnknown
+	pNsErrorSmReplPartnerVersionUnknown = cNsErrorSmReplPartnerVersionUnknown
+	NsErrorSmReplPartnerVersionUnknown = &pNsErrorSmReplPartnerVersionUnknown
 
- pNsErrorSmAsupNameresError = cNsErrorSmAsupNameresError
- NsErrorSmAsupNameresError = &pNsErrorSmAsupNameresError
+	pNsErrorSmAsupNameresError = cNsErrorSmAsupNameresError
+	NsErrorSmAsupNameresError = &pNsErrorSmAsupNameresError
 
- pNsErrorSmReplApiUnsup = cNsErrorSmReplApiUnsup
- NsErrorSmReplApiUnsup = &pNsErrorSmReplApiUnsup
+	pNsErrorSmReplApiUnsup = cNsErrorSmReplApiUnsup
+	NsErrorSmReplApiUnsup = &pNsErrorSmReplApiUnsup
 
- pNsErrorSmEperm = cNsErrorSmEperm
- NsErrorSmEperm = &pNsErrorSmEperm
+	pNsErrorSmEperm = cNsErrorSmEperm
+	NsErrorSmEperm = &pNsErrorSmEperm
 
- pNsErrorSmEnoentEnoent = cNsErrorSmEnoentEnoent
- NsErrorSmEnoentEnoent = &pNsErrorSmEnoentEnoent
+	pNsErrorSmEnoentEnoent = cNsErrorSmEnoentEnoent
+	NsErrorSmEnoentEnoent = &pNsErrorSmEnoentEnoent
 
- pNsErrorSmArrayGroupLeader = cNsErrorSmArrayGroupLeader
- NsErrorSmArrayGroupLeader = &pNsErrorSmArrayGroupLeader
+	pNsErrorSmArrayGroupLeader = cNsErrorSmArrayGroupLeader
+	NsErrorSmArrayGroupLeader = &pNsErrorSmArrayGroupLeader
 
- pNsErrorSmInvalidInitiatorIqn = cNsErrorSmInvalidInitiatorIqn
- NsErrorSmInvalidInitiatorIqn = &pNsErrorSmInvalidInitiatorIqn
+	pNsErrorSmInvalidInitiatorIqn = cNsErrorSmInvalidInitiatorIqn
+	NsErrorSmInvalidInitiatorIqn = &pNsErrorSmInvalidInitiatorIqn
 
- pNsErrorSmReplIntragroup = cNsErrorSmReplIntragroup
- NsErrorSmReplIntragroup = &pNsErrorSmReplIntragroup
+	pNsErrorSmReplIntragroup = cNsErrorSmReplIntragroup
+	NsErrorSmReplIntragroup = &pNsErrorSmReplIntragroup
 
- pNsErrorSmRemoveNonemptyFolder = cNsErrorSmRemoveNonemptyFolder
- NsErrorSmRemoveNonemptyFolder = &pNsErrorSmRemoveNonemptyFolder
+	pNsErrorSmRemoveNonemptyFolder = cNsErrorSmRemoveNonemptyFolder
+	NsErrorSmRemoveNonemptyFolder = &pNsErrorSmRemoveNonemptyFolder
 
- pNsErrorSmAddNoniscsiToIscsiGroup = cNsErrorSmAddNoniscsiToIscsiGroup
- NsErrorSmAddNoniscsiToIscsiGroup = &pNsErrorSmAddNoniscsiToIscsiGroup
+	pNsErrorSmAddNoniscsiToIscsiGroup = cNsErrorSmAddNoniscsiToIscsiGroup
+	NsErrorSmAddNoniscsiToIscsiGroup = &pNsErrorSmAddNoniscsiToIscsiGroup
 
- pNsErrorSmPoolDedupeIncapable = cNsErrorSmPoolDedupeIncapable
- NsErrorSmPoolDedupeIncapable = &pNsErrorSmPoolDedupeIncapable
+	pNsErrorSmPoolDedupeIncapable = cNsErrorSmPoolDedupeIncapable
+	NsErrorSmPoolDedupeIncapable = &pNsErrorSmPoolDedupeIncapable
 
- pNsErrorSmNoVvolSupport = cNsErrorSmNoVvolSupport
- NsErrorSmNoVvolSupport = &pNsErrorSmNoVvolSupport
+	pNsErrorSmNoVvolSupport = cNsErrorSmNoVvolSupport
+	NsErrorSmNoVvolSupport = &pNsErrorSmNoVvolSupport
 
- pNsErrorSmNoInitiatorgrp = cNsErrorSmNoInitiatorgrp
- NsErrorSmNoInitiatorgrp = &pNsErrorSmNoInitiatorgrp
+	pNsErrorSmNoInitiatorgrp = cNsErrorSmNoInitiatorgrp
+	NsErrorSmNoInitiatorgrp = &pNsErrorSmNoInitiatorgrp
 
- pNsErrorSmInvalidNetmask = cNsErrorSmInvalidNetmask
- NsErrorSmInvalidNetmask = &pNsErrorSmInvalidNetmask
+	pNsErrorSmInvalidNetmask = cNsErrorSmInvalidNetmask
+	NsErrorSmInvalidNetmask = &pNsErrorSmInvalidNetmask
 
- pNsErrorSmNoDiscoveryIpInManualMode = cNsErrorSmNoDiscoveryIpInManualMode
- NsErrorSmNoDiscoveryIpInManualMode = &pNsErrorSmNoDiscoveryIpInManualMode
+	pNsErrorSmNoDiscoveryIpInManualMode = cNsErrorSmNoDiscoveryIpInManualMode
+	NsErrorSmNoDiscoveryIpInManualMode = &pNsErrorSmNoDiscoveryIpInManualMode
 
- pNsErrorSmInvalidVolReserveValues = cNsErrorSmInvalidVolReserveValues
- NsErrorSmInvalidVolReserveValues = &pNsErrorSmInvalidVolReserveValues
+	pNsErrorSmInvalidVolReserveValues = cNsErrorSmInvalidVolReserveValues
+	NsErrorSmInvalidVolReserveValues = &pNsErrorSmInvalidVolReserveValues
 
- pNsErrorSmSupportIpInvalid = cNsErrorSmSupportIpInvalid
- NsErrorSmSupportIpInvalid = &pNsErrorSmSupportIpInvalid
+	pNsErrorSmSupportIpInvalid = cNsErrorSmSupportIpInvalid
+	NsErrorSmSupportIpInvalid = &pNsErrorSmSupportIpInvalid
 
- pNsErrorSmErrShelfForeignDisk = cNsErrorSmErrShelfForeignDisk
- NsErrorSmErrShelfForeignDisk = &pNsErrorSmErrShelfForeignDisk
+	pNsErrorSmErrShelfForeignDisk = cNsErrorSmErrShelfForeignDisk
+	NsErrorSmErrShelfForeignDisk = &pNsErrorSmErrShelfForeignDisk
 
- pNsErrorSmVolsnapAlreadyExported = cNsErrorSmVolsnapAlreadyExported
- NsErrorSmVolsnapAlreadyExported = &pNsErrorSmVolsnapAlreadyExported
+	pNsErrorSmVolsnapAlreadyExported = cNsErrorSmVolsnapAlreadyExported
+	NsErrorSmVolsnapAlreadyExported = &pNsErrorSmVolsnapAlreadyExported
 
- pNsErrorSmFcInitiatorgrpSubnetNotSupported = cNsErrorSmFcInitiatorgrpSubnetNotSupported
- NsErrorSmFcInitiatorgrpSubnetNotSupported = &pNsErrorSmFcInitiatorgrpSubnetNotSupported
+	pNsErrorSmFcInitiatorgrpSubnetNotSupported = cNsErrorSmFcInitiatorgrpSubnetNotSupported
+	NsErrorSmFcInitiatorgrpSubnetNotSupported = &pNsErrorSmFcInitiatorgrpSubnetNotSupported
 
- pNsErrorSmIncompatibleInitiatorAccessProtocol = cNsErrorSmIncompatibleInitiatorAccessProtocol
- NsErrorSmIncompatibleInitiatorAccessProtocol = &pNsErrorSmIncompatibleInitiatorAccessProtocol
+	pNsErrorSmIncompatibleInitiatorAccessProtocol = cNsErrorSmIncompatibleInitiatorAccessProtocol
+	NsErrorSmIncompatibleInitiatorAccessProtocol = &pNsErrorSmIncompatibleInitiatorAccessProtocol
 
- pNsErrorSmInvalidInitiatorgrpAccessProtocol = cNsErrorSmInvalidInitiatorgrpAccessProtocol
- NsErrorSmInvalidInitiatorgrpAccessProtocol = &pNsErrorSmInvalidInitiatorgrpAccessProtocol
+	pNsErrorSmInvalidInitiatorgrpAccessProtocol = cNsErrorSmInvalidInitiatorgrpAccessProtocol
+	NsErrorSmInvalidInitiatorgrpAccessProtocol = &pNsErrorSmInvalidInitiatorgrpAccessProtocol
 
- pNsErrorSmLimitPeacl = cNsErrorSmLimitPeacl
- NsErrorSmLimitPeacl = &pNsErrorSmLimitPeacl
+	pNsErrorSmLimitPeacl = cNsErrorSmLimitPeacl
+	NsErrorSmLimitPeacl = &pNsErrorSmLimitPeacl
 
- pNsErrorSmEtimedout = cNsErrorSmEtimedout
- NsErrorSmEtimedout = &pNsErrorSmEtimedout
+	pNsErrorSmEtimedout = cNsErrorSmEtimedout
+	NsErrorSmEtimedout = &pNsErrorSmEtimedout
 
- pNsErrorSmInitiatorgrpSubnetDoesNotExist = cNsErrorSmInitiatorgrpSubnetDoesNotExist
- NsErrorSmInitiatorgrpSubnetDoesNotExist = &pNsErrorSmInitiatorgrpSubnetDoesNotExist
+	pNsErrorSmInitiatorgrpSubnetDoesNotExist = cNsErrorSmInitiatorgrpSubnetDoesNotExist
+	NsErrorSmInitiatorgrpSubnetDoesNotExist = &pNsErrorSmInitiatorgrpSubnetDoesNotExist
 
- pNsErrorSmVolOffline = cNsErrorSmVolOffline
- NsErrorSmVolOffline = &pNsErrorSmVolOffline
+	pNsErrorSmVolOffline = cNsErrorSmVolOffline
+	NsErrorSmVolOffline = &pNsErrorSmVolOffline
 
- pNsErrorSmErrSreplMgmtOpInProgress = cNsErrorSmErrSreplMgmtOpInProgress
- NsErrorSmErrSreplMgmtOpInProgress = &pNsErrorSmErrSreplMgmtOpInProgress
+	pNsErrorSmErrSreplMgmtOpInProgress = cNsErrorSmErrSreplMgmtOpInProgress
+	NsErrorSmErrSreplMgmtOpInProgress = &pNsErrorSmErrSreplMgmtOpInProgress
 
- pNsErrorSmReplFanoutMaximumCloudPartnersExceeded = cNsErrorSmReplFanoutMaximumCloudPartnersExceeded
- NsErrorSmReplFanoutMaximumCloudPartnersExceeded = &pNsErrorSmReplFanoutMaximumCloudPartnersExceeded
+	pNsErrorSmReplFanoutMaximumCloudPartnersExceeded = cNsErrorSmReplFanoutMaximumCloudPartnersExceeded
+	NsErrorSmReplFanoutMaximumCloudPartnersExceeded = &pNsErrorSmReplFanoutMaximumCloudPartnersExceeded
 
- pNsErrorSmMalformedUrl = cNsErrorSmMalformedUrl
- NsErrorSmMalformedUrl = &pNsErrorSmMalformedUrl
+	pNsErrorSmMalformedUrl = cNsErrorSmMalformedUrl
+	NsErrorSmMalformedUrl = &pNsErrorSmMalformedUrl
 
- pNsErrorSmErrSessionCreate = cNsErrorSmErrSessionCreate
- NsErrorSmErrSessionCreate = &pNsErrorSmErrSessionCreate
+	pNsErrorSmErrSessionCreate = cNsErrorSmErrSessionCreate
+	NsErrorSmErrSessionCreate = &pNsErrorSmErrSessionCreate
 
- pNsErrorSmErrShelfCtrlrLoop = cNsErrorSmErrShelfCtrlrLoop
- NsErrorSmErrShelfCtrlrLoop = &pNsErrorSmErrShelfCtrlrLoop
+	pNsErrorSmErrShelfCtrlrLoop = cNsErrorSmErrShelfCtrlrLoop
+	NsErrorSmErrShelfCtrlrLoop = &pNsErrorSmErrShelfCtrlrLoop
 
- pNsErrorSmPeConflictingAclLun = cNsErrorSmPeConflictingAclLun
- NsErrorSmPeConflictingAclLun = &pNsErrorSmPeConflictingAclLun
+	pNsErrorSmPeConflictingAclLun = cNsErrorSmPeConflictingAclLun
+	NsErrorSmPeConflictingAclLun = &pNsErrorSmPeConflictingAclLun
 
- pNsErrorSmInvalidCtrlrName = cNsErrorSmInvalidCtrlrName
- NsErrorSmInvalidCtrlrName = &pNsErrorSmInvalidCtrlrName
+	pNsErrorSmInvalidCtrlrName = cNsErrorSmInvalidCtrlrName
+	NsErrorSmInvalidCtrlrName = &pNsErrorSmInvalidCtrlrName
 
- pNsErrorSmBackupNetconfigReadonly = cNsErrorSmBackupNetconfigReadonly
- NsErrorSmBackupNetconfigReadonly = &pNsErrorSmBackupNetconfigReadonly
+	pNsErrorSmBackupNetconfigReadonly = cNsErrorSmBackupNetconfigReadonly
+	NsErrorSmBackupNetconfigReadonly = &pNsErrorSmBackupNetconfigReadonly
 
- pNsErrorSmLimitSnapGroup = cNsErrorSmLimitSnapGroup
- NsErrorSmLimitSnapGroup = &pNsErrorSmLimitSnapGroup
+	pNsErrorSmLimitSnapGroup = cNsErrorSmLimitSnapGroup
+	NsErrorSmLimitSnapGroup = &pNsErrorSmLimitSnapGroup
 
- pNsErrorSmEncryptionInvalidCipher = cNsErrorSmEncryptionInvalidCipher
- NsErrorSmEncryptionInvalidCipher = &pNsErrorSmEncryptionInvalidCipher
+	pNsErrorSmEncryptionInvalidCipher = cNsErrorSmEncryptionInvalidCipher
+	NsErrorSmEncryptionInvalidCipher = &pNsErrorSmEncryptionInvalidCipher
 
- pNsErrorSmPerfpolInvalidAppCategory = cNsErrorSmPerfpolInvalidAppCategory
- NsErrorSmPerfpolInvalidAppCategory = &pNsErrorSmPerfpolInvalidAppCategory
+	pNsErrorSmPerfpolInvalidAppCategory = cNsErrorSmPerfpolInvalidAppCategory
+	NsErrorSmPerfpolInvalidAppCategory = &pNsErrorSmPerfpolInvalidAppCategory
 
- pNsErrorSmArrayPoolFlashMismatch = cNsErrorSmArrayPoolFlashMismatch
- NsErrorSmArrayPoolFlashMismatch = &pNsErrorSmArrayPoolFlashMismatch
+	pNsErrorSmArrayPoolFlashMismatch = cNsErrorSmArrayPoolFlashMismatch
+	NsErrorSmArrayPoolFlashMismatch = &pNsErrorSmArrayPoolFlashMismatch
 
- pNsErrorSmFolderLimitInval = cNsErrorSmFolderLimitInval
- NsErrorSmFolderLimitInval = &pNsErrorSmFolderLimitInval
+	pNsErrorSmFolderLimitInval = cNsErrorSmFolderLimitInval
+	NsErrorSmFolderLimitInval = &pNsErrorSmFolderLimitInval
 
- pNsErrorSmShelfSsdDegraded = cNsErrorSmShelfSsdDegraded
- NsErrorSmShelfSsdDegraded = &pNsErrorSmShelfSsdDegraded
+	pNsErrorSmShelfSsdDegraded = cNsErrorSmShelfSsdDegraded
+	NsErrorSmShelfSsdDegraded = &pNsErrorSmShelfSsdDegraded
 
- pNsErrorSmFolderOverdraftLimitNeedsUsageLimit = cNsErrorSmFolderOverdraftLimitNeedsUsageLimit
- NsErrorSmFolderOverdraftLimitNeedsUsageLimit = &pNsErrorSmFolderOverdraftLimitNeedsUsageLimit
+	pNsErrorSmFolderOverdraftLimitNeedsUsageLimit = cNsErrorSmFolderOverdraftLimitNeedsUsageLimit
+	NsErrorSmFolderOverdraftLimitNeedsUsageLimit = &pNsErrorSmFolderOverdraftLimitNeedsUsageLimit
 
- pNsErrorSmEncryptionMasterKeyMissing = cNsErrorSmEncryptionMasterKeyMissing
- NsErrorSmEncryptionMasterKeyMissing = &pNsErrorSmEncryptionMasterKeyMissing
+	pNsErrorSmEncryptionMasterKeyMissing = cNsErrorSmEncryptionMasterKeyMissing
+	NsErrorSmEncryptionMasterKeyMissing = &pNsErrorSmEncryptionMasterKeyMissing
 
- pNsErrorSmSrepAgentTypeMismatchDownstreamVols = cNsErrorSmSrepAgentTypeMismatchDownstreamVols
- NsErrorSmSrepAgentTypeMismatchDownstreamVols = &pNsErrorSmSrepAgentTypeMismatchDownstreamVols
+	pNsErrorSmSrepAgentTypeMismatchDownstreamVols = cNsErrorSmSrepAgentTypeMismatchDownstreamVols
+	NsErrorSmSrepAgentTypeMismatchDownstreamVols = &pNsErrorSmSrepAgentTypeMismatchDownstreamVols
 
- pNsErrorSmErrVolNotOfflineOnRestore = cNsErrorSmErrVolNotOfflineOnRestore
- NsErrorSmErrVolNotOfflineOnRestore = &pNsErrorSmErrVolNotOfflineOnRestore
+	pNsErrorSmErrVolNotOfflineOnRestore = cNsErrorSmErrVolNotOfflineOnRestore
+	NsErrorSmErrVolNotOfflineOnRestore = &pNsErrorSmErrVolNotOfflineOnRestore
 
- pNsErrorSmArrayModelNotDedupeConfigurable = cNsErrorSmArrayModelNotDedupeConfigurable
- NsErrorSmArrayModelNotDedupeConfigurable = &pNsErrorSmArrayModelNotDedupeConfigurable
+	pNsErrorSmArrayModelNotDedupeConfigurable = cNsErrorSmArrayModelNotDedupeConfigurable
+	NsErrorSmArrayModelNotDedupeConfigurable = &pNsErrorSmArrayModelNotDedupeConfigurable
 
- pNsErrorSmReplHandoverBusy = cNsErrorSmReplHandoverBusy
- NsErrorSmReplHandoverBusy = &pNsErrorSmReplHandoverBusy
+	pNsErrorSmReplHandoverBusy = cNsErrorSmReplHandoverBusy
+	NsErrorSmReplHandoverBusy = &pNsErrorSmReplHandoverBusy
 
- pNsErrorSmNotOwner = cNsErrorSmNotOwner
- NsErrorSmNotOwner = &pNsErrorSmNotOwner
+	pNsErrorSmNotOwner = cNsErrorSmNotOwner
+	NsErrorSmNotOwner = &pNsErrorSmNotOwner
 
- pNsErrorSmSrepDownstreamAcl = cNsErrorSmSrepDownstreamAcl
- NsErrorSmSrepDownstreamAcl = &pNsErrorSmSrepDownstreamAcl
+	pNsErrorSmSrepDownstreamAcl = cNsErrorSmSrepDownstreamAcl
+	NsErrorSmSrepDownstreamAcl = &pNsErrorSmSrepDownstreamAcl
 
- pNsErrorSmNoSubnetWithLabel = cNsErrorSmNoSubnetWithLabel
- NsErrorSmNoSubnetWithLabel = &pNsErrorSmNoSubnetWithLabel
+	pNsErrorSmNoSubnetWithLabel = cNsErrorSmNoSubnetWithLabel
+	NsErrorSmNoSubnetWithLabel = &pNsErrorSmNoSubnetWithLabel
 
- pNsErrorSmPoolUpdateInvalArrays = cNsErrorSmPoolUpdateInvalArrays
- NsErrorSmPoolUpdateInvalArrays = &pNsErrorSmPoolUpdateInvalArrays
+	pNsErrorSmPoolUpdateInvalArrays = cNsErrorSmPoolUpdateInvalArrays
+	NsErrorSmPoolUpdateInvalArrays = &pNsErrorSmPoolUpdateInvalArrays
 
- pNsErrorSmVolHasOnlineSnap = cNsErrorSmVolHasOnlineSnap
- NsErrorSmVolHasOnlineSnap = &pNsErrorSmVolHasOnlineSnap
+	pNsErrorSmVolHasOnlineSnap = cNsErrorSmVolHasOnlineSnap
+	NsErrorSmVolHasOnlineSnap = &pNsErrorSmVolHasOnlineSnap
 
- pNsErrorSmInvalidDataIp = cNsErrorSmInvalidDataIp
- NsErrorSmInvalidDataIp = &pNsErrorSmInvalidDataIp
+	pNsErrorSmInvalidDataIp = cNsErrorSmInvalidDataIp
+	NsErrorSmInvalidDataIp = &pNsErrorSmInvalidDataIp
 
- pNsErrorSmPoolVolmvEinprog = cNsErrorSmPoolVolmvEinprog
- NsErrorSmPoolVolmvEinprog = &pNsErrorSmPoolVolmvEinprog
+	pNsErrorSmPoolVolmvEinprog = cNsErrorSmPoolVolmvEinprog
+	NsErrorSmPoolVolmvEinprog = &pNsErrorSmPoolVolmvEinprog
 
- pNsErrorSmErrLdapBindPasswordNoUser = cNsErrorSmErrLdapBindPasswordNoUser
- NsErrorSmErrLdapBindPasswordNoUser = &pNsErrorSmErrLdapBindPasswordNoUser
+	pNsErrorSmErrLdapBindPasswordNoUser = cNsErrorSmErrLdapBindPasswordNoUser
+	NsErrorSmErrLdapBindPasswordNoUser = &pNsErrorSmErrLdapBindPasswordNoUser
 
- pNsErrorSmNoDataIpOnMgmtPlusData = cNsErrorSmNoDataIpOnMgmtPlusData
- NsErrorSmNoDataIpOnMgmtPlusData = &pNsErrorSmNoDataIpOnMgmtPlusData
+	pNsErrorSmNoDataIpOnMgmtPlusData = cNsErrorSmNoDataIpOnMgmtPlusData
+	NsErrorSmNoDataIpOnMgmtPlusData = &pNsErrorSmNoDataIpOnMgmtPlusData
 
- pNsErrorSmConflictingAclLun = cNsErrorSmConflictingAclLun
- NsErrorSmConflictingAclLun = &pNsErrorSmConflictingAclLun
+	pNsErrorSmConflictingAclLun = cNsErrorSmConflictingAclLun
+	NsErrorSmConflictingAclLun = &pNsErrorSmConflictingAclLun
 
- pNsErrorSmVpCreatedIgrp = cNsErrorSmVpCreatedIgrp
- NsErrorSmVpCreatedIgrp = &pNsErrorSmVpCreatedIgrp
+	pNsErrorSmVpCreatedIgrp = cNsErrorSmVpCreatedIgrp
+	NsErrorSmVpCreatedIgrp = &pNsErrorSmVpCreatedIgrp
 
- pNsErrorSmStarterVolAclCreate = cNsErrorSmStarterVolAclCreate
- NsErrorSmStarterVolAclCreate = &pNsErrorSmStarterVolAclCreate
+	pNsErrorSmStarterVolAclCreate = cNsErrorSmStarterVolAclCreate
+	NsErrorSmStarterVolAclCreate = &pNsErrorSmStarterVolAclCreate
 
- pNsErrorSmBadPkg = cNsErrorSmBadPkg
- NsErrorSmBadPkg = &pNsErrorSmBadPkg
+	pNsErrorSmBadPkg = cNsErrorSmBadPkg
+	NsErrorSmBadPkg = &pNsErrorSmBadPkg
 
- pNsErrorSmPasswdSameAsCurrent = cNsErrorSmPasswdSameAsCurrent
- NsErrorSmPasswdSameAsCurrent = &pNsErrorSmPasswdSameAsCurrent
+	pNsErrorSmPasswdSameAsCurrent = cNsErrorSmPasswdSameAsCurrent
+	NsErrorSmPasswdSameAsCurrent = &pNsErrorSmPasswdSameAsCurrent
 
- pNsErrorSmSnaplunsOutOfSync = cNsErrorSmSnaplunsOutOfSync
- NsErrorSmSnaplunsOutOfSync = &pNsErrorSmSnaplunsOutOfSync
+	pNsErrorSmSnaplunsOutOfSync = cNsErrorSmSnaplunsOutOfSync
+	NsErrorSmSnaplunsOutOfSync = &pNsErrorSmSnaplunsOutOfSync
 
- pNsErrorSmLimitSnapPool = cNsErrorSmLimitSnapPool
- NsErrorSmLimitSnapPool = &pNsErrorSmLimitSnapPool
+	pNsErrorSmLimitSnapPool = cNsErrorSmLimitSnapPool
+	NsErrorSmLimitSnapPool = &pNsErrorSmLimitSnapPool
 
- pNsErrorSmMultiProtocolAccessNotSupported = cNsErrorSmMultiProtocolAccessNotSupported
- NsErrorSmMultiProtocolAccessNotSupported = &pNsErrorSmMultiProtocolAccessNotSupported
+	pNsErrorSmMultiProtocolAccessNotSupported = cNsErrorSmMultiProtocolAccessNotSupported
+	NsErrorSmMultiProtocolAccessNotSupported = &pNsErrorSmMultiProtocolAccessNotSupported
 
- pNsErrorSmVolHasClone = cNsErrorSmVolHasClone
- NsErrorSmVolHasClone = &pNsErrorSmVolHasClone
+	pNsErrorSmVolHasClone = cNsErrorSmVolHasClone
+	NsErrorSmVolHasClone = &pNsErrorSmVolHasClone
 
- pNsErrorSmDedupeSingleArray = cNsErrorSmDedupeSingleArray
- NsErrorSmDedupeSingleArray = &pNsErrorSmDedupeSingleArray
+	pNsErrorSmDedupeSingleArray = cNsErrorSmDedupeSingleArray
+	NsErrorSmDedupeSingleArray = &pNsErrorSmDedupeSingleArray
 
- pNsErrorSmEncryptionMasterKeyInactive = cNsErrorSmEncryptionMasterKeyInactive
- NsErrorSmEncryptionMasterKeyInactive = &pNsErrorSmEncryptionMasterKeyInactive
+	pNsErrorSmEncryptionMasterKeyInactive = cNsErrorSmEncryptionMasterKeyInactive
+	NsErrorSmEncryptionMasterKeyInactive = &pNsErrorSmEncryptionMasterKeyInactive
 
- pNsErrorSmSnapHasClone = cNsErrorSmSnapHasClone
- NsErrorSmSnapHasClone = &pNsErrorSmSnapHasClone
+	pNsErrorSmSnapHasClone = cNsErrorSmSnapHasClone
+	NsErrorSmSnapHasClone = &pNsErrorSmSnapHasClone
 
- pNsErrorSmErrEncryptionNeeded = cNsErrorSmErrEncryptionNeeded
- NsErrorSmErrEncryptionNeeded = &pNsErrorSmErrEncryptionNeeded
+	pNsErrorSmErrEncryptionNeeded = cNsErrorSmErrEncryptionNeeded
+	NsErrorSmErrEncryptionNeeded = &pNsErrorSmErrEncryptionNeeded
 
- pNsErrorSmMismatchingDuplicateSubnet = cNsErrorSmMismatchingDuplicateSubnet
- NsErrorSmMismatchingDuplicateSubnet = &pNsErrorSmMismatchingDuplicateSubnet
+	pNsErrorSmMismatchingDuplicateSubnet = cNsErrorSmMismatchingDuplicateSubnet
+	NsErrorSmMismatchingDuplicateSubnet = &pNsErrorSmMismatchingDuplicateSubnet
 
- pNsErrorSmSrepNotGroupScopedVol = cNsErrorSmSrepNotGroupScopedVol
- NsErrorSmSrepNotGroupScopedVol = &pNsErrorSmSrepNotGroupScopedVol
+	pNsErrorSmSrepNotGroupScopedVol = cNsErrorSmSrepNotGroupScopedVol
+	NsErrorSmSrepNotGroupScopedVol = &pNsErrorSmSrepNotGroupScopedVol
 
- pNsErrorSmOnlyVvolFolderFolset = cNsErrorSmOnlyVvolFolderFolset
- NsErrorSmOnlyVvolFolderFolset = &pNsErrorSmOnlyVvolFolderFolset
+	pNsErrorSmOnlyVvolFolderFolset = cNsErrorSmOnlyVvolFolderFolset
+	NsErrorSmOnlyVvolFolderFolset = &pNsErrorSmOnlyVvolFolderFolset
 
- pNsErrorSmReplSnapshotSync = cNsErrorSmReplSnapshotSync
- NsErrorSmReplSnapshotSync = &pNsErrorSmReplSnapshotSync
+	pNsErrorSmReplSnapshotSync = cNsErrorSmReplSnapshotSync
+	NsErrorSmReplSnapshotSync = &pNsErrorSmReplSnapshotSync
 
- pNsErrorSmStatsNoSuchObject = cNsErrorSmStatsNoSuchObject
- NsErrorSmStatsNoSuchObject = &pNsErrorSmStatsNoSuchObject
+	pNsErrorSmStatsNoSuchObject = cNsErrorSmStatsNoSuchObject
+	NsErrorSmStatsNoSuchObject = &pNsErrorSmStatsNoSuchObject
 
- pNsErrorSmDefaultRouteMissing = cNsErrorSmDefaultRouteMissing
- NsErrorSmDefaultRouteMissing = &pNsErrorSmDefaultRouteMissing
+	pNsErrorSmDefaultRouteMissing = cNsErrorSmDefaultRouteMissing
+	NsErrorSmDefaultRouteMissing = &pNsErrorSmDefaultRouteMissing
 
- pNsErrorSmReplVasa3ApiUnsup = cNsErrorSmReplVasa3ApiUnsup
- NsErrorSmReplVasa3ApiUnsup = &pNsErrorSmReplVasa3ApiUnsup
+	pNsErrorSmReplVasa3ApiUnsup = cNsErrorSmReplVasa3ApiUnsup
+	NsErrorSmReplVasa3ApiUnsup = &pNsErrorSmReplVasa3ApiUnsup
 
- pNsErrorSmOverlappingSubnets = cNsErrorSmOverlappingSubnets
- NsErrorSmOverlappingSubnets = &pNsErrorSmOverlappingSubnets
+	pNsErrorSmOverlappingSubnets = cNsErrorSmOverlappingSubnets
+	NsErrorSmOverlappingSubnets = &pNsErrorSmOverlappingSubnets
 
- pNsErrorSmMissingArg = cNsErrorSmMissingArg
- NsErrorSmMissingArg = &pNsErrorSmMissingArg
+	pNsErrorSmMissingArg = cNsErrorSmMissingArg
+	NsErrorSmMissingArg = &pNsErrorSmMissingArg
 
- pNsErrorSmVolmvCachePinDedupeNotsupp = cNsErrorSmVolmvCachePinDedupeNotsupp
- NsErrorSmVolmvCachePinDedupeNotsupp = &pNsErrorSmVolmvCachePinDedupeNotsupp
+	pNsErrorSmVolmvCachePinDedupeNotsupp = cNsErrorSmVolmvCachePinDedupeNotsupp
+	NsErrorSmVolmvCachePinDedupeNotsupp = &pNsErrorSmVolmvCachePinDedupeNotsupp
 
- pNsErrorSmErrMergeConflict = cNsErrorSmErrMergeConflict
- NsErrorSmErrMergeConflict = &pNsErrorSmErrMergeConflict
+	pNsErrorSmErrMergeConflict = cNsErrorSmErrMergeConflict
+	NsErrorSmErrMergeConflict = &pNsErrorSmErrMergeConflict
 
- pNsErrorSmTooSmall = cNsErrorSmTooSmall
- NsErrorSmTooSmall = &pNsErrorSmTooSmall
+	pNsErrorSmTooSmall = cNsErrorSmTooSmall
+	NsErrorSmTooSmall = &pNsErrorSmTooSmall
 
- pNsErrorSmVolWarnGreaterThanLimit = cNsErrorSmVolWarnGreaterThanLimit
- NsErrorSmVolWarnGreaterThanLimit = &pNsErrorSmVolWarnGreaterThanLimit
+	pNsErrorSmVolWarnGreaterThanLimit = cNsErrorSmVolWarnGreaterThanLimit
+	NsErrorSmVolWarnGreaterThanLimit = &pNsErrorSmVolWarnGreaterThanLimit
 
- pNsErrorSmKeymgrUnreach = cNsErrorSmKeymgrUnreach
- NsErrorSmKeymgrUnreach = &pNsErrorSmKeymgrUnreach
+	pNsErrorSmKeymgrUnreach = cNsErrorSmKeymgrUnreach
+	NsErrorSmKeymgrUnreach = &pNsErrorSmKeymgrUnreach
 
- pNsErrorSmErrFcAsymmetryNotSupported = cNsErrorSmErrFcAsymmetryNotSupported
- NsErrorSmErrFcAsymmetryNotSupported = &pNsErrorSmErrFcAsymmetryNotSupported
+	pNsErrorSmErrFcAsymmetryNotSupported = cNsErrorSmErrFcAsymmetryNotSupported
+	NsErrorSmErrFcAsymmetryNotSupported = &pNsErrorSmErrFcAsymmetryNotSupported
 
- pNsErrorSmLunMismatch = cNsErrorSmLunMismatch
- NsErrorSmLunMismatch = &pNsErrorSmLunMismatch
+	pNsErrorSmLunMismatch = cNsErrorSmLunMismatch
+	NsErrorSmLunMismatch = &pNsErrorSmLunMismatch
 
- pNsErrorSmErrShelfInvalidDiskCount = cNsErrorSmErrShelfInvalidDiskCount
- NsErrorSmErrShelfInvalidDiskCount = &pNsErrorSmErrShelfInvalidDiskCount
+	pNsErrorSmErrShelfInvalidDiskCount = cNsErrorSmErrShelfInvalidDiskCount
+	NsErrorSmErrShelfInvalidDiskCount = &pNsErrorSmErrShelfInvalidDiskCount
 
- pNsErrorSmLimitVolacl = cNsErrorSmLimitVolacl
- NsErrorSmLimitVolacl = &pNsErrorSmLimitVolacl
+	pNsErrorSmLimitVolacl = cNsErrorSmLimitVolacl
+	NsErrorSmLimitVolacl = &pNsErrorSmLimitVolacl
 
- pNsErrorSmControllerNotActive = cNsErrorSmControllerNotActive
- NsErrorSmControllerNotActive = &pNsErrorSmControllerNotActive
+	pNsErrorSmControllerNotActive = cNsErrorSmControllerNotActive
+	NsErrorSmControllerNotActive = &pNsErrorSmControllerNotActive
 
- pNsErrorSmReplNoPartnerAvail = cNsErrorSmReplNoPartnerAvail
- NsErrorSmReplNoPartnerAvail = &pNsErrorSmReplNoPartnerAvail
+	pNsErrorSmReplNoPartnerAvail = cNsErrorSmReplNoPartnerAvail
+	NsErrorSmReplNoPartnerAvail = &pNsErrorSmReplNoPartnerAvail
 
- pNsErrorSmSreplMgmtOpDisallowedWhenSolo = cNsErrorSmSreplMgmtOpDisallowedWhenSolo
- NsErrorSmSreplMgmtOpDisallowedWhenSolo = &pNsErrorSmSreplMgmtOpDisallowedWhenSolo
+	pNsErrorSmSreplMgmtOpDisallowedWhenSolo = cNsErrorSmSreplMgmtOpDisallowedWhenSolo
+	NsErrorSmSreplMgmtOpDisallowedWhenSolo = &pNsErrorSmSreplMgmtOpDisallowedWhenSolo
 
- pNsErrorSmNoMgmtSubnetSpecified = cNsErrorSmNoMgmtSubnetSpecified
- NsErrorSmNoMgmtSubnetSpecified = &pNsErrorSmNoMgmtSubnetSpecified
+	pNsErrorSmNoMgmtSubnetSpecified = cNsErrorSmNoMgmtSubnetSpecified
+	NsErrorSmNoMgmtSubnetSpecified = &pNsErrorSmNoMgmtSubnetSpecified
 
- pNsErrorSmFolderConflict = cNsErrorSmFolderConflict
- NsErrorSmFolderConflict = &pNsErrorSmFolderConflict
+	pNsErrorSmFolderConflict = cNsErrorSmFolderConflict
+	NsErrorSmFolderConflict = &pNsErrorSmFolderConflict
 
- pNsErrorSmInvalidDataSubnet = cNsErrorSmInvalidDataSubnet
- NsErrorSmInvalidDataSubnet = &pNsErrorSmInvalidDataSubnet
+	pNsErrorSmInvalidDataSubnet = cNsErrorSmInvalidDataSubnet
+	NsErrorSmInvalidDataSubnet = &pNsErrorSmInvalidDataSubnet
 
- pNsErrorSmVolUsageUnavailable = cNsErrorSmVolUsageUnavailable
- NsErrorSmVolUsageUnavailable = &pNsErrorSmVolUsageUnavailable
+	pNsErrorSmVolUsageUnavailable = cNsErrorSmVolUsageUnavailable
+	NsErrorSmVolUsageUnavailable = &pNsErrorSmVolUsageUnavailable
 
- pNsErrorSmAclScopeOverlap = cNsErrorSmAclScopeOverlap
- NsErrorSmAclScopeOverlap = &pNsErrorSmAclScopeOverlap
+	pNsErrorSmAclScopeOverlap = cNsErrorSmAclScopeOverlap
+	NsErrorSmAclScopeOverlap = &pNsErrorSmAclScopeOverlap
 
- pNsErrorSmErrVvolAclGrpMerge = cNsErrorSmErrVvolAclGrpMerge
- NsErrorSmErrVvolAclGrpMerge = &pNsErrorSmErrVvolAclGrpMerge
+	pNsErrorSmErrVvolAclGrpMerge = cNsErrorSmErrVvolAclGrpMerge
+	NsErrorSmErrVvolAclGrpMerge = &pNsErrorSmErrVvolAclGrpMerge
 
- pNsErrorSmDisabledProtocolArtifacts = cNsErrorSmDisabledProtocolArtifacts
- NsErrorSmDisabledProtocolArtifacts = &pNsErrorSmDisabledProtocolArtifacts
+	pNsErrorSmDisabledProtocolArtifacts = cNsErrorSmDisabledProtocolArtifacts
+	NsErrorSmDisabledProtocolArtifacts = &pNsErrorSmDisabledProtocolArtifacts
 
- pNsErrorSmDuplicateSubnetVlanId = cNsErrorSmDuplicateSubnetVlanId
- NsErrorSmDuplicateSubnetVlanId = &pNsErrorSmDuplicateSubnetVlanId
+	pNsErrorSmDuplicateSubnetVlanId = cNsErrorSmDuplicateSubnetVlanId
+	NsErrorSmDuplicateSubnetVlanId = &pNsErrorSmDuplicateSubnetVlanId
 
- pNsErrorSmReplOpenstackUnsup = cNsErrorSmReplOpenstackUnsup
- NsErrorSmReplOpenstackUnsup = &pNsErrorSmReplOpenstackUnsup
+	pNsErrorSmReplOpenstackUnsup = cNsErrorSmReplOpenstackUnsup
+	NsErrorSmReplOpenstackUnsup = &pNsErrorSmReplOpenstackUnsup
 
- pNsErrorSmNoAvailableLun = cNsErrorSmNoAvailableLun
- NsErrorSmNoAvailableLun = &pNsErrorSmNoAvailableLun
+	pNsErrorSmNoAvailableLun = cNsErrorSmNoAvailableLun
+	NsErrorSmNoAvailableLun = &pNsErrorSmNoAvailableLun
 
- pNsErrorSmGroupPartnerNameConflict = cNsErrorSmGroupPartnerNameConflict
- NsErrorSmGroupPartnerNameConflict = &pNsErrorSmGroupPartnerNameConflict
+	pNsErrorSmGroupPartnerNameConflict = cNsErrorSmGroupPartnerNameConflict
+	NsErrorSmGroupPartnerNameConflict = &pNsErrorSmGroupPartnerNameConflict
 
- pNsErrorSmMgmtIpNotOnMgmt = cNsErrorSmMgmtIpNotOnMgmt
- NsErrorSmMgmtIpNotOnMgmt = &pNsErrorSmMgmtIpNotOnMgmt
+	pNsErrorSmMgmtIpNotOnMgmt = cNsErrorSmMgmtIpNotOnMgmt
+	NsErrorSmMgmtIpNotOnMgmt = &pNsErrorSmMgmtIpNotOnMgmt
 
- pNsErrorSmInUseLun = cNsErrorSmInUseLun
- NsErrorSmInUseLun = &pNsErrorSmInUseLun
+	pNsErrorSmInUseLun = cNsErrorSmInUseLun
+	NsErrorSmInUseLun = &pNsErrorSmInUseLun
 
- pNsErrorSmNotFcInitiatorgrp = cNsErrorSmNotFcInitiatorgrp
- NsErrorSmNotFcInitiatorgrp = &pNsErrorSmNotFcInitiatorgrp
+	pNsErrorSmNotFcInitiatorgrp = cNsErrorSmNotFcInitiatorgrp
+	NsErrorSmNotFcInitiatorgrp = &pNsErrorSmNotFcInitiatorgrp
 
- pNsErrorSmErrShelfInvalidCsz = cNsErrorSmErrShelfInvalidCsz
- NsErrorSmErrShelfInvalidCsz = &pNsErrorSmErrShelfInvalidCsz
+	pNsErrorSmErrShelfInvalidCsz = cNsErrorSmErrShelfInvalidCsz
+	NsErrorSmErrShelfInvalidCsz = &pNsErrorSmErrShelfInvalidCsz
 
- pNsErrorSmVolDedupeInvalidPerfPolicy = cNsErrorSmVolDedupeInvalidPerfPolicy
- NsErrorSmVolDedupeInvalidPerfPolicy = &pNsErrorSmVolDedupeInvalidPerfPolicy
+	pNsErrorSmVolDedupeInvalidPerfPolicy = cNsErrorSmVolDedupeInvalidPerfPolicy
+	NsErrorSmVolDedupeInvalidPerfPolicy = &pNsErrorSmVolDedupeInvalidPerfPolicy
 
- pNsErrorSmEncryptionInvalidMode = cNsErrorSmEncryptionInvalidMode
- NsErrorSmEncryptionInvalidMode = &pNsErrorSmEncryptionInvalidMode
+	pNsErrorSmEncryptionInvalidMode = cNsErrorSmEncryptionInvalidMode
+	NsErrorSmEncryptionInvalidMode = &pNsErrorSmEncryptionInvalidMode
 
- pNsErrorSmAsupDisabled = cNsErrorSmAsupDisabled
- NsErrorSmAsupDisabled = &pNsErrorSmAsupDisabled
+	pNsErrorSmAsupDisabled = cNsErrorSmAsupDisabled
+	NsErrorSmAsupDisabled = &pNsErrorSmAsupDisabled
 
- pNsErrorSmErrShelfConnectedOnlyOneSide = cNsErrorSmErrShelfConnectedOnlyOneSide
- NsErrorSmErrShelfConnectedOnlyOneSide = &pNsErrorSmErrShelfConnectedOnlyOneSide
+	pNsErrorSmErrShelfConnectedOnlyOneSide = cNsErrorSmErrShelfConnectedOnlyOneSide
+	NsErrorSmErrShelfConnectedOnlyOneSide = &pNsErrorSmErrShelfConnectedOnlyOneSide
 
- pNsErrorSmVolmvEnospace = cNsErrorSmVolmvEnospace
- NsErrorSmVolmvEnospace = &pNsErrorSmVolmvEnospace
+	pNsErrorSmVolmvEnospace = cNsErrorSmVolmvEnospace
+	NsErrorSmVolmvEnospace = &pNsErrorSmVolmvEnospace
 
- pNsErrorSmIncompatibleVolumes = cNsErrorSmIncompatibleVolumes
- NsErrorSmIncompatibleVolumes = &pNsErrorSmIncompatibleVolumes
+	pNsErrorSmIncompatibleVolumes = cNsErrorSmIncompatibleVolumes
+	NsErrorSmIncompatibleVolumes = &pNsErrorSmIncompatibleVolumes
 
- pNsErrorSmComplexTypeQueryParam = cNsErrorSmComplexTypeQueryParam
- NsErrorSmComplexTypeQueryParam = &pNsErrorSmComplexTypeQueryParam
+	pNsErrorSmComplexTypeQueryParam = cNsErrorSmComplexTypeQueryParam
+	NsErrorSmComplexTypeQueryParam = &pNsErrorSmComplexTypeQueryParam
 
- pNsErrorSmAsupError = cNsErrorSmAsupError
- NsErrorSmAsupError = &pNsErrorSmAsupError
+	pNsErrorSmAsupError = cNsErrorSmAsupError
+	NsErrorSmAsupError = &pNsErrorSmAsupError
 
- pNsErrorSmReplUnassignedAppcat = cNsErrorSmReplUnassignedAppcat
- NsErrorSmReplUnassignedAppcat = &pNsErrorSmReplUnassignedAppcat
+	pNsErrorSmReplUnassignedAppcat = cNsErrorSmReplUnassignedAppcat
+	NsErrorSmReplUnassignedAppcat = &pNsErrorSmReplUnassignedAppcat
 
- pNsErrorSmErrFcRegenerateInvalidOperationTdz = cNsErrorSmErrFcRegenerateInvalidOperationTdz
- NsErrorSmErrFcRegenerateInvalidOperationTdz = &pNsErrorSmErrFcRegenerateInvalidOperationTdz
+	pNsErrorSmErrFcRegenerateInvalidOperationTdz = cNsErrorSmErrFcRegenerateInvalidOperationTdz
+	NsErrorSmErrFcRegenerateInvalidOperationTdz = &pNsErrorSmErrFcRegenerateInvalidOperationTdz
 
- pNsErrorSmInvalidPathVariable = cNsErrorSmInvalidPathVariable
- NsErrorSmInvalidPathVariable = &pNsErrorSmInvalidPathVariable
+	pNsErrorSmInvalidPathVariable = cNsErrorSmInvalidPathVariable
+	NsErrorSmInvalidPathVariable = &pNsErrorSmInvalidPathVariable
 
- pNsErrorSmErrArgChangeNotAllowed = cNsErrorSmErrArgChangeNotAllowed
- NsErrorSmErrArgChangeNotAllowed = &pNsErrorSmErrArgChangeNotAllowed
+	pNsErrorSmErrArgChangeNotAllowed = cNsErrorSmErrArgChangeNotAllowed
+	NsErrorSmErrArgChangeNotAllowed = &pNsErrorSmErrArgChangeNotAllowed
 
- pNsErrorSmSpecifiedSnapshotLun = cNsErrorSmSpecifiedSnapshotLun
- NsErrorSmSpecifiedSnapshotLun = &pNsErrorSmSpecifiedSnapshotLun
+	pNsErrorSmSpecifiedSnapshotLun = cNsErrorSmSpecifiedSnapshotLun
+	NsErrorSmSpecifiedSnapshotLun = &pNsErrorSmSpecifiedSnapshotLun
 
- pNsErrorSmSrepDownstreamAssocedVol = cNsErrorSmSrepDownstreamAssocedVol
- NsErrorSmSrepDownstreamAssocedVol = &pNsErrorSmSrepDownstreamAssocedVol
+	pNsErrorSmSrepDownstreamAssocedVol = cNsErrorSmSrepDownstreamAssocedVol
+	NsErrorSmSrepDownstreamAssocedVol = &pNsErrorSmSrepDownstreamAssocedVol
 
- pNsErrorSmLimitScopeValues = cNsErrorSmLimitScopeValues
- NsErrorSmLimitScopeValues = &pNsErrorSmLimitScopeValues
+	pNsErrorSmLimitScopeValues = cNsErrorSmLimitScopeValues
+	NsErrorSmLimitScopeValues = &pNsErrorSmLimitScopeValues
 
- pNsErrorSmErrPassphraseInval = cNsErrorSmErrPassphraseInval
- NsErrorSmErrPassphraseInval = &pNsErrorSmErrPassphraseInval
+	pNsErrorSmErrPassphraseInval = cNsErrorSmErrPassphraseInval
+	NsErrorSmErrPassphraseInval = &pNsErrorSmErrPassphraseInval
 
- pNsErrorSmInitiatorgroupsOutOfSync = cNsErrorSmInitiatorgroupsOutOfSync
- NsErrorSmInitiatorgroupsOutOfSync = &pNsErrorSmInitiatorgroupsOutOfSync
+	pNsErrorSmInitiatorgroupsOutOfSync = cNsErrorSmInitiatorgroupsOutOfSync
+	NsErrorSmInitiatorgroupsOutOfSync = &pNsErrorSmInitiatorgroupsOutOfSync
 
- pNsErrorSmCachePinnedNotsup = cNsErrorSmCachePinnedNotsup
- NsErrorSmCachePinnedNotsup = &pNsErrorSmCachePinnedNotsup
+	pNsErrorSmCachePinnedNotsup = cNsErrorSmCachePinnedNotsup
+	NsErrorSmCachePinnedNotsup = &pNsErrorSmCachePinnedNotsup
 
- pNsErrorSmNoOperationFound = cNsErrorSmNoOperationFound
- NsErrorSmNoOperationFound = &pNsErrorSmNoOperationFound
+	pNsErrorSmNoOperationFound = cNsErrorSmNoOperationFound
+	NsErrorSmNoOperationFound = &pNsErrorSmNoOperationFound
 
- pNsErrorSmInvalidDataForPartnerType = cNsErrorSmInvalidDataForPartnerType
- NsErrorSmInvalidDataForPartnerType = &pNsErrorSmInvalidDataForPartnerType
+	pNsErrorSmInvalidDataForPartnerType = cNsErrorSmInvalidDataForPartnerType
+	NsErrorSmInvalidDataForPartnerType = &pNsErrorSmInvalidDataForPartnerType
 
- pNsErrorSmSrvUpdatePrecheck = cNsErrorSmSrvUpdatePrecheck
- NsErrorSmSrvUpdatePrecheck = &pNsErrorSmSrvUpdatePrecheck
+	pNsErrorSmSrvUpdatePrecheck = cNsErrorSmSrvUpdatePrecheck
+	NsErrorSmSrvUpdatePrecheck = &pNsErrorSmSrvUpdatePrecheck
 
- pNsErrorSmVolDedupeEncryptionInvalid = cNsErrorSmVolDedupeEncryptionInvalid
- NsErrorSmVolDedupeEncryptionInvalid = &pNsErrorSmVolDedupeEncryptionInvalid
+	pNsErrorSmVolDedupeEncryptionInvalid = cNsErrorSmVolDedupeEncryptionInvalid
+	NsErrorSmVolDedupeEncryptionInvalid = &pNsErrorSmVolDedupeEncryptionInvalid
 
- pNsErrorSmVvolFolderNoAppsrvr = cNsErrorSmVvolFolderNoAppsrvr
- NsErrorSmVvolFolderNoAppsrvr = &pNsErrorSmVvolFolderNoAppsrvr
+	pNsErrorSmVvolFolderNoAppsrvr = cNsErrorSmVvolFolderNoAppsrvr
+	NsErrorSmVvolFolderNoAppsrvr = &pNsErrorSmVvolFolderNoAppsrvr
 
- pNsErrorSmHttpConflict = cNsErrorSmHttpConflict
- NsErrorSmHttpConflict = &pNsErrorSmHttpConflict
+	pNsErrorSmHttpConflict = cNsErrorSmHttpConflict
+	NsErrorSmHttpConflict = &pNsErrorSmHttpConflict
 
- pNsErrorSmVolDedupeNotEnoughCache = cNsErrorSmVolDedupeNotEnoughCache
- NsErrorSmVolDedupeNotEnoughCache = &pNsErrorSmVolDedupeNotEnoughCache
+	pNsErrorSmVolDedupeNotEnoughCache = cNsErrorSmVolDedupeNotEnoughCache
+	NsErrorSmVolDedupeNotEnoughCache = &pNsErrorSmVolDedupeNotEnoughCache
 
- pNsErrorSmArrayRenameInNetconfigFailed = cNsErrorSmArrayRenameInNetconfigFailed
- NsErrorSmArrayRenameInNetconfigFailed = &pNsErrorSmArrayRenameInNetconfigFailed
+	pNsErrorSmArrayRenameInNetconfigFailed = cNsErrorSmArrayRenameInNetconfigFailed
+	NsErrorSmArrayRenameInNetconfigFailed = &pNsErrorSmArrayRenameInNetconfigFailed
 
- pNsErrorSmInvalidInitiatorIp = cNsErrorSmInvalidInitiatorIp
- NsErrorSmInvalidInitiatorIp = &pNsErrorSmInvalidInitiatorIp
+	pNsErrorSmInvalidInitiatorIp = cNsErrorSmInvalidInitiatorIp
+	NsErrorSmInvalidInitiatorIp = &pNsErrorSmInvalidInitiatorIp
 
- pNsErrorSmDuplicateVol = cNsErrorSmDuplicateVol
- NsErrorSmDuplicateVol = &pNsErrorSmDuplicateVol
+	pNsErrorSmDuplicateVol = cNsErrorSmDuplicateVol
+	NsErrorSmDuplicateVol = &pNsErrorSmDuplicateVol
 
- pNsErrorSmErrShelfInvalidModel = cNsErrorSmErrShelfInvalidModel
- NsErrorSmErrShelfInvalidModel = &pNsErrorSmErrShelfInvalidModel
+	pNsErrorSmErrShelfInvalidModel = cNsErrorSmErrShelfInvalidModel
+	NsErrorSmErrShelfInvalidModel = &pNsErrorSmErrShelfInvalidModel
 
- pNsErrorSmReplProtectLastSnap = cNsErrorSmReplProtectLastSnap
- NsErrorSmReplProtectLastSnap = &pNsErrorSmReplProtectLastSnap
+	pNsErrorSmReplProtectLastSnap = cNsErrorSmReplProtectLastSnap
+	NsErrorSmReplProtectLastSnap = &pNsErrorSmReplProtectLastSnap
 
- pNsErrorSmErrGroupMergeBusy = cNsErrorSmErrGroupMergeBusy
- NsErrorSmErrGroupMergeBusy = &pNsErrorSmErrGroupMergeBusy
+	pNsErrorSmErrGroupMergeBusy = cNsErrorSmErrGroupMergeBusy
+	NsErrorSmErrGroupMergeBusy = &pNsErrorSmErrGroupMergeBusy
 
- pNsErrorSmErrVolmvPoolMerging = cNsErrorSmErrVolmvPoolMerging
- NsErrorSmErrVolmvPoolMerging = &pNsErrorSmErrVolmvPoolMerging
+	pNsErrorSmErrVolmvPoolMerging = cNsErrorSmErrVolmvPoolMerging
+	NsErrorSmErrVolmvPoolMerging = &pNsErrorSmErrVolmvPoolMerging
 
- pNsErrorSmArrayNotFoundWithArgs = cNsErrorSmArrayNotFoundWithArgs
- NsErrorSmArrayNotFoundWithArgs = &pNsErrorSmArrayNotFoundWithArgs
+	pNsErrorSmArrayNotFoundWithArgs = cNsErrorSmArrayNotFoundWithArgs
+	NsErrorSmArrayNotFoundWithArgs = &pNsErrorSmArrayNotFoundWithArgs
 
- pNsErrorSmConnectionRebalancingWithoutAutomaticMethod = cNsErrorSmConnectionRebalancingWithoutAutomaticMethod
- NsErrorSmConnectionRebalancingWithoutAutomaticMethod = &pNsErrorSmConnectionRebalancingWithoutAutomaticMethod
+	pNsErrorSmConnectionRebalancingWithoutAutomaticMethod = cNsErrorSmConnectionRebalancingWithoutAutomaticMethod
+	NsErrorSmConnectionRebalancingWithoutAutomaticMethod = &pNsErrorSmConnectionRebalancingWithoutAutomaticMethod
 
- pNsErrorSmSrepDownstreamNoCommonSnapVols = cNsErrorSmSrepDownstreamNoCommonSnapVols
- NsErrorSmSrepDownstreamNoCommonSnapVols = &pNsErrorSmSrepDownstreamNoCommonSnapVols
+	pNsErrorSmSrepDownstreamNoCommonSnapVols = cNsErrorSmSrepDownstreamNoCommonSnapVols
+	NsErrorSmSrepDownstreamNoCommonSnapVols = &pNsErrorSmSrepDownstreamNoCommonSnapVols
 
- pNsErrorSmErrShelfWrongSasPort = cNsErrorSmErrShelfWrongSasPort
- NsErrorSmErrShelfWrongSasPort = &pNsErrorSmErrShelfWrongSasPort
+	pNsErrorSmErrShelfWrongSasPort = cNsErrorSmErrShelfWrongSasPort
+	NsErrorSmErrShelfWrongSasPort = &pNsErrorSmErrShelfWrongSasPort
 
- pNsErrorSmFolderUsageLimitBelowCurrentUsage = cNsErrorSmFolderUsageLimitBelowCurrentUsage
- NsErrorSmFolderUsageLimitBelowCurrentUsage = &pNsErrorSmFolderUsageLimitBelowCurrentUsage
+	pNsErrorSmFolderUsageLimitBelowCurrentUsage = cNsErrorSmFolderUsageLimitBelowCurrentUsage
+	NsErrorSmFolderUsageLimitBelowCurrentUsage = &pNsErrorSmFolderUsageLimitBelowCurrentUsage
 
- pNsErrorSmLimitSnapRetentionPool = cNsErrorSmLimitSnapRetentionPool
- NsErrorSmLimitSnapRetentionPool = &pNsErrorSmLimitSnapRetentionPool
+	pNsErrorSmLimitSnapRetentionPool = cNsErrorSmLimitSnapRetentionPool
+	NsErrorSmLimitSnapRetentionPool = &pNsErrorSmLimitSnapRetentionPool
 
- pNsErrorSmErrShelfExprFwVerInval = cNsErrorSmErrShelfExprFwVerInval
- NsErrorSmErrShelfExprFwVerInval = &pNsErrorSmErrShelfExprFwVerInval
+	pNsErrorSmErrShelfExprFwVerInval = cNsErrorSmErrShelfExprFwVerInval
+	NsErrorSmErrShelfExprFwVerInval = &pNsErrorSmErrShelfExprFwVerInval
 
- pNsErrorSmSrepVolcollUnsup = cNsErrorSmSrepVolcollUnsup
- NsErrorSmSrepVolcollUnsup = &pNsErrorSmSrepVolcollUnsup
+	pNsErrorSmSrepVolcollUnsup = cNsErrorSmSrepVolcollUnsup
+	NsErrorSmSrepVolcollUnsup = &pNsErrorSmSrepVolcollUnsup
 
- pNsErrorSmSrepNotGroupScopedVols = cNsErrorSmSrepNotGroupScopedVols
- NsErrorSmSrepNotGroupScopedVols = &pNsErrorSmSrepNotGroupScopedVols
+	pNsErrorSmSrepNotGroupScopedVols = cNsErrorSmSrepNotGroupScopedVols
+	NsErrorSmSrepNotGroupScopedVols = &pNsErrorSmSrepNotGroupScopedVols
 
- pNsErrorSmFcIntfNotFound = cNsErrorSmFcIntfNotFound
- NsErrorSmFcIntfNotFound = &pNsErrorSmFcIntfNotFound
+	pNsErrorSmFcIntfNotFound = cNsErrorSmFcIntfNotFound
+	NsErrorSmFcIntfNotFound = &pNsErrorSmFcIntfNotFound
 
- pNsErrorSmVolUnknown = cNsErrorSmVolUnknown
- NsErrorSmVolUnknown = &pNsErrorSmVolUnknown
+	pNsErrorSmVolUnknown = cNsErrorSmVolUnknown
+	NsErrorSmVolUnknown = &pNsErrorSmVolUnknown
 
- pNsErrorSmErrShelfEbusy = cNsErrorSmErrShelfEbusy
- NsErrorSmErrShelfEbusy = &pNsErrorSmErrShelfEbusy
+	pNsErrorSmErrShelfEbusy = cNsErrorSmErrShelfEbusy
+	NsErrorSmErrShelfEbusy = &pNsErrorSmErrShelfEbusy
 
- pNsErrorSmAppserverInUse = cNsErrorSmAppserverInUse
- NsErrorSmAppserverInUse = &pNsErrorSmAppserverInUse
+	pNsErrorSmAppserverInUse = cNsErrorSmAppserverInUse
+	NsErrorSmAppserverInUse = &pNsErrorSmAppserverInUse
 
- pNsErrorSmPoolDoesNotHaveFolder = cNsErrorSmPoolDoesNotHaveFolder
- NsErrorSmPoolDoesNotHaveFolder = &pNsErrorSmPoolDoesNotHaveFolder
+	pNsErrorSmPoolDoesNotHaveFolder = cNsErrorSmPoolDoesNotHaveFolder
+	NsErrorSmPoolDoesNotHaveFolder = &pNsErrorSmPoolDoesNotHaveFolder
 
- pNsErrorSmPerfpolNotFound = cNsErrorSmPerfpolNotFound
- NsErrorSmPerfpolNotFound = &pNsErrorSmPerfpolNotFound
+	pNsErrorSmPerfpolNotFound = cNsErrorSmPerfpolNotFound
+	NsErrorSmPerfpolNotFound = &pNsErrorSmPerfpolNotFound
 
- pNsErrorSmPerfpolOob = cNsErrorSmPerfpolOob
- NsErrorSmPerfpolOob = &pNsErrorSmPerfpolOob
+	pNsErrorSmPerfpolOob = cNsErrorSmPerfpolOob
+	NsErrorSmPerfpolOob = &pNsErrorSmPerfpolOob
 
- pNsErrorSmDuplicateInitiator = cNsErrorSmDuplicateInitiator
- NsErrorSmDuplicateInitiator = &pNsErrorSmDuplicateInitiator
+	pNsErrorSmDuplicateInitiator = cNsErrorSmDuplicateInitiator
+	NsErrorSmDuplicateInitiator = &pNsErrorSmDuplicateInitiator
 
- pNsErrorSmInUseAppUuid = cNsErrorSmInUseAppUuid
- NsErrorSmInUseAppUuid = &pNsErrorSmInUseAppUuid
+	pNsErrorSmInUseAppUuid = cNsErrorSmInUseAppUuid
+	NsErrorSmInUseAppUuid = &pNsErrorSmInUseAppUuid
 
- pNsErrorSmPartnerCfgSync = cNsErrorSmPartnerCfgSync
- NsErrorSmPartnerCfgSync = &pNsErrorSmPartnerCfgSync
+	pNsErrorSmPartnerCfgSync = cNsErrorSmPartnerCfgSync
+	NsErrorSmPartnerCfgSync = &pNsErrorSmPartnerCfgSync
 
- pNsErrorSmNotDownloadingSw = cNsErrorSmNotDownloadingSw
- NsErrorSmNotDownloadingSw = &pNsErrorSmNotDownloadingSw
+	pNsErrorSmNotDownloadingSw = cNsErrorSmNotDownloadingSw
+	NsErrorSmNotDownloadingSw = &pNsErrorSmNotDownloadingSw
 
- pNsErrorSmMissingMgmtIp = cNsErrorSmMissingMgmtIp
- NsErrorSmMissingMgmtIp = &pNsErrorSmMissingMgmtIp
+	pNsErrorSmMissingMgmtIp = cNsErrorSmMissingMgmtIp
+	NsErrorSmMissingMgmtIp = &pNsErrorSmMissingMgmtIp
 
- pNsErrorSmSrepDownstreamNoCommonSnapVol = cNsErrorSmSrepDownstreamNoCommonSnapVol
- NsErrorSmSrepDownstreamNoCommonSnapVol = &pNsErrorSmSrepDownstreamNoCommonSnapVol
+	pNsErrorSmSrepDownstreamNoCommonSnapVol = cNsErrorSmSrepDownstreamNoCommonSnapVol
+	NsErrorSmSrepDownstreamNoCommonSnapVol = &pNsErrorSmSrepDownstreamNoCommonSnapVol
 
- pNsErrorSmEbusy = cNsErrorSmEbusy
- NsErrorSmEbusy = &pNsErrorSmEbusy
+	pNsErrorSmEbusy = cNsErrorSmEbusy
+	NsErrorSmEbusy = &pNsErrorSmEbusy
 
- pNsErrorSmErrReplCantConnect = cNsErrorSmErrReplCantConnect
- NsErrorSmErrReplCantConnect = &pNsErrorSmErrReplCantConnect
+	pNsErrorSmErrReplCantConnect = cNsErrorSmErrReplCantConnect
+	NsErrorSmErrReplCantConnect = &pNsErrorSmErrReplCantConnect
 
- pNsErrorSmErrShelfExpanderErr = cNsErrorSmErrShelfExpanderErr
- NsErrorSmErrShelfExpanderErr = &pNsErrorSmErrShelfExpanderErr
+	pNsErrorSmErrShelfExpanderErr = cNsErrorSmErrShelfExpanderErr
+	NsErrorSmErrShelfExpanderErr = &pNsErrorSmErrShelfExpanderErr
 
- pNsErrorSmPeFailAclRemoval = cNsErrorSmPeFailAclRemoval
- NsErrorSmPeFailAclRemoval = &pNsErrorSmPeFailAclRemoval
+	pNsErrorSmPeFailAclRemoval = cNsErrorSmPeFailAclRemoval
+	NsErrorSmPeFailAclRemoval = &pNsErrorSmPeFailAclRemoval
 
- pNsErrorSmSupportIpNotOnMgmt = cNsErrorSmSupportIpNotOnMgmt
- NsErrorSmSupportIpNotOnMgmt = &pNsErrorSmSupportIpNotOnMgmt
+	pNsErrorSmSupportIpNotOnMgmt = cNsErrorSmSupportIpNotOnMgmt
+	NsErrorSmSupportIpNotOnMgmt = &pNsErrorSmSupportIpNotOnMgmt
 
- pNsErrorSmAtLeastOneGroupSubnet = cNsErrorSmAtLeastOneGroupSubnet
- NsErrorSmAtLeastOneGroupSubnet = &pNsErrorSmAtLeastOneGroupSubnet
+	pNsErrorSmAtLeastOneGroupSubnet = cNsErrorSmAtLeastOneGroupSubnet
+	NsErrorSmAtLeastOneGroupSubnet = &pNsErrorSmAtLeastOneGroupSubnet
 
- pNsErrorSmUnsupportedAccessProtocol = cNsErrorSmUnsupportedAccessProtocol
- NsErrorSmUnsupportedAccessProtocol = &pNsErrorSmUnsupportedAccessProtocol
+	pNsErrorSmUnsupportedAccessProtocol = cNsErrorSmUnsupportedAccessProtocol
+	NsErrorSmUnsupportedAccessProtocol = &pNsErrorSmUnsupportedAccessProtocol
 
- pNsErrorSmSpaceInfoUnavail = cNsErrorSmSpaceInfoUnavail
- NsErrorSmSpaceInfoUnavail = &pNsErrorSmSpaceInfoUnavail
+	pNsErrorSmSpaceInfoUnavail = cNsErrorSmSpaceInfoUnavail
+	NsErrorSmSpaceInfoUnavail = &pNsErrorSmSpaceInfoUnavail
 
- pNsErrorSmInfoOtpNeedCode = cNsErrorSmInfoOtpNeedCode
- NsErrorSmInfoOtpNeedCode = &pNsErrorSmInfoOtpNeedCode
+	pNsErrorSmInfoOtpNeedCode = cNsErrorSmInfoOtpNeedCode
+	NsErrorSmInfoOtpNeedCode = &pNsErrorSmInfoOtpNeedCode
 
- pNsErrorSmLimitVolmvHretSnapPool = cNsErrorSmLimitVolmvHretSnapPool
- NsErrorSmLimitVolmvHretSnapPool = &pNsErrorSmLimitVolmvHretSnapPool
+	pNsErrorSmLimitVolmvHretSnapPool = cNsErrorSmLimitVolmvHretSnapPool
+	NsErrorSmLimitVolmvHretSnapPool = &pNsErrorSmLimitVolmvHretSnapPool
 
- pNsErrorSmStartTimeBeyondEndTime = cNsErrorSmStartTimeBeyondEndTime
- NsErrorSmStartTimeBeyondEndTime = &pNsErrorSmStartTimeBeyondEndTime
+	pNsErrorSmStartTimeBeyondEndTime = cNsErrorSmStartTimeBeyondEndTime
+	NsErrorSmStartTimeBeyondEndTime = &pNsErrorSmStartTimeBeyondEndTime
 
- pNsErrorSmReplRemotePaused = cNsErrorSmReplRemotePaused
- NsErrorSmReplRemotePaused = &pNsErrorSmReplRemotePaused
+	pNsErrorSmReplRemotePaused = cNsErrorSmReplRemotePaused
+	NsErrorSmReplRemotePaused = &pNsErrorSmReplRemotePaused
 
- pNsErrorSmDataIpNotOnSubnet = cNsErrorSmDataIpNotOnSubnet
- NsErrorSmDataIpNotOnSubnet = &pNsErrorSmDataIpNotOnSubnet
+	pNsErrorSmDataIpNotOnSubnet = cNsErrorSmDataIpNotOnSubnet
+	NsErrorSmDataIpNotOnSubnet = &pNsErrorSmDataIpNotOnSubnet
 
- pNsErrorSmConflictingInitiatorAlias = cNsErrorSmConflictingInitiatorAlias
- NsErrorSmConflictingInitiatorAlias = &pNsErrorSmConflictingInitiatorAlias
+	pNsErrorSmConflictingInitiatorAlias = cNsErrorSmConflictingInitiatorAlias
+	NsErrorSmConflictingInitiatorAlias = &pNsErrorSmConflictingInitiatorAlias
 
- pNsErrorSmReplEditPartnerNameNotPaused = cNsErrorSmReplEditPartnerNameNotPaused
- NsErrorSmReplEditPartnerNameNotPaused = &pNsErrorSmReplEditPartnerNameNotPaused
+	pNsErrorSmReplEditPartnerNameNotPaused = cNsErrorSmReplEditPartnerNameNotPaused
+	NsErrorSmReplEditPartnerNameNotPaused = &pNsErrorSmReplEditPartnerNameNotPaused
 
- pNsErrorSmShelfForeignDisk = cNsErrorSmShelfForeignDisk
- NsErrorSmShelfForeignDisk = &pNsErrorSmShelfForeignDisk
+	pNsErrorSmShelfForeignDisk = cNsErrorSmShelfForeignDisk
+	NsErrorSmShelfForeignDisk = &pNsErrorSmShelfForeignDisk
 
- pNsErrorSmQosLimitNotInRange = cNsErrorSmQosLimitNotInRange
- NsErrorSmQosLimitNotInRange = &pNsErrorSmQosLimitNotInRange
+	pNsErrorSmQosLimitNotInRange = cNsErrorSmQosLimitNotInRange
+	NsErrorSmQosLimitNotInRange = &pNsErrorSmQosLimitNotInRange
 
- pNsErrorSmErrShelfNoRserial = cNsErrorSmErrShelfNoRserial
- NsErrorSmErrShelfNoRserial = &pNsErrorSmErrShelfNoRserial
+	pNsErrorSmErrShelfNoRserial = cNsErrorSmErrShelfNoRserial
+	NsErrorSmErrShelfNoRserial = &pNsErrorSmErrShelfNoRserial
 
- pNsErrorSmUntaggedMtuNotLargest = cNsErrorSmUntaggedMtuNotLargest
- NsErrorSmUntaggedMtuNotLargest = &pNsErrorSmUntaggedMtuNotLargest
+	pNsErrorSmUntaggedMtuNotLargest = cNsErrorSmUntaggedMtuNotLargest
+	NsErrorSmUntaggedMtuNotLargest = &pNsErrorSmUntaggedMtuNotLargest
 
- pNsErrorSmErrShelfDisconnected = cNsErrorSmErrShelfDisconnected
- NsErrorSmErrShelfDisconnected = &pNsErrorSmErrShelfDisconnected
+	pNsErrorSmErrShelfDisconnected = cNsErrorSmErrShelfDisconnected
+	NsErrorSmErrShelfDisconnected = &pNsErrorSmErrShelfDisconnected
 
- pNsErrorSmSubnetAlreadyAssignedOnNic = cNsErrorSmSubnetAlreadyAssignedOnNic
- NsErrorSmSubnetAlreadyAssignedOnNic = &pNsErrorSmSubnetAlreadyAssignedOnNic
+	pNsErrorSmSubnetAlreadyAssignedOnNic = cNsErrorSmSubnetAlreadyAssignedOnNic
+	NsErrorSmSubnetAlreadyAssignedOnNic = &pNsErrorSmSubnetAlreadyAssignedOnNic
 
- pNsErrorSmFcSessionExist = cNsErrorSmFcSessionExist
- NsErrorSmFcSessionExist = &pNsErrorSmFcSessionExist
+	pNsErrorSmFcSessionExist = cNsErrorSmFcSessionExist
+	NsErrorSmFcSessionExist = &pNsErrorSmFcSessionExist
 
- pNsErrorSmVvolCannotOfflineBoundSnap = cNsErrorSmVvolCannotOfflineBoundSnap
- NsErrorSmVvolCannotOfflineBoundSnap = &pNsErrorSmVvolCannotOfflineBoundSnap
+	pNsErrorSmVvolCannotOfflineBoundSnap = cNsErrorSmVvolCannotOfflineBoundSnap
+	NsErrorSmVvolCannotOfflineBoundSnap = &pNsErrorSmVvolCannotOfflineBoundSnap
 
- pNsErrorSmArrayMemberOrphan = cNsErrorSmArrayMemberOrphan
- NsErrorSmArrayMemberOrphan = &pNsErrorSmArrayMemberOrphan
+	pNsErrorSmArrayMemberOrphan = cNsErrorSmArrayMemberOrphan
+	NsErrorSmArrayMemberOrphan = &pNsErrorSmArrayMemberOrphan
 
- pNsErrorSmArrayMissingSubnet = cNsErrorSmArrayMissingSubnet
- NsErrorSmArrayMissingSubnet = &pNsErrorSmArrayMissingSubnet
+	pNsErrorSmArrayMissingSubnet = cNsErrorSmArrayMissingSubnet
+	NsErrorSmArrayMissingSubnet = &pNsErrorSmArrayMissingSubnet
 
- pNsErrorSmDisableVvolWithPe = cNsErrorSmDisableVvolWithPe
- NsErrorSmDisableVvolWithPe = &pNsErrorSmDisableVvolWithPe
+	pNsErrorSmDisableVvolWithPe = cNsErrorSmDisableVvolWithPe
+	NsErrorSmDisableVvolWithPe = &pNsErrorSmDisableVvolWithPe
 
- pNsErrorSmLimitSnapVol = cNsErrorSmLimitSnapVol
- NsErrorSmLimitSnapVol = &pNsErrorSmLimitSnapVol
+	pNsErrorSmLimitSnapVol = cNsErrorSmLimitSnapVol
+	NsErrorSmLimitSnapVol = &pNsErrorSmLimitSnapVol
 
- pNsErrorSmPoolUsageUnavailable = cNsErrorSmPoolUsageUnavailable
- NsErrorSmPoolUsageUnavailable = &pNsErrorSmPoolUsageUnavailable
+	pNsErrorSmPoolUsageUnavailable = cNsErrorSmPoolUsageUnavailable
+	NsErrorSmPoolUsageUnavailable = &pNsErrorSmPoolUsageUnavailable
 
- pNsErrorSmInvalidQueryParam = cNsErrorSmInvalidQueryParam
- NsErrorSmInvalidQueryParam = &pNsErrorSmInvalidQueryParam
+	pNsErrorSmInvalidQueryParam = cNsErrorSmInvalidQueryParam
+	NsErrorSmInvalidQueryParam = &pNsErrorSmInvalidQueryParam
 
- pNsErrorSmErrGroupMergeDbLoad = cNsErrorSmErrGroupMergeDbLoad
- NsErrorSmErrGroupMergeDbLoad = &pNsErrorSmErrGroupMergeDbLoad
+	pNsErrorSmErrGroupMergeDbLoad = cNsErrorSmErrGroupMergeDbLoad
+	NsErrorSmErrGroupMergeDbLoad = &pNsErrorSmErrGroupMergeDbLoad
 
- pNsErrorSmEio = cNsErrorSmEio
- NsErrorSmEio = &pNsErrorSmEio
+	pNsErrorSmEio = cNsErrorSmEio
+	NsErrorSmEio = &pNsErrorSmEio
 
- pNsErrorSmSrepDownstreamOnlineVol = cNsErrorSmSrepDownstreamOnlineVol
- NsErrorSmSrepDownstreamOnlineVol = &pNsErrorSmSrepDownstreamOnlineVol
+	pNsErrorSmSrepDownstreamOnlineVol = cNsErrorSmSrepDownstreamOnlineVol
+	NsErrorSmSrepDownstreamOnlineVol = &pNsErrorSmSrepDownstreamOnlineVol
 
- pNsErrorSmPoolNoSrcArray = cNsErrorSmPoolNoSrcArray
- NsErrorSmPoolNoSrcArray = &pNsErrorSmPoolNoSrcArray
+	pNsErrorSmPoolNoSrcArray = cNsErrorSmPoolNoSrcArray
+	NsErrorSmPoolNoSrcArray = &pNsErrorSmPoolNoSrcArray
 
- pNsErrorSmInvalidKeyvalue = cNsErrorSmInvalidKeyvalue
- NsErrorSmInvalidKeyvalue = &pNsErrorSmInvalidKeyvalue
+	pNsErrorSmInvalidKeyvalue = cNsErrorSmInvalidKeyvalue
+	NsErrorSmInvalidKeyvalue = &pNsErrorSmInvalidKeyvalue
 
- pNsErrorSmProtpolMaxLength = cNsErrorSmProtpolMaxLength
- NsErrorSmProtpolMaxLength = &pNsErrorSmProtpolMaxLength
+	pNsErrorSmProtpolMaxLength = cNsErrorSmProtpolMaxLength
+	NsErrorSmProtpolMaxLength = &pNsErrorSmProtpolMaxLength
 
- pNsErrorSmVolAssocVolcoll = cNsErrorSmVolAssocVolcoll
- NsErrorSmVolAssocVolcoll = &pNsErrorSmVolAssocVolcoll
+	pNsErrorSmVolAssocVolcoll = cNsErrorSmVolAssocVolcoll
+	NsErrorSmVolAssocVolcoll = &pNsErrorSmVolAssocVolcoll
 
- pNsErrorSmMissingDiscoveryIp = cNsErrorSmMissingDiscoveryIp
- NsErrorSmMissingDiscoveryIp = &pNsErrorSmMissingDiscoveryIp
+	pNsErrorSmMissingDiscoveryIp = cNsErrorSmMissingDiscoveryIp
+	NsErrorSmMissingDiscoveryIp = &pNsErrorSmMissingDiscoveryIp
 
- pNsErrorSmReplDeleteReplicaUnsup = cNsErrorSmReplDeleteReplicaUnsup
- NsErrorSmReplDeleteReplicaUnsup = &pNsErrorSmReplDeleteReplicaUnsup
+	pNsErrorSmReplDeleteReplicaUnsup = cNsErrorSmReplDeleteReplicaUnsup
+	NsErrorSmReplDeleteReplicaUnsup = &pNsErrorSmReplDeleteReplicaUnsup
 
- pNsErrorSmVolSizeDecreased = cNsErrorSmVolSizeDecreased
- NsErrorSmVolSizeDecreased = &pNsErrorSmVolSizeDecreased
+	pNsErrorSmVolSizeDecreased = cNsErrorSmVolSizeDecreased
+	NsErrorSmVolSizeDecreased = &pNsErrorSmVolSizeDecreased
 
- pNsErrorSmSrepDownstreamAssocedVols = cNsErrorSmSrepDownstreamAssocedVols
- NsErrorSmSrepDownstreamAssocedVols = &pNsErrorSmSrepDownstreamAssocedVols
+	pNsErrorSmSrepDownstreamAssocedVols = cNsErrorSmSrepDownstreamAssocedVols
+	NsErrorSmSrepDownstreamAssocedVols = &pNsErrorSmSrepDownstreamAssocedVols
 
- pNsErrorSmAddNonfcToFcGroup = cNsErrorSmAddNonfcToFcGroup
- NsErrorSmAddNonfcToFcGroup = &pNsErrorSmAddNonfcToFcGroup
+	pNsErrorSmAddNonfcToFcGroup = cNsErrorSmAddNonfcToFcGroup
+	NsErrorSmAddNonfcToFcGroup = &pNsErrorSmAddNonfcToFcGroup
 
- pNsErrorSmNetconfigDoesNotExist = cNsErrorSmNetconfigDoesNotExist
- NsErrorSmNetconfigDoesNotExist = &pNsErrorSmNetconfigDoesNotExist
+	pNsErrorSmNetconfigDoesNotExist = cNsErrorSmNetconfigDoesNotExist
+	NsErrorSmNetconfigDoesNotExist = &pNsErrorSmNetconfigDoesNotExist
 
- pNsErrorSmFolderVolmvEnospace = cNsErrorSmFolderVolmvEnospace
- NsErrorSmFolderVolmvEnospace = &pNsErrorSmFolderVolmvEnospace
+	pNsErrorSmFolderVolmvEnospace = cNsErrorSmFolderVolmvEnospace
+	NsErrorSmFolderVolmvEnospace = &pNsErrorSmFolderVolmvEnospace
 
- pNsErrorSmInfoOtpNewSecret = cNsErrorSmInfoOtpNewSecret
- NsErrorSmInfoOtpNewSecret = &pNsErrorSmInfoOtpNewSecret
+	pNsErrorSmInfoOtpNewSecret = cNsErrorSmInfoOtpNewSecret
+	NsErrorSmInfoOtpNewSecret = &pNsErrorSmInfoOtpNewSecret
 
- pNsErrorSmNetconfigExistNoForce = cNsErrorSmNetconfigExistNoForce
- NsErrorSmNetconfigExistNoForce = &pNsErrorSmNetconfigExistNoForce
+	pNsErrorSmNetconfigExistNoForce = cNsErrorSmNetconfigExistNoForce
+	NsErrorSmNetconfigExistNoForce = &pNsErrorSmNetconfigExistNoForce
 
- pNsErrorSmPoolUpdateInval = cNsErrorSmPoolUpdateInval
- NsErrorSmPoolUpdateInval = &pNsErrorSmPoolUpdateInval
+	pNsErrorSmPoolUpdateInval = cNsErrorSmPoolUpdateInval
+	NsErrorSmPoolUpdateInval = &pNsErrorSmPoolUpdateInval
 
- pNsErrorSmVlanSubnetInManual = cNsErrorSmVlanSubnetInManual
- NsErrorSmVlanSubnetInManual = &pNsErrorSmVlanSubnetInManual
+	pNsErrorSmVlanSubnetInManual = cNsErrorSmVlanSubnetInManual
+	NsErrorSmVlanSubnetInManual = &pNsErrorSmVlanSubnetInManual
 
- pNsErrorSmReplVvolUnsup = cNsErrorSmReplVvolUnsup
- NsErrorSmReplVvolUnsup = &pNsErrorSmReplVvolUnsup
+	pNsErrorSmReplVvolUnsup = cNsErrorSmReplVvolUnsup
+	NsErrorSmReplVvolUnsup = &pNsErrorSmReplVvolUnsup
 
- pNsErrorSmErrTdzNotSupported = cNsErrorSmErrTdzNotSupported
- NsErrorSmErrTdzNotSupported = &pNsErrorSmErrTdzNotSupported
+	pNsErrorSmErrTdzNotSupported = cNsErrorSmErrTdzNotSupported
+	NsErrorSmErrTdzNotSupported = &pNsErrorSmErrTdzNotSupported
 
- pNsErrorSmPoolExists = cNsErrorSmPoolExists
- NsErrorSmPoolExists = &pNsErrorSmPoolExists
+	pNsErrorSmPoolExists = cNsErrorSmPoolExists
+	NsErrorSmPoolExists = &pNsErrorSmPoolExists
 
- pNsErrorSmAuth = cNsErrorSmAuth
- NsErrorSmAuth = &pNsErrorSmAuth
+	pNsErrorSmAuth = cNsErrorSmAuth
+	NsErrorSmAuth = &pNsErrorSmAuth
 
- pNsErrorSmInvalidObjectSetQuery = cNsErrorSmInvalidObjectSetQuery
- NsErrorSmInvalidObjectSetQuery = &pNsErrorSmInvalidObjectSetQuery
+	pNsErrorSmInvalidObjectSetQuery = cNsErrorSmInvalidObjectSetQuery
+	NsErrorSmInvalidObjectSetQuery = &pNsErrorSmInvalidObjectSetQuery
 
- pNsErrorSmSrepDownstreamOnlineVols = cNsErrorSmSrepDownstreamOnlineVols
- NsErrorSmSrepDownstreamOnlineVols = &pNsErrorSmSrepDownstreamOnlineVols
+	pNsErrorSmSrepDownstreamOnlineVols = cNsErrorSmSrepDownstreamOnlineVols
+	NsErrorSmSrepDownstreamOnlineVols = &pNsErrorSmSrepDownstreamOnlineVols
 
- pNsErrorSmNoMethodForUrlPattern = cNsErrorSmNoMethodForUrlPattern
- NsErrorSmNoMethodForUrlPattern = &pNsErrorSmNoMethodForUrlPattern
+	pNsErrorSmNoMethodForUrlPattern = cNsErrorSmNoMethodForUrlPattern
+	NsErrorSmNoMethodForUrlPattern = &pNsErrorSmNoMethodForUrlPattern
 
- pNsErrorSmVolNotOnline = cNsErrorSmVolNotOnline
- NsErrorSmVolNotOnline = &pNsErrorSmVolNotOnline
+	pNsErrorSmVolNotOnline = cNsErrorSmVolNotOnline
+	NsErrorSmVolNotOnline = &pNsErrorSmVolNotOnline
 
- pNsErrorSmVolDedupeVolfamAppcat = cNsErrorSmVolDedupeVolfamAppcat
- NsErrorSmVolDedupeVolfamAppcat = &pNsErrorSmVolDedupeVolfamAppcat
+	pNsErrorSmVolDedupeVolfamAppcat = cNsErrorSmVolDedupeVolfamAppcat
+	NsErrorSmVolDedupeVolfamAppcat = &pNsErrorSmVolDedupeVolfamAppcat
 
- pNsErrorSmInvalidNic = cNsErrorSmInvalidNic
- NsErrorSmInvalidNic = &pNsErrorSmInvalidNic
+	pNsErrorSmInvalidNic = cNsErrorSmInvalidNic
+	NsErrorSmInvalidNic = &pNsErrorSmInvalidNic
 
- pNsErrorSmArrayNotGroupLeader = cNsErrorSmArrayNotGroupLeader
- NsErrorSmArrayNotGroupLeader = &pNsErrorSmArrayNotGroupLeader
+	pNsErrorSmArrayNotGroupLeader = cNsErrorSmArrayNotGroupLeader
+	NsErrorSmArrayNotGroupLeader = &pNsErrorSmArrayNotGroupLeader
 
- pNsErrorSmInvalidVlanId = cNsErrorSmInvalidVlanId
- NsErrorSmInvalidVlanId = &pNsErrorSmInvalidVlanId
+	pNsErrorSmInvalidVlanId = cNsErrorSmInvalidVlanId
+	NsErrorSmInvalidVlanId = &pNsErrorSmInvalidVlanId
 
- pNsErrorSmLimitSnaplun = cNsErrorSmLimitSnaplun
- NsErrorSmLimitSnaplun = &pNsErrorSmLimitSnaplun
+	pNsErrorSmLimitSnaplun = cNsErrorSmLimitSnaplun
+	NsErrorSmLimitSnaplun = &pNsErrorSmLimitSnaplun
 
- pNsErrorSmIncompatibleCachePolicy = cNsErrorSmIncompatibleCachePolicy
- NsErrorSmIncompatibleCachePolicy = &pNsErrorSmIncompatibleCachePolicy
+	pNsErrorSmIncompatibleCachePolicy = cNsErrorSmIncompatibleCachePolicy
+	NsErrorSmIncompatibleCachePolicy = &pNsErrorSmIncompatibleCachePolicy
 
- pNsErrorSmVolmvAbortEnospace = cNsErrorSmVolmvAbortEnospace
- NsErrorSmVolmvAbortEnospace = &pNsErrorSmVolmvAbortEnospace
+	pNsErrorSmVolmvAbortEnospace = cNsErrorSmVolmvAbortEnospace
+	NsErrorSmVolmvAbortEnospace = &pNsErrorSmVolmvAbortEnospace
 
- pNsErrorSmLimitHretSnapGroup = cNsErrorSmLimitHretSnapGroup
- NsErrorSmLimitHretSnapGroup = &pNsErrorSmLimitHretSnapGroup
+	pNsErrorSmLimitHretSnapGroup = cNsErrorSmLimitHretSnapGroup
+	NsErrorSmLimitHretSnapGroup = &pNsErrorSmLimitHretSnapGroup
 
- pNsErrorSmVolmvEalready = cNsErrorSmVolmvEalready
- NsErrorSmVolmvEalready = &pNsErrorSmVolmvEalready
+	pNsErrorSmVolmvEalready = cNsErrorSmVolmvEalready
+	NsErrorSmVolmvEalready = &pNsErrorSmVolmvEalready
 
- pNsErrorSmAsupPingfromCtrlrbError = cNsErrorSmAsupPingfromCtrlrbError
- NsErrorSmAsupPingfromCtrlrbError = &pNsErrorSmAsupPingfromCtrlrbError
+	pNsErrorSmAsupPingfromCtrlrbError = cNsErrorSmAsupPingfromCtrlrbError
+	NsErrorSmAsupPingfromCtrlrbError = &pNsErrorSmAsupPingfromCtrlrbError
 
- pNsErrorSmVolDedupeUnassignedAppCategory = cNsErrorSmVolDedupeUnassignedAppCategory
- NsErrorSmVolDedupeUnassignedAppCategory = &pNsErrorSmVolDedupeUnassignedAppCategory
+	pNsErrorSmVolDedupeUnassignedAppCategory = cNsErrorSmVolDedupeUnassignedAppCategory
+	NsErrorSmVolDedupeUnassignedAppCategory = &pNsErrorSmVolDedupeUnassignedAppCategory
 
- pNsErrorSmEnoent = cNsErrorSmEnoent
- NsErrorSmEnoent = &pNsErrorSmEnoent
+	pNsErrorSmEnoent = cNsErrorSmEnoent
+	NsErrorSmEnoent = &pNsErrorSmEnoent
 
- pNsErrorSmPerfpolDedupeUnassignedAppCategory = cNsErrorSmPerfpolDedupeUnassignedAppCategory
- NsErrorSmPerfpolDedupeUnassignedAppCategory = &pNsErrorSmPerfpolDedupeUnassignedAppCategory
+	pNsErrorSmPerfpolDedupeUnassignedAppCategory = cNsErrorSmPerfpolDedupeUnassignedAppCategory
+	NsErrorSmPerfpolDedupeUnassignedAppCategory = &pNsErrorSmPerfpolDedupeUnassignedAppCategory
 
- pNsErrorSmInvalidInitiatorLabel = cNsErrorSmInvalidInitiatorLabel
- NsErrorSmInvalidInitiatorLabel = &pNsErrorSmInvalidInitiatorLabel
+	pNsErrorSmInvalidInitiatorLabel = cNsErrorSmInvalidInitiatorLabel
+	NsErrorSmInvalidInitiatorLabel = &pNsErrorSmInvalidInitiatorLabel
 
- pNsErrorSmDuplicateInitiatorWithArgs = cNsErrorSmDuplicateInitiatorWithArgs
- NsErrorSmDuplicateInitiatorWithArgs = &pNsErrorSmDuplicateInitiatorWithArgs
+	pNsErrorSmDuplicateInitiatorWithArgs = cNsErrorSmDuplicateInitiatorWithArgs
+	NsErrorSmDuplicateInitiatorWithArgs = &pNsErrorSmDuplicateInitiatorWithArgs
 
- pNsErrorSmErrShelfForeign = cNsErrorSmErrShelfForeign
- NsErrorSmErrShelfForeign = &pNsErrorSmErrShelfForeign
+	pNsErrorSmErrShelfForeign = cNsErrorSmErrShelfForeign
+	NsErrorSmErrShelfForeign = &pNsErrorSmErrShelfForeign
 
- pNsErrorSmInvalidAgentType = cNsErrorSmInvalidAgentType
- NsErrorSmInvalidAgentType = &pNsErrorSmInvalidAgentType
+	pNsErrorSmInvalidAgentType = cNsErrorSmInvalidAgentType
+	NsErrorSmInvalidAgentType = &pNsErrorSmInvalidAgentType
 
- pNsErrorSmEinprogress = cNsErrorSmEinprogress
- NsErrorSmEinprogress = &pNsErrorSmEinprogress
+	pNsErrorSmEinprogress = cNsErrorSmEinprogress
+	NsErrorSmEinprogress = &pNsErrorSmEinprogress
 
- pNsErrorSmNotEnoughCache = cNsErrorSmNotEnoughCache
- NsErrorSmNotEnoughCache = &pNsErrorSmNotEnoughCache
+	pNsErrorSmNotEnoughCache = cNsErrorSmNotEnoughCache
+	NsErrorSmNotEnoughCache = &pNsErrorSmNotEnoughCache
 
- pNsErrorSmEexist = cNsErrorSmEexist
- NsErrorSmEexist = &pNsErrorSmEexist
+	pNsErrorSmEexist = cNsErrorSmEexist
+	NsErrorSmEexist = &pNsErrorSmEexist
 
- pNsErrorSmMissingArrayNetconfig = cNsErrorSmMissingArrayNetconfig
- NsErrorSmMissingArrayNetconfig = &pNsErrorSmMissingArrayNetconfig
+	pNsErrorSmMissingArrayNetconfig = cNsErrorSmMissingArrayNetconfig
+	NsErrorSmMissingArrayNetconfig = &pNsErrorSmMissingArrayNetconfig
 
- pNsErrorSmInvalidInitiatorAlias = cNsErrorSmInvalidInitiatorAlias
- NsErrorSmInvalidInitiatorAlias = &pNsErrorSmInvalidInitiatorAlias
+	pNsErrorSmInvalidInitiatorAlias = cNsErrorSmInvalidInitiatorAlias
+	NsErrorSmInvalidInitiatorAlias = &pNsErrorSmInvalidInitiatorAlias
 
- pNsErrorSmProtpolAppSyncOracle = cNsErrorSmProtpolAppSyncOracle
- NsErrorSmProtpolAppSyncOracle = &pNsErrorSmProtpolAppSyncOracle
+	pNsErrorSmProtpolAppSyncOracle = cNsErrorSmProtpolAppSyncOracle
+	NsErrorSmProtpolAppSyncOracle = &pNsErrorSmProtpolAppSyncOracle
 
- pNsErrorSmNoSupport = cNsErrorSmNoSupport
- NsErrorSmNoSupport = &pNsErrorSmNoSupport
+	pNsErrorSmNoSupport = cNsErrorSmNoSupport
+	NsErrorSmNoSupport = &pNsErrorSmNoSupport
 
- pNsErrorSmDataIpMissingSubnet = cNsErrorSmDataIpMissingSubnet
- NsErrorSmDataIpMissingSubnet = &pNsErrorSmDataIpMissingSubnet
+	pNsErrorSmDataIpMissingSubnet = cNsErrorSmDataIpMissingSubnet
+	NsErrorSmDataIpMissingSubnet = &pNsErrorSmDataIpMissingSubnet
 
- pNsErrorSmErrShelfHddsInAfs = cNsErrorSmErrShelfHddsInAfs
- NsErrorSmErrShelfHddsInAfs = &pNsErrorSmErrShelfHddsInAfs
+	pNsErrorSmErrShelfHddsInAfs = cNsErrorSmErrShelfHddsInAfs
+	NsErrorSmErrShelfHddsInAfs = &pNsErrorSmErrShelfHddsInAfs
 
- pNsErrorSmStartRowBeyondTotalRows = cNsErrorSmStartRowBeyondTotalRows
- NsErrorSmStartRowBeyondTotalRows = &pNsErrorSmStartRowBeyondTotalRows
+	pNsErrorSmStartRowBeyondTotalRows = cNsErrorSmStartRowBeyondTotalRows
+	NsErrorSmStartRowBeyondTotalRows = &pNsErrorSmStartRowBeyondTotalRows
 
- pNsErrorSmExtraneousArrayNetconfig = cNsErrorSmExtraneousArrayNetconfig
- NsErrorSmExtraneousArrayNetconfig = &pNsErrorSmExtraneousArrayNetconfig
+	pNsErrorSmExtraneousArrayNetconfig = cNsErrorSmExtraneousArrayNetconfig
+	NsErrorSmExtraneousArrayNetconfig = &pNsErrorSmExtraneousArrayNetconfig
 
- pNsErrorSmPoolCachePinNotsupp = cNsErrorSmPoolCachePinNotsupp
- NsErrorSmPoolCachePinNotsupp = &pNsErrorSmPoolCachePinNotsupp
+	pNsErrorSmPoolCachePinNotsupp = cNsErrorSmPoolCachePinNotsupp
+	NsErrorSmPoolCachePinNotsupp = &pNsErrorSmPoolCachePinNotsupp
 
- pNsErrorSmUsageUnavailable = cNsErrorSmUsageUnavailable
- NsErrorSmUsageUnavailable = &pNsErrorSmUsageUnavailable
+	pNsErrorSmUsageUnavailable = cNsErrorSmUsageUnavailable
+	NsErrorSmUsageUnavailable = &pNsErrorSmUsageUnavailable
 
- pNsErrorSmReplAgentTypeUnsup = cNsErrorSmReplAgentTypeUnsup
- NsErrorSmReplAgentTypeUnsup = &pNsErrorSmReplAgentTypeUnsup
+	pNsErrorSmReplAgentTypeUnsup = cNsErrorSmReplAgentTypeUnsup
+	NsErrorSmReplAgentTypeUnsup = &pNsErrorSmReplAgentTypeUnsup
 
- pNsErrorSmReplFanoutMaximumPartnersExceeded = cNsErrorSmReplFanoutMaximumPartnersExceeded
- NsErrorSmReplFanoutMaximumPartnersExceeded = &pNsErrorSmReplFanoutMaximumPartnersExceeded
+	pNsErrorSmReplFanoutMaximumPartnersExceeded = cNsErrorSmReplFanoutMaximumPartnersExceeded
+	NsErrorSmReplFanoutMaximumPartnersExceeded = &pNsErrorSmReplFanoutMaximumPartnersExceeded
 
- pNsErrorSmPoolDedupeInvalidFdr = cNsErrorSmPoolDedupeInvalidFdr
- NsErrorSmPoolDedupeInvalidFdr = &pNsErrorSmPoolDedupeInvalidFdr
+	pNsErrorSmPoolDedupeInvalidFdr = cNsErrorSmPoolDedupeInvalidFdr
+	NsErrorSmPoolDedupeInvalidFdr = &pNsErrorSmPoolDedupeInvalidFdr
 
- pNsErrorSmAsupPingfromCtrlraError = cNsErrorSmAsupPingfromCtrlraError
- NsErrorSmAsupPingfromCtrlraError = &pNsErrorSmAsupPingfromCtrlraError
+	pNsErrorSmAsupPingfromCtrlraError = cNsErrorSmAsupPingfromCtrlraError
+	NsErrorSmAsupPingfromCtrlraError = &pNsErrorSmAsupPingfromCtrlraError
 
- pNsErrorSmErrShelfInvalidLoc = cNsErrorSmErrShelfInvalidLoc
- NsErrorSmErrShelfInvalidLoc = &pNsErrorSmErrShelfInvalidLoc
+	pNsErrorSmErrShelfInvalidLoc = cNsErrorSmErrShelfInvalidLoc
+	NsErrorSmErrShelfInvalidLoc = &pNsErrorSmErrShelfInvalidLoc
 
- pNsErrorSmErrShelfSsdDegraded = cNsErrorSmErrShelfSsdDegraded
- NsErrorSmErrShelfSsdDegraded = &pNsErrorSmErrShelfSsdDegraded
+	pNsErrorSmErrShelfSsdDegraded = cNsErrorSmErrShelfSsdDegraded
+	NsErrorSmErrShelfSsdDegraded = &pNsErrorSmErrShelfSsdDegraded
 
- pNsErrorSmSyncReplConfigure = cNsErrorSmSyncReplConfigure
- NsErrorSmSyncReplConfigure = &pNsErrorSmSyncReplConfigure
+	pNsErrorSmSyncReplConfigure = cNsErrorSmSyncReplConfigure
+	NsErrorSmSyncReplConfigure = &pNsErrorSmSyncReplConfigure
 
- pNsErrorSmAsupHeartbeatError = cNsErrorSmAsupHeartbeatError
- NsErrorSmAsupHeartbeatError = &pNsErrorSmAsupHeartbeatError
+	pNsErrorSmAsupHeartbeatError = cNsErrorSmAsupHeartbeatError
+	NsErrorSmAsupHeartbeatError = &pNsErrorSmAsupHeartbeatError
 
- pNsErrorSmLimitHretSnapRetentionPoolWarn = cNsErrorSmLimitHretSnapRetentionPoolWarn
- NsErrorSmLimitHretSnapRetentionPoolWarn = &pNsErrorSmLimitHretSnapRetentionPoolWarn
+	pNsErrorSmLimitHretSnapRetentionPoolWarn = cNsErrorSmLimitHretSnapRetentionPoolWarn
+	NsErrorSmLimitHretSnapRetentionPoolWarn = &pNsErrorSmLimitHretSnapRetentionPoolWarn
 
- pNsErrorSmErrAuth = cNsErrorSmErrAuth
- NsErrorSmErrAuth = &pNsErrorSmErrAuth
+	pNsErrorSmErrAuth = cNsErrorSmErrAuth
+	NsErrorSmErrAuth = &pNsErrorSmErrAuth
 
- pNsErrorSmPartnerSubnetDoesNotExist = cNsErrorSmPartnerSubnetDoesNotExist
- NsErrorSmPartnerSubnetDoesNotExist = &pNsErrorSmPartnerSubnetDoesNotExist
+	pNsErrorSmPartnerSubnetDoesNotExist = cNsErrorSmPartnerSubnetDoesNotExist
+	NsErrorSmPartnerSubnetDoesNotExist = &pNsErrorSmPartnerSubnetDoesNotExist
 
- pNsErrorSmErrShelfLocOrder = cNsErrorSmErrShelfLocOrder
- NsErrorSmErrShelfLocOrder = &pNsErrorSmErrShelfLocOrder
+	pNsErrorSmErrShelfLocOrder = cNsErrorSmErrShelfLocOrder
+	NsErrorSmErrShelfLocOrder = &pNsErrorSmErrShelfLocOrder
 
- pNsErrorSmFolderEnospace = cNsErrorSmFolderEnospace
- NsErrorSmFolderEnospace = &pNsErrorSmFolderEnospace
+	pNsErrorSmFolderEnospace = cNsErrorSmFolderEnospace
+	NsErrorSmFolderEnospace = &pNsErrorSmFolderEnospace
 
- pNsErrorSmErrPoolHasGroupPartners = cNsErrorSmErrPoolHasGroupPartners
- NsErrorSmErrPoolHasGroupPartners = &pNsErrorSmErrPoolHasGroupPartners
+	pNsErrorSmErrPoolHasGroupPartners = cNsErrorSmErrPoolHasGroupPartners
+	NsErrorSmErrPoolHasGroupPartners = &pNsErrorSmErrPoolHasGroupPartners
 
- pNsErrorSmPoolDedupeInvalidCap = cNsErrorSmPoolDedupeInvalidCap
- NsErrorSmPoolDedupeInvalidCap = &pNsErrorSmPoolDedupeInvalidCap
+	pNsErrorSmPoolDedupeInvalidCap = cNsErrorSmPoolDedupeInvalidCap
+	NsErrorSmPoolDedupeInvalidCap = &pNsErrorSmPoolDedupeInvalidCap
 
- pNsErrorSmProtpolNotSpecified = cNsErrorSmProtpolNotSpecified
- NsErrorSmProtpolNotSpecified = &pNsErrorSmProtpolNotSpecified
+	pNsErrorSmProtpolNotSpecified = cNsErrorSmProtpolNotSpecified
+	NsErrorSmProtpolNotSpecified = &pNsErrorSmProtpolNotSpecified
 
- pNsErrorSmUnexpectedQueryParam = cNsErrorSmUnexpectedQueryParam
- NsErrorSmUnexpectedQueryParam = &pNsErrorSmUnexpectedQueryParam
+	pNsErrorSmUnexpectedQueryParam = cNsErrorSmUnexpectedQueryParam
+	NsErrorSmUnexpectedQueryParam = &pNsErrorSmUnexpectedQueryParam
 
- pNsErrorSmVolmvAbortEalready = cNsErrorSmVolmvAbortEalready
- NsErrorSmVolmvAbortEalready = &pNsErrorSmVolmvAbortEalready
+	pNsErrorSmVolmvAbortEalready = cNsErrorSmVolmvAbortEalready
+	NsErrorSmVolmvAbortEalready = &pNsErrorSmVolmvAbortEalready
 
- pNsErrorSmFcIntfAlreadyInState = cNsErrorSmFcIntfAlreadyInState
- NsErrorSmFcIntfAlreadyInState = &pNsErrorSmFcIntfAlreadyInState
+	pNsErrorSmFcIntfAlreadyInState = cNsErrorSmFcIntfAlreadyInState
+	NsErrorSmFcIntfAlreadyInState = &pNsErrorSmFcIntfAlreadyInState
 
- pNsErrorSmLimitHretSnapPool = cNsErrorSmLimitHretSnapPool
- NsErrorSmLimitHretSnapPool = &pNsErrorSmLimitHretSnapPool
+	pNsErrorSmLimitHretSnapPool = cNsErrorSmLimitHretSnapPool
+	NsErrorSmLimitHretSnapPool = &pNsErrorSmLimitHretSnapPool
 
- pNsErrorSmIpUpdateNoForce = cNsErrorSmIpUpdateNoForce
- NsErrorSmIpUpdateNoForce = &pNsErrorSmIpUpdateNoForce
+	pNsErrorSmIpUpdateNoForce = cNsErrorSmIpUpdateNoForce
+	NsErrorSmIpUpdateNoForce = &pNsErrorSmIpUpdateNoForce
 
- pNsErrorSmSrepAgentTypeMismatchDownstreamVol = cNsErrorSmSrepAgentTypeMismatchDownstreamVol
- NsErrorSmSrepAgentTypeMismatchDownstreamVol = &pNsErrorSmSrepAgentTypeMismatchDownstreamVol
+	pNsErrorSmSrepAgentTypeMismatchDownstreamVol = cNsErrorSmSrepAgentTypeMismatchDownstreamVol
+	NsErrorSmSrepAgentTypeMismatchDownstreamVol = &pNsErrorSmSrepAgentTypeMismatchDownstreamVol
 
- pNsErrorSmVssValidationTimedout = cNsErrorSmVssValidationTimedout
- NsErrorSmVssValidationTimedout = &pNsErrorSmVssValidationTimedout
+	pNsErrorSmVssValidationTimedout = cNsErrorSmVssValidationTimedout
+	NsErrorSmVssValidationTimedout = &pNsErrorSmVssValidationTimedout
 
- pNsErrorSmConfigSyncInprogress = cNsErrorSmConfigSyncInprogress
- NsErrorSmConfigSyncInprogress = &pNsErrorSmConfigSyncInprogress
+	pNsErrorSmConfigSyncInprogress = cNsErrorSmConfigSyncInprogress
+	NsErrorSmConfigSyncInprogress = &pNsErrorSmConfigSyncInprogress
 
- pNsErrorSmAsyncJobId = cNsErrorSmAsyncJobId
- NsErrorSmAsyncJobId = &pNsErrorSmAsyncJobId
+	pNsErrorSmAsyncJobId = cNsErrorSmAsyncJobId
+	NsErrorSmAsyncJobId = &pNsErrorSmAsyncJobId
 
- pNsErrorSmEagain = cNsErrorSmEagain
- NsErrorSmEagain = &pNsErrorSmEagain
+	pNsErrorSmEagain = cNsErrorSmEagain
+	NsErrorSmEagain = &pNsErrorSmEagain
 
- pNsErrorSmPerfpolVolMoveAppCategory = cNsErrorSmPerfpolVolMoveAppCategory
- NsErrorSmPerfpolVolMoveAppCategory = &pNsErrorSmPerfpolVolMoveAppCategory
+	pNsErrorSmPerfpolVolMoveAppCategory = cNsErrorSmPerfpolVolMoveAppCategory
+	NsErrorSmPerfpolVolMoveAppCategory = &pNsErrorSmPerfpolVolMoveAppCategory
 
- pNsErrorSmLimitHretSnapRetentionPoolMax = cNsErrorSmLimitHretSnapRetentionPoolMax
- NsErrorSmLimitHretSnapRetentionPoolMax = &pNsErrorSmLimitHretSnapRetentionPoolMax
+	pNsErrorSmLimitHretSnapRetentionPoolMax = cNsErrorSmLimitHretSnapRetentionPoolMax
+	NsErrorSmLimitHretSnapRetentionPoolMax = &pNsErrorSmLimitHretSnapRetentionPoolMax
 
- pNsErrorSmVolHasConnections = cNsErrorSmVolHasConnections
- NsErrorSmVolHasConnections = &pNsErrorSmVolHasConnections
+	pNsErrorSmVolHasConnections = cNsErrorSmVolHasConnections
+	NsErrorSmVolHasConnections = &pNsErrorSmVolHasConnections
 
- pNsErrorSmNoCommonLun = cNsErrorSmNoCommonLun
- NsErrorSmNoCommonLun = &pNsErrorSmNoCommonLun
+	pNsErrorSmNoCommonLun = cNsErrorSmNoCommonLun
+	NsErrorSmNoCommonLun = &pNsErrorSmNoCommonLun
 
- pNsErrorSmErrShelfSasLanesDegraded = cNsErrorSmErrShelfSasLanesDegraded
- NsErrorSmErrShelfSasLanesDegraded = &pNsErrorSmErrShelfSasLanesDegraded
+	pNsErrorSmErrShelfSasLanesDegraded = cNsErrorSmErrShelfSasLanesDegraded
+	NsErrorSmErrShelfSasLanesDegraded = &pNsErrorSmErrShelfSasLanesDegraded
 
- pNsErrorSmVolAppCategoryMoveInvalid = cNsErrorSmVolAppCategoryMoveInvalid
- NsErrorSmVolAppCategoryMoveInvalid = &pNsErrorSmVolAppCategoryMoveInvalid
+	pNsErrorSmVolAppCategoryMoveInvalid = cNsErrorSmVolAppCategoryMoveInvalid
+	NsErrorSmVolAppCategoryMoveInvalid = &pNsErrorSmVolAppCategoryMoveInvalid
 
- pNsErrorSmExtTrigSchedAlreadyPresent = cNsErrorSmExtTrigSchedAlreadyPresent
- NsErrorSmExtTrigSchedAlreadyPresent = &pNsErrorSmExtTrigSchedAlreadyPresent
+	pNsErrorSmExtTrigSchedAlreadyPresent = cNsErrorSmExtTrigSchedAlreadyPresent
+	NsErrorSmExtTrigSchedAlreadyPresent = &pNsErrorSmExtTrigSchedAlreadyPresent
 
- pNsErrorSmNoDataIpSpecified = cNsErrorSmNoDataIpSpecified
- NsErrorSmNoDataIpSpecified = &pNsErrorSmNoDataIpSpecified
+	pNsErrorSmNoDataIpSpecified = cNsErrorSmNoDataIpSpecified
+	NsErrorSmNoDataIpSpecified = &pNsErrorSmNoDataIpSpecified
 
- pNsErrorSmInvalidVolAssoc = cNsErrorSmInvalidVolAssoc
- NsErrorSmInvalidVolAssoc = &pNsErrorSmInvalidVolAssoc
+	pNsErrorSmInvalidVolAssoc = cNsErrorSmInvalidVolAssoc
+	NsErrorSmInvalidVolAssoc = &pNsErrorSmInvalidVolAssoc
 
- pNsErrorSmReplObjectBusy = cNsErrorSmReplObjectBusy
- NsErrorSmReplObjectBusy = &pNsErrorSmReplObjectBusy
+	pNsErrorSmReplObjectBusy = cNsErrorSmReplObjectBusy
+	NsErrorSmReplObjectBusy = &pNsErrorSmReplObjectBusy
 
- pNsErrorSmPoolDedupeData = cNsErrorSmPoolDedupeData
- NsErrorSmPoolDedupeData = &pNsErrorSmPoolDedupeData
+	pNsErrorSmPoolDedupeData = cNsErrorSmPoolDedupeData
+	NsErrorSmPoolDedupeData = &pNsErrorSmPoolDedupeData
 
- pNsErrorSmVolcollOwner = cNsErrorSmVolcollOwner
- NsErrorSmVolcollOwner = &pNsErrorSmVolcollOwner
+	pNsErrorSmVolcollOwner = cNsErrorSmVolcollOwner
+	NsErrorSmVolcollOwner = &pNsErrorSmVolcollOwner
 
- pNsErrorSmReservedUsername = cNsErrorSmReservedUsername
- NsErrorSmReservedUsername = &pNsErrorSmReservedUsername
+	pNsErrorSmReservedUsername = cNsErrorSmReservedUsername
+	NsErrorSmReservedUsername = &pNsErrorSmReservedUsername
 
- pNsErrorSmVvolsnapOnline = cNsErrorSmVvolsnapOnline
- NsErrorSmVvolsnapOnline = &pNsErrorSmVvolsnapOnline
+	pNsErrorSmVvolsnapOnline = cNsErrorSmVvolsnapOnline
+	NsErrorSmVvolsnapOnline = &pNsErrorSmVvolsnapOnline
 
- pNsErrorSmFolderVolmvEinprog = cNsErrorSmFolderVolmvEinprog
- NsErrorSmFolderVolmvEinprog = &pNsErrorSmFolderVolmvEinprog
+	pNsErrorSmFolderVolmvEinprog = cNsErrorSmFolderVolmvEinprog
+	NsErrorSmFolderVolmvEinprog = &pNsErrorSmFolderVolmvEinprog
 
- pNsErrorSmUnexpectedObjectSetQuery = cNsErrorSmUnexpectedObjectSetQuery
- NsErrorSmUnexpectedObjectSetQuery = &pNsErrorSmUnexpectedObjectSetQuery
+	pNsErrorSmUnexpectedObjectSetQuery = cNsErrorSmUnexpectedObjectSetQuery
+	NsErrorSmUnexpectedObjectSetQuery = &pNsErrorSmUnexpectedObjectSetQuery
 
- pNsErrorSmProtpolInvalidValue = cNsErrorSmProtpolInvalidValue
- NsErrorSmProtpolInvalidValue = &pNsErrorSmProtpolInvalidValue
+	pNsErrorSmProtpolInvalidValue = cNsErrorSmProtpolInvalidValue
+	NsErrorSmProtpolInvalidValue = &pNsErrorSmProtpolInvalidValue
 
- pNsErrorSmFolderIncompatibleAgentType = cNsErrorSmFolderIncompatibleAgentType
- NsErrorSmFolderIncompatibleAgentType = &pNsErrorSmFolderIncompatibleAgentType
+	pNsErrorSmFolderIncompatibleAgentType = cNsErrorSmFolderIncompatibleAgentType
+	NsErrorSmFolderIncompatibleAgentType = &pNsErrorSmFolderIncompatibleAgentType
 
- pNsErrorSmProtpolVmwareInvalidVcenterHostname = cNsErrorSmProtpolVmwareInvalidVcenterHostname
- NsErrorSmProtpolVmwareInvalidVcenterHostname = &pNsErrorSmProtpolVmwareInvalidVcenterHostname
+	pNsErrorSmProtpolVmwareInvalidVcenterHostname = cNsErrorSmProtpolVmwareInvalidVcenterHostname
+	NsErrorSmProtpolVmwareInvalidVcenterHostname = &pNsErrorSmProtpolVmwareInvalidVcenterHostname
 
- pNsErrorSmErrVolCollMultipleSchedules = cNsErrorSmErrVolCollMultipleSchedules
- NsErrorSmErrVolCollMultipleSchedules = &pNsErrorSmErrVolCollMultipleSchedules
+	pNsErrorSmErrVolCollMultipleSchedules = cNsErrorSmErrVolCollMultipleSchedules
+	NsErrorSmErrVolCollMultipleSchedules = &pNsErrorSmErrVolCollMultipleSchedules
 
- pNsErrorSmReplPartnerNameMismatch = cNsErrorSmReplPartnerNameMismatch
- NsErrorSmReplPartnerNameMismatch = &pNsErrorSmReplPartnerNameMismatch
+	pNsErrorSmReplPartnerNameMismatch = cNsErrorSmReplPartnerNameMismatch
+	NsErrorSmReplPartnerNameMismatch = &pNsErrorSmReplPartnerNameMismatch
 
- pNsErrorSmInvalidFolder = cNsErrorSmInvalidFolder
- NsErrorSmInvalidFolder = &pNsErrorSmInvalidFolder
+	pNsErrorSmInvalidFolder = cNsErrorSmInvalidFolder
+	NsErrorSmInvalidFolder = &pNsErrorSmInvalidFolder
 
- pNsErrorSmSrvUpdatePrecheckArray = cNsErrorSmSrvUpdatePrecheckArray
- NsErrorSmSrvUpdatePrecheckArray = &pNsErrorSmSrvUpdatePrecheckArray
+	pNsErrorSmSrvUpdatePrecheckArray = cNsErrorSmSrvUpdatePrecheckArray
+	NsErrorSmSrvUpdatePrecheckArray = &pNsErrorSmSrvUpdatePrecheckArray
 
- pNsErrorSmGatewayNotInSubnets = cNsErrorSmGatewayNotInSubnets
- NsErrorSmGatewayNotInSubnets = &pNsErrorSmGatewayNotInSubnets
+	pNsErrorSmGatewayNotInSubnets = cNsErrorSmGatewayNotInSubnets
+	NsErrorSmGatewayNotInSubnets = &pNsErrorSmGatewayNotInSubnets
 
- pNsErrorSmErrLdapBindUserNoPassword = cNsErrorSmErrLdapBindUserNoPassword
- NsErrorSmErrLdapBindUserNoPassword = &pNsErrorSmErrLdapBindUserNoPassword
+	pNsErrorSmErrLdapBindUserNoPassword = cNsErrorSmErrLdapBindUserNoPassword
+	NsErrorSmErrLdapBindUserNoPassword = &pNsErrorSmErrLdapBindUserNoPassword
 
- pNsErrorSmDeprecatedPerfpol = cNsErrorSmDeprecatedPerfpol
- NsErrorSmDeprecatedPerfpol = &pNsErrorSmDeprecatedPerfpol
+	pNsErrorSmDeprecatedPerfpol = cNsErrorSmDeprecatedPerfpol
+	NsErrorSmDeprecatedPerfpol = &pNsErrorSmDeprecatedPerfpol
 
- pNsErrorSmTakeoverSplitBrain = cNsErrorSmTakeoverSplitBrain
- NsErrorSmTakeoverSplitBrain = &pNsErrorSmTakeoverSplitBrain
+	pNsErrorSmTakeoverSplitBrain = cNsErrorSmTakeoverSplitBrain
+	NsErrorSmTakeoverSplitBrain = &pNsErrorSmTakeoverSplitBrain
 
- pNsErrorSmPeIgroupProtocolMismatched = cNsErrorSmPeIgroupProtocolMismatched
- NsErrorSmPeIgroupProtocolMismatched = &pNsErrorSmPeIgroupProtocolMismatched
+	pNsErrorSmPeIgroupProtocolMismatched = cNsErrorSmPeIgroupProtocolMismatched
+	NsErrorSmPeIgroupProtocolMismatched = &pNsErrorSmPeIgroupProtocolMismatched
 
- pNsErrorSmOnlyVvolFolderAppsrvr = cNsErrorSmOnlyVvolFolderAppsrvr
- NsErrorSmOnlyVvolFolderAppsrvr = &pNsErrorSmOnlyVvolFolderAppsrvr
+	pNsErrorSmOnlyVvolFolderAppsrvr = cNsErrorSmOnlyVvolFolderAppsrvr
+	NsErrorSmOnlyVvolFolderAppsrvr = &pNsErrorSmOnlyVvolFolderAppsrvr
 
- pNsErrorSmVersionMismatch = cNsErrorSmVersionMismatch
- NsErrorSmVersionMismatch = &pNsErrorSmVersionMismatch
+	pNsErrorSmVersionMismatch = cNsErrorSmVersionMismatch
+	NsErrorSmVersionMismatch = &pNsErrorSmVersionMismatch
 
- pNsErrorSmPoolLastArray = cNsErrorSmPoolLastArray
- NsErrorSmPoolLastArray = &pNsErrorSmPoolLastArray
+	pNsErrorSmPoolLastArray = cNsErrorSmPoolLastArray
+	NsErrorSmPoolLastArray = &pNsErrorSmPoolLastArray
 
- pNsErrorSmEaccess = cNsErrorSmEaccess
- NsErrorSmEaccess = &pNsErrorSmEaccess
+	pNsErrorSmEaccess = cNsErrorSmEaccess
+	NsErrorSmEaccess = &pNsErrorSmEaccess
 
- pNsErrorSmInvalidSubnetLabel = cNsErrorSmInvalidSubnetLabel
- NsErrorSmInvalidSubnetLabel = &pNsErrorSmInvalidSubnetLabel
+	pNsErrorSmInvalidSubnetLabel = cNsErrorSmInvalidSubnetLabel
+	NsErrorSmInvalidSubnetLabel = &pNsErrorSmInvalidSubnetLabel
 
- pNsErrorSmInvalidArg = cNsErrorSmInvalidArg
- NsErrorSmInvalidArg = &pNsErrorSmInvalidArg
+	pNsErrorSmInvalidArg = cNsErrorSmInvalidArg
+	NsErrorSmInvalidArg = &pNsErrorSmInvalidArg
 
- pNsErrorSmDedupeVolfamAppcat = cNsErrorSmDedupeVolfamAppcat
- NsErrorSmDedupeVolfamAppcat = &pNsErrorSmDedupeVolfamAppcat
+	pNsErrorSmDedupeVolfamAppcat = cNsErrorSmDedupeVolfamAppcat
+	NsErrorSmDedupeVolfamAppcat = &pNsErrorSmDedupeVolfamAppcat
 
- pNsErrorSmSrvUnreach = cNsErrorSmSrvUnreach
- NsErrorSmSrvUnreach = &pNsErrorSmSrvUnreach
+	pNsErrorSmSrvUnreach = cNsErrorSmSrvUnreach
+	NsErrorSmSrvUnreach = &pNsErrorSmSrvUnreach
 
- pNsErrorSmPoolPartnerPauseUnsup = cNsErrorSmPoolPartnerPauseUnsup
- NsErrorSmPoolPartnerPauseUnsup = &pNsErrorSmPoolPartnerPauseUnsup
+	pNsErrorSmPoolPartnerPauseUnsup = cNsErrorSmPoolPartnerPauseUnsup
+	NsErrorSmPoolPartnerPauseUnsup = &pNsErrorSmPoolPartnerPauseUnsup
 
- pNsErrorSmNetconfigCreateDraftOnly = cNsErrorSmNetconfigCreateDraftOnly
- NsErrorSmNetconfigCreateDraftOnly = &pNsErrorSmNetconfigCreateDraftOnly
+	pNsErrorSmNetconfigCreateDraftOnly = cNsErrorSmNetconfigCreateDraftOnly
+	NsErrorSmNetconfigCreateDraftOnly = &pNsErrorSmNetconfigCreateDraftOnly
 
- pNsErrorSmErrArrayNotFound = cNsErrorSmErrArrayNotFound
- NsErrorSmErrArrayNotFound = &pNsErrorSmErrArrayNotFound
+	pNsErrorSmErrArrayNotFound = cNsErrorSmErrArrayNotFound
+	NsErrorSmErrArrayNotFound = &pNsErrorSmErrArrayNotFound
 
- pNsErrorSmFolsetInUse = cNsErrorSmFolsetInUse
- NsErrorSmFolsetInUse = &pNsErrorSmFolsetInUse
+	pNsErrorSmFolsetInUse = cNsErrorSmFolsetInUse
+	NsErrorSmFolsetInUse = &pNsErrorSmFolsetInUse
 
- pNsErrorSmErrShelfSesDeviceNotReady = cNsErrorSmErrShelfSesDeviceNotReady
- NsErrorSmErrShelfSesDeviceNotReady = &pNsErrorSmErrShelfSesDeviceNotReady
+	pNsErrorSmErrShelfSesDeviceNotReady = cNsErrorSmErrShelfSesDeviceNotReady
+	NsErrorSmErrShelfSesDeviceNotReady = &pNsErrorSmErrShelfSesDeviceNotReady
 
- pNsErrorSmInvalidIp = cNsErrorSmInvalidIp
- NsErrorSmInvalidIp = &pNsErrorSmInvalidIp
+	pNsErrorSmInvalidIp = cNsErrorSmInvalidIp
+	NsErrorSmInvalidIp = &pNsErrorSmInvalidIp
 
- pNsErrorSmEalready = cNsErrorSmEalready
- NsErrorSmEalready = &pNsErrorSmEalready
+	pNsErrorSmEalready = cNsErrorSmEalready
+	NsErrorSmEalready = &pNsErrorSmEalready
 
- pNsErrorSmInvalidNonIscsiDataSubnet = cNsErrorSmInvalidNonIscsiDataSubnet
- NsErrorSmInvalidNonIscsiDataSubnet = &pNsErrorSmInvalidNonIscsiDataSubnet
+	pNsErrorSmInvalidNonIscsiDataSubnet = cNsErrorSmInvalidNonIscsiDataSubnet
+	NsErrorSmInvalidNonIscsiDataSubnet = &pNsErrorSmInvalidNonIscsiDataSubnet
 
- pNsErrorSmReplHandoverUnsupPtype = cNsErrorSmReplHandoverUnsupPtype
- NsErrorSmReplHandoverUnsupPtype = &pNsErrorSmReplHandoverUnsupPtype
+	pNsErrorSmReplHandoverUnsupPtype = cNsErrorSmReplHandoverUnsupPtype
+	NsErrorSmReplHandoverUnsupPtype = &pNsErrorSmReplHandoverUnsupPtype
 
- pNsErrorSmArrayNotAssigned = cNsErrorSmArrayNotAssigned
- NsErrorSmArrayNotAssigned = &pNsErrorSmArrayNotAssigned
+	pNsErrorSmArrayNotAssigned = cNsErrorSmArrayNotAssigned
+	NsErrorSmArrayNotAssigned = &pNsErrorSmArrayNotAssigned
 
- pNsErrorSmEpartial = cNsErrorSmEpartial
- NsErrorSmEpartial = &pNsErrorSmEpartial
+	pNsErrorSmEpartial = cNsErrorSmEpartial
+	NsErrorSmEpartial = &pNsErrorSmEpartial
 
- pNsErrorSmErrProtpolMissingName = cNsErrorSmErrProtpolMissingName
- NsErrorSmErrProtpolMissingName = &pNsErrorSmErrProtpolMissingName
+	pNsErrorSmErrProtpolMissingName = cNsErrorSmErrProtpolMissingName
+	NsErrorSmErrProtpolMissingName = &pNsErrorSmErrProtpolMissingName
 
- pNsErrorSmVfVolCachePinned = cNsErrorSmVfVolCachePinned
- NsErrorSmVfVolCachePinned = &pNsErrorSmVfVolCachePinned
+	pNsErrorSmVfVolCachePinned = cNsErrorSmVfVolCachePinned
+	NsErrorSmVfVolCachePinned = &pNsErrorSmVfVolCachePinned
 
- pNsErrorSmAtLeastOneIscsiCluster = cNsErrorSmAtLeastOneIscsiCluster
- NsErrorSmAtLeastOneIscsiCluster = &pNsErrorSmAtLeastOneIscsiCluster
+	pNsErrorSmAtLeastOneIscsiCluster = cNsErrorSmAtLeastOneIscsiCluster
+	NsErrorSmAtLeastOneIscsiCluster = &pNsErrorSmAtLeastOneIscsiCluster
 
- pNsErrorSmErrTooMany = cNsErrorSmErrTooMany
- NsErrorSmErrTooMany = &pNsErrorSmErrTooMany
+	pNsErrorSmErrTooMany = cNsErrorSmErrTooMany
+	NsErrorSmErrTooMany = &pNsErrorSmErrTooMany
 
- pNsErrorSmErrShelfExprMfgVerInval = cNsErrorSmErrShelfExprMfgVerInval
- NsErrorSmErrShelfExprMfgVerInval = &pNsErrorSmErrShelfExprMfgVerInval
+	pNsErrorSmErrShelfExprMfgVerInval = cNsErrorSmErrShelfExprMfgVerInval
+	NsErrorSmErrShelfExprMfgVerInval = &pNsErrorSmErrShelfExprMfgVerInval
 
- pNsErrorSmMgmtIpInvalid = cNsErrorSmMgmtIpInvalid
- NsErrorSmMgmtIpInvalid = &pNsErrorSmMgmtIpInvalid
+	pNsErrorSmMgmtIpInvalid = cNsErrorSmMgmtIpInvalid
+	NsErrorSmMgmtIpInvalid = &pNsErrorSmMgmtIpInvalid
 
- pNsErrorSmErrShelfWrongCtrlrSide = cNsErrorSmErrShelfWrongCtrlrSide
- NsErrorSmErrShelfWrongCtrlrSide = &pNsErrorSmErrShelfWrongCtrlrSide
+	pNsErrorSmErrShelfWrongCtrlrSide = cNsErrorSmErrShelfWrongCtrlrSide
+	NsErrorSmErrShelfWrongCtrlrSide = &pNsErrorSmErrShelfWrongCtrlrSide
 
 }
-

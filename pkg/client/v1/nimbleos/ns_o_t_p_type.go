@@ -6,8 +6,8 @@ package nimbleos
 type NsOTPType string
 
 const (
- cNsOTPTypeGoogleAuth NsOTPType = "google_auth"
- cNsOTPTypeNone NsOTPType = "none"
+	cNsOTPTypeGoogleAuth NsOTPType = "google_auth"
+	cNsOTPTypeNone       NsOTPType = "none"
 )
 
 var pNsOTPTypeGoogleAuth NsOTPType
@@ -20,11 +20,10 @@ var NsOTPTypeGoogleAuth *NsOTPType
 var NsOTPTypeNone *NsOTPType
 
 func init() {
- pNsOTPTypeGoogleAuth = cNsOTPTypeGoogleAuth
- NsOTPTypeGoogleAuth = &pNsOTPTypeGoogleAuth
+	pNsOTPTypeGoogleAuth = cNsOTPTypeGoogleAuth
+	NsOTPTypeGoogleAuth = &pNsOTPTypeGoogleAuth
 
- pNsOTPTypeNone = cNsOTPTypeNone
- NsOTPTypeNone = &pNsOTPTypeNone
+	pNsOTPTypeNone = cNsOTPTypeNone
+	NsOTPTypeNone = &pNsOTPTypeNone
 
 }
-

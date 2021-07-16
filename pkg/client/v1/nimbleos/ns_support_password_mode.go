@@ -6,7 +6,7 @@ package nimbleos
 type NsSupportPasswordMode string
 
 const (
- cNsSupportPasswordModeCiphertext NsSupportPasswordMode = "ciphertext"
+	cNsSupportPasswordModeCiphertext NsSupportPasswordMode = "ciphertext"
 )
 
 var pNsSupportPasswordModeCiphertext NsSupportPasswordMode
@@ -15,8 +15,7 @@ var pNsSupportPasswordModeCiphertext NsSupportPasswordMode
 var NsSupportPasswordModeCiphertext *NsSupportPasswordMode
 
 func init() {
- pNsSupportPasswordModeCiphertext = cNsSupportPasswordModeCiphertext
- NsSupportPasswordModeCiphertext = &pNsSupportPasswordModeCiphertext
+	pNsSupportPasswordModeCiphertext = cNsSupportPasswordModeCiphertext
+	NsSupportPasswordModeCiphertext = &pNsSupportPasswordModeCiphertext
 
 }
-
